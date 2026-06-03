@@ -1,0 +1,8 @@
+{
+  "autoDraft": true,
+  "autoPublish": false,
+  "requiresHumanApproval": true,
+  "enabledAfter": "2027-01-01",
+  "defaultDraftStatus": "ready_for_approval",
+  "providerRequiredForDrafting": true
+}

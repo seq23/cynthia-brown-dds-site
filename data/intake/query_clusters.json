@@ -1,0 +1,48 @@
+{
+  "clusters": [
+    {
+      "id": "avoidance-cost-anxiety",
+      "label": "Dental avoidance, cost, and anxiety",
+      "queries": [
+        "What if I have not been to the dentist in years?",
+        "Will I be judged?",
+        "How do I ask about cost before treatment?"
+      ],
+      "patientIntent": "return to care without shame and with practical sequencing",
+      "priority": "high"
+    },
+    {
+      "id": "social-media-cosmetic-pressure",
+      "label": "Social media cosmetic pressure",
+      "queries": [
+        "Are TikTok whitening hacks safe?",
+        "Do I need veneers?",
+        "What should I ask before cosmetic dental work?"
+      ],
+      "patientIntent": "make cosmetic decisions without internet pressure",
+      "priority": "high"
+    },
+    {
+      "id": "black-women-confidence-care",
+      "label": "Confidence-centered culturally aware care",
+      "queries": [
+        "How do I find care that does not shame me?",
+        "How do I talk about confidence and aesthetics without pressure?",
+        "How do I prepare for photos or big life events?"
+      ],
+      "patientIntent": "feel seen while making informed dental choices",
+      "priority": "high"
+    },
+    {
+      "id": "benefits-emergency-planning",
+      "label": "Benefits, emergency, and family planning",
+      "queries": [
+        "When should tooth pain be urgent?",
+        "How do I use benefits before year end?",
+        "How do I create a realistic family dental routine?"
+      ],
+      "patientIntent": "navigate practical dental timing and family care",
+      "priority": "high"
+    }
+  ]
+}

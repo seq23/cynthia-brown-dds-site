@@ -1,0 +1,45 @@
+{
+  "policyVersion": "2026-06-03-aeo-geo",
+  "brandVoice": {
+    "tone": [
+      "warm",
+      "smart",
+      "feminine",
+      "clear",
+      "nonjudgmental"
+    ],
+    "avoid": [
+      "sterile",
+      "girly",
+      "salesy",
+      "fear-based",
+      "corporate",
+      "performative"
+    ],
+    "signatureLanguage": [
+      "confidence-centered care",
+      "no shame if it has been a while",
+      "ask before you commit",
+      "healthy foundation before cosmetic decisions"
+    ]
+  },
+  "compliance": {
+    "noDiagnosis": true,
+    "noTreatmentGuarantees": true,
+    "noCostGuarantees": true,
+    "noProcedurePressure": true,
+    "requiresDisclaimer": true,
+    "requiresExamBoundary": true
+  },
+  "publishing": {
+    "autoDraftAllowed": true,
+    "autoPublishAllowed": false,
+    "approvalRequired": true
+  },
+  "floors": {
+    "monthlyInsight": 900,
+    "quarterlyWhitePaper": 2500,
+    "quickAnswerMinWords": 45,
+    "quickAnswerMaxWords": 100
+  }
+}

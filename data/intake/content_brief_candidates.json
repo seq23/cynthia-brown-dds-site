@@ -1,0 +1,85 @@
+{
+  "generatedAt": "2026-06-03T17:04:18.942Z",
+  "briefs": [
+    {
+      "id": "brief-avoidance-cost-anxiety",
+      "queryClusterId": "avoidance-cost-anxiety",
+      "title": "Patient education brief: Dental avoidance, cost, and anxiety",
+      "status": "brief_candidate",
+      "priority": "high",
+      "patientIntent": "return to care without shame and with practical sequencing",
+      "recommendedContentType": "monthly_insight",
+      "mustInclude": [
+        "quick answer",
+        "useful takeaway",
+        "FAQ block",
+        "exam boundary",
+        "educational disclaimer",
+        "source trace"
+      ],
+      "autoPublish": false,
+      "requiresHumanApproval": true,
+      "gapStatus": "needs_content"
+    },
+    {
+      "id": "brief-social-media-cosmetic-pressure",
+      "queryClusterId": "social-media-cosmetic-pressure",
+      "title": "Patient education brief: Social media cosmetic pressure",
+      "status": "brief_candidate",
+      "priority": "high",
+      "patientIntent": "make cosmetic decisions without internet pressure",
+      "recommendedContentType": "monthly_insight",
+      "mustInclude": [
+        "quick answer",
+        "useful takeaway",
+        "FAQ block",
+        "exam boundary",
+        "educational disclaimer",
+        "source trace"
+      ],
+      "autoPublish": false,
+      "requiresHumanApproval": true,
+      "gapStatus": "covered"
+    },
+    {
+      "id": "brief-black-women-confidence-care",
+      "queryClusterId": "black-women-confidence-care",
+      "title": "Patient education brief: Confidence-centered culturally aware care",
+      "status": "brief_candidate",
+      "priority": "high",
+      "patientIntent": "feel seen while making informed dental choices",
+      "recommendedContentType": "monthly_insight",
+      "mustInclude": [
+        "quick answer",
+        "useful takeaway",
+        "FAQ block",
+        "exam boundary",
+        "educational disclaimer",
+        "source trace"
+      ],
+      "autoPublish": false,
+      "requiresHumanApproval": true,
+      "gapStatus": "covered"
+    },
+    {
+      "id": "brief-benefits-emergency-planning",
+      "queryClusterId": "benefits-emergency-planning",
+      "title": "Patient education brief: Benefits, emergency, and family planning",
+      "status": "brief_candidate",
+      "priority": "high",
+      "patientIntent": "navigate practical dental timing and family care",
+      "recommendedContentType": "monthly_insight",
+      "mustInclude": [
+        "quick answer",
+        "useful takeaway",
+        "FAQ block",
+        "exam boundary",
+        "educational disclaimer",
+        "source trace"
+      ],
+      "autoPublish": false,
+      "requiresHumanApproval": true,
+      "gapStatus": "covered"
+    }
+  ]
+}

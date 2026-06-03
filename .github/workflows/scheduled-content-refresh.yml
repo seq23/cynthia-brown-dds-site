@@ -1,0 +1,27 @@
+name: Scheduled Content Refresh Legacy Alias
+on:
+  workflow_dispatch:
+jobs:
+  future-drafts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scripts/generate_auto_draft.js
+        env:
+          ENABLE_AUTO_DRAFTS: ${{ vars.ENABLE_AUTO_DRAFTS }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      - run: npm run build
+      - run: npm run validate:all
+      - uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: refresh future dental drafts"
+          title: "Refresh future dental draft queue"
+          body: "Legacy alias for monthly auto-drafting. Dental resources remain approval-gated and must be reviewed before publishing."
+          branch: "automation/future-dental-drafts"
+          delete-branch: true

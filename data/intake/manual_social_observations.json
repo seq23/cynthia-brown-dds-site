@@ -1,0 +1,36 @@
+{
+  "observations": [
+    {
+      "id": "manual-2026-06-001",
+      "source": "manual-social-observations",
+      "platform": "TikTok/Instagram observation",
+      "observedQuery": "Are veneers worth it if I do not like my smile?",
+      "normalizedQuery": "Are veneers worth it?",
+      "topic": "veneers",
+      "intent": "cosmetic decision support",
+      "audience": [
+        "young adults",
+        "millennial patients"
+      ],
+      "dateObserved": "2026-06-03",
+      "rawPostStored": false,
+      "containsPersonalData": false
+    },
+    {
+      "id": "manual-2026-06-002",
+      "source": "manual-social-observations",
+      "platform": "Reddit/question forums observation",
+      "observedQuery": "I have not been to the dentist in years and I am embarrassed",
+      "normalizedQuery": "What if I have not been to the dentist in years?",
+      "topic": "dental anxiety",
+      "intent": "reassurance and first-step planning",
+      "audience": [
+        "returning patients",
+        "millennial patients"
+      ],
+      "dateObserved": "2026-06-03",
+      "rawPostStored": false,
+      "containsPersonalData": false
+    }
+  ]
+}

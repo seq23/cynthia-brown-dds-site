@@ -1,0 +1,8 @@
+{
+  "siteUrl": "https://cynthiabrowndds.com",
+  "githubRepoUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site",
+  "githubEditBase": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/",
+  "brandName": "Dr. Cynthia Brown, DDS",
+  "defaultOgImage": "/assets/portraits/optimized/cynthia-brown-dds-dental-coat-portrait-1200.webp",
+  "adminSecurityNotice": "The static admin panel is a convenience review dashboard, not real authentication. It must not contain patient data, secrets, or private health information."
+}

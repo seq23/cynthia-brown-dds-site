@@ -1,0 +1,21 @@
+{
+  "sourcePolicy": "Use public question patterns and reputable oral-health sources. Do not copy private posts or republish individual patient stories.",
+  "seedQueries": [
+    "millennials skipping dentist cost insurance dental anxiety",
+    "TikTok teeth trends whitening veneers DIY dentistry",
+    "Black women smile confidence dentist anxiety oral health",
+    "young adults dental checkup after years no dentist",
+    "wedding smile prep whitening veneers bonding questions",
+    "year end dental benefits use it before December"
+  ],
+  "referenceSources": [
+    {"label":"Tufts Now young adults skipping dentist 2025", "url":"https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem"},
+    {"label":"ADA social media dental trends", "url":"https://adanews.ada.org/huddles/social-media-trends-that-could-cause-dental-harm/"},
+    {"label":"MouthHealthy dental trends", "url":"https://www.mouthhealthy.org/dental-care/dental-trends"},
+    {"label":"ADA whitening topic", "url":"https://www.ada.org/resources/ada-library/oral-health-topics/whitening"},
+    {"label":"CDC oral health disparities", "url":"https://www.cdc.gov/oral-health/health-equity/index.html"},
+    {"label":"CDC preventing oral diseases", "url":"https://www.cdc.gov/oral-health/prevention/index.html"},
+    {"label":"CareQuest 2025 survey findings", "url":"https://carequest.org/wp-content/uploads/2025/11/CareQuest_Institute_SOHEA-2025-Key-Survey-Findings_11.10.25.pdf"},
+    {"label":"AP veneer tech warning", "url":"https://apnews.com/article/d0d9d57613a10f18bc9735dc5eca4b41"}
+  ]
+}

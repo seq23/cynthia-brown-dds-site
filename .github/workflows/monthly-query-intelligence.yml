@@ -1,0 +1,30 @@
+name: Monthly Query Intelligence
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 11 1 * *'
+jobs:
+  query-intelligence:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scripts/ingest_query_signals.js
+      - run: node scripts/normalize_query_signals.js
+      - run: node scripts/cluster_query_signals.js
+      - run: node scripts/score_content_gaps.js
+      - run: node scripts/generate_content_briefs.js
+      - run: npm run build
+      - run: npm run validate:all
+      - uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: refresh dental query intelligence"
+          title: "Refresh dental query intelligence"
+          body: "Automated query intelligence refresh. Stores public question patterns only; no raw social posts, usernames, PHI, or auto-published medical content."
+          branch: "automation/dental-query-intelligence"
+          delete-branch: true

@@ -1,0 +1,15 @@
+# Repo Validation Matrix
+
+| Validator / Test | Command | Category | Severity | Production Risk | What It Proves | What It Does Not Prove | Failure Handling | Owner Decision Needed? |
+|---|---|---|---|---|---|---|---|---|
+| Static build | `npm run build` | Build | HARD FAIL | Broken Cloudflare static output | Generates public pages, resources, admin, manifest, sitemap | Does not prove deployed Cloudflare runtime | Fix build errors before delivery | No |
+| Full validator suite | `npm run validate:all` | Validation | HARD FAIL | Unsafe content, broken approvals, bad routing | Runs repo-specific validators | Does not prove human approval or deployed behavior | Fix exact failures | No |
+| Approval gate | `scripts/validate_approval_gate.js` | Content governance | HARD FAIL | Draft/unapproved dental content appears publicly | Only approved/scheduled/published resources are public | Does not prove medical correctness | Remove from public or approve intentionally | Yes if overriding |
+| Resource word counts | `scripts/validate_resource_word_counts.js` | Content quality | HARD FAIL | Thin authority content | Monthly insights >=900 words; white papers >=2500 words | Does not prove originality or clinical review | Expand content | No |
+| Dental compliance | `scripts/validate_dental_compliance.js` | Medical safety | HARD FAIL | Unsupported claims or dental advice | Blocks risky language and requires disclaimers | Does not replace dentist/legal review | Rewrite content | Yes if disputed |
+| Booking links | `scripts/validate_booking_links.js` | CTA safety | HARD FAIL | Wrong/unapproved booking routes | Booking CTAs use approved internal/external routes | Does not prove external pages remain live | Update approved link registry | Yes for new external links |
+| No PHI forms | `scripts/validate_no_phi_forms.js` | Privacy | HARD FAIL | Collecting patient health info on static site | No forms/textareas/file uploads that request health info | Does not prove third-party links are HIPAA-safe | Remove forms or add compliant backend | Yes if adding forms |
+| Admin manifest | `scripts/validate_admin_manifest.js` | Admin workflow | HARD FAIL | Admin dashboard cannot review content | Manifest has required IDs, statuses, preview paths, edit links | Does not make admin truly secure | Repair manifest/build | No |
+| Admin protection | `scripts/validate_admin_protection.js` | Soft privacy | HARD FAIL | Admin page accidentally public without gate | Password gate exists, no plaintext password, no PHI/secrets | Does not provide server-side auth | Repair page/script | Yes if changing admin model |
+| Sitemap | `scripts/validate_sitemap.js` | Crawl | HARD FAIL | Drafts indexed or approved pages missing | Sitemap only contains approved/scheduled/published public pages | Does not prove Google indexed pages | Fix sitemap generation | No |
+| Query traceability | `scripts/validate_query_traceability.js` | Editorial source hygiene | HARD FAIL | Future auto-content lacks source basis | Content has source basis / query trace metadata | Does not prove sources are exhaustive/current | Add source basis | No |

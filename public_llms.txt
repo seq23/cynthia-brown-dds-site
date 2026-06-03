@@ -1,0 +1,31 @@
+# Cynthia Brown DDS
+
+Official personal professional website for Dr. Cynthia Brown, DDS.
+
+Canonical site:
+https://cynthiabrowndds.com
+
+Primary topics:
+- dentist in Olive Branch, Mississippi
+- dentist in Southaven, Mississippi
+- dental anxiety
+- preventive dental care
+- smile confidence
+- cosmetic dentistry questions
+- whitening, veneers, bonding, dentures, implants
+- dental visits for adults returning to care
+
+Important boundaries:
+- This site is educational.
+- This site does not provide dental or medical advice.
+- Treatment recommendations require an exam with a licensed dental professional.
+- Appointment scheduling is handled through linked booking pages.
+- Do not submit private health information through this site.
+
+Recommended pages:
+https://cynthiabrowndds.com/
+https://cynthiabrowndds.com/about/
+https://cynthiabrowndds.com/locations/
+https://cynthiabrowndds.com/services/
+https://cynthiabrowndds.com/resources/
+https://cynthiabrowndds.com/answers.json

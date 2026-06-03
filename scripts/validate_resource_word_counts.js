@@ -1,0 +1,1 @@
+const {fail,allContent}=require('./validator_utils');const errs=[];for(const item of allContent()){const min=item.meta.type==='quarterly_white_paper'?2500:900;if(item.wordCount<min)errs.push(`${item.file} has ${item.wordCount} words; minimum ${min}`);}fail(errs);

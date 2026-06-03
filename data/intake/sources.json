@@ -1,0 +1,39 @@
+{
+  "sources": [
+    {
+      "id": "google-trends",
+      "type": "trends_api",
+      "enabled": false,
+      "requiresSecret": true,
+      "secretName": "GOOGLE_TRENDS_API_KEY",
+      "riskLevel": "low",
+      "storesRawContent": false
+    },
+    {
+      "id": "youtube-search",
+      "type": "youtube_data_api",
+      "enabled": false,
+      "requiresSecret": true,
+      "secretName": "YOUTUBE_API_KEY",
+      "riskLevel": "medium",
+      "storesRawContent": false
+    },
+    {
+      "id": "reddit-approved",
+      "type": "reddit_api_or_rss",
+      "enabled": false,
+      "requiresSecret": true,
+      "secretName": "REDDIT_CLIENT_ID",
+      "riskLevel": "medium",
+      "storesRawContent": false
+    },
+    {
+      "id": "manual-social-observations",
+      "type": "manual",
+      "enabled": true,
+      "requiresSecret": false,
+      "riskLevel": "low",
+      "storesRawContent": false
+    }
+  ]
+}

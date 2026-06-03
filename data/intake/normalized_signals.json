@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-06-03T17:04:18.665Z",
+  "signals": [
+    {
+      "id": "manual-2026-06-001",
+      "source": "manual-social-observations",
+      "normalizedQuery": "Are veneers worth it?",
+      "topic": "veneers",
+      "intent": "cosmetic decision support",
+      "audience": [
+        "young adults",
+        "millennial patients"
+      ],
+      "dateObserved": "2026-06-03",
+      "rawPostStored": false,
+      "containsPersonalData": false
+    },
+    {
+      "id": "manual-2026-06-002",
+      "source": "manual-social-observations",
+      "normalizedQuery": "What if I have not been to the dentist in years?",
+      "topic": "dental anxiety",
+      "intent": "reassurance and first-step planning",
+      "audience": [
+        "returning patients",
+        "millennial patients"
+      ],
+      "dateObserved": "2026-06-03",
+      "rawPostStored": false,
+      "containsPersonalData": false
+    }
+  ]
+}

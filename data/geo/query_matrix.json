@@ -1,0 +1,213 @@
+{
+  "generatedAt": "2026-06-03",
+  "clusters": [
+    {
+      "cluster": "black-women-confidence-care",
+      "queries": [
+        "The New-Year Smile Reset What to Do Before You Book Whitening, Aligners, or Cosmetic Dental Work",
+        "What should I know about smile confidence, cosmetic planning, young adult dental questions?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/insights/new-year-smile-reset/",
+      "previewPage": "/previews/resources/insights/new-year-smile-reset/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "social-media-cosmetic-pressure",
+      "queries": [
+        "Why Dental Anxiety Is So Common \u2014 and How to Make Your Next Visit Feel Less Intimidating",
+        "What should I know about dental anxiety, shame-free care, return to care?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/insights/dental-anxiety-less-intimidating/",
+      "previewPage": "/previews/resources/insights/dental-anxiety-less-intimidating/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "social-media-cosmetic-pressure",
+      "queries": [
+        "TikTok Teeth Trends What Looks Cute Online but May Not Be Safe for Your Smile",
+        "What should I know about social media, DIY dentistry, enamel safety?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/insights/tiktok-teeth-trends/",
+      "previewPage": "/previews/resources/insights/tiktok-teeth-trends/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "social-media-cosmetic-pressure",
+      "queries": [
+        "The Millennial Dental Checkup What to Ask When You Haven\u2019t Been in a While",
+        "What should I know about millennial oral health, comeback visit, preventive care?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/insights/millennial-dental-checkup/",
+      "previewPage": "/previews/resources/insights/millennial-dental-checkup/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "black-women-confidence-care",
+      "queries": [
+        "Wedding, Graduation, and Photo-Season Smile Prep What to Plan Early",
+        "What should I know about event prep, whitening timing, photo confidence?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/insights/photo-season-smile-prep/",
+      "previewPage": "/previews/resources/insights/photo-season-smile-prep/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "social-media-cosmetic-pressure",
+      "queries": [
+        "Whitening vs. Veneers vs. Bonding How to Think About Smile Goals Without Rushing",
+        "What should I know about cosmetic options, whitening, veneers, bonding?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/insights/whitening-veneers-bonding/",
+      "previewPage": "/previews/resources/insights/whitening-veneers-bonding/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "benefits-emergency-planning",
+      "queries": [
+        "Dental Emergencies in Real Life Tooth Pain, Chipped Teeth, Swelling, and When to Call",
+        "What should I know about urgent dental symptoms, tooth pain, chipped tooth?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/insights/dental-emergencies-real-life/",
+      "previewPage": "/previews/resources/insights/dental-emergencies-real-life/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "benefits-emergency-planning",
+      "queries": [
+        "Back-to-School Isn\u2019t Just for Kids Building a Better Family Dental Routine",
+        "What should I know about family routines, prevention, busy households?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/insights/family-dental-routine/",
+      "previewPage": "/previews/resources/insights/family-dental-routine/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "social-media-cosmetic-pressure",
+      "queries": [
+        "Gums, Bleeding, and Bad Breath The Signs People Ignore Until They Get Annoying",
+        "What should I know about gum health, bleeding gums, bad breath?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/insights/gums-bleeding-bad-breath/",
+      "previewPage": "/previews/resources/insights/gums-bleeding-bad-breath/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "social-media-cosmetic-pressure",
+      "queries": [
+        "Candy Season, Coffee Season, and Stain Season How Everyday Habits Affect Your Teeth",
+        "What should I know about coffee stains, candy, habits, prevention?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/insights/candy-coffee-stain-season/",
+      "previewPage": "/previews/resources/insights/candy-coffee-stain-season/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "benefits-emergency-planning",
+      "queries": [
+        "Using Dental Benefits Before Year-End What to Know Before December Gets Busy",
+        "What should I know about dental benefits, cost planning, year-end appointments?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/insights/use-dental-benefits/",
+      "previewPage": "/previews/resources/insights/use-dental-benefits/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "black-women-confidence-care",
+      "queries": [
+        "A Confidence-Centered Smile Plan for the New Year",
+        "What should I know about annual planning, smile goals, confidence?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/insights/confidence-smile-plan/",
+      "previewPage": "/previews/resources/insights/confidence-smile-plan/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "black-women-confidence-care",
+      "queries": [
+        "The Modern Smile Confidence Guide A Practical Framework for Whitening, Cosmetic Questions, and First Appointments",
+        "What should I know about quarterly dental education and smile confidence?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/white-papers/modern-smile-confidence-guide/",
+      "previewPage": "/previews/resources/white-papers/modern-smile-confidence-guide/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "black-women-confidence-care",
+      "queries": [
+        "Dental Anxiety, Avoidance, and the Shame-Free Return to Care",
+        "What should I know about quarterly dental education and smile confidence?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/white-papers/dental-anxiety-avoidance/",
+      "previewPage": "/previews/resources/white-papers/dental-anxiety-avoidance/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "black-women-confidence-care",
+      "queries": [
+        "Social Media, Beauty Culture, and Your Teeth A Patient\u2019s Guide to Safer Smile Decisions",
+        "What should I know about quarterly dental education and smile confidence?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/white-papers/social-media-beauty-culture-teeth/",
+      "previewPage": "/previews/resources/white-papers/social-media-beauty-culture-teeth/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    },
+    {
+      "cluster": "black-women-confidence-care",
+      "queries": [
+        "The Year-End Oral Health Planning Guide Benefits, Budgets, Emergencies, and Next-Year Smile Goals",
+        "What should I know about quarterly dental education and smile confidence?",
+        "What should I ask my dentist before deciding?"
+      ],
+      "intent": "patient education and confidence-centered decision support",
+      "targetPage": "/resources/white-papers/year-end-oral-health-planning/",
+      "previewPage": "/previews/resources/white-papers/year-end-oral-health-planning/",
+      "contentStatus": "ready_for_approval",
+      "priority": "high"
+    }
+  ]
+}

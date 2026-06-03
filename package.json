@@ -1,0 +1,22 @@
+{
+  "name": "cynthia-brown-dds-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static personal-professional website and resources approval system for Dr. Cynthia Brown, DDS.",
+  "scripts": {
+    "build": "node scripts/build_site.js",
+    "validate": "node scripts/validate_all.js",
+    "validate:all": "node scripts/validate_all.js",
+    "preflight": "node scripts/build_site.js && node scripts/validate_all.js",
+    "validate:accessibility": "node scripts/validate_accessibility_static.js",
+    "validate:seo": "node scripts/validate_seo_contract.js",
+    "validate:aeo": "node scripts/validate_aeo_contract.js",
+    "validate:geo": "node scripts/validate_geo_contract.js",
+    "validate:ingestion": "node scripts/validate_ingestion_contract.js",
+    "ingest:queries": "node scripts/ingest_query_signals.js && node scripts/normalize_query_signals.js && node scripts/cluster_query_signals.js && node scripts/score_content_gaps.js && node scripts/generate_content_briefs.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {}
+}

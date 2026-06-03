@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-06-03T17:07:23.813Z",
+  "site": "https://cynthiabrowndds.com",
+  "records": [
+    {
+      "id": "home-dr-cynthia-brown-dds",
+      "url": "https://cynthiabrowndds.com/",
+      "question": "Who is Dr. Cynthia Brown DDS?",
+      "shortAnswer": "Dr. Cynthia Brown, DDS is a dentist and practice owner serving patients in Olive Branch and Southaven, Mississippi. Her personal professional site focuses on clear dental education, smile confidence, and booking pathways for current practice locations.",
+      "audience": [
+        "patients",
+        "local searchers"
+      ],
+      "topic": "professional profile",
+      "clinicalBoundary": "Educational only. Not dental or medical advice.",
+      "sourcePage": "home",
+      "lastReviewed": "2026-06-03"
+    },
+    {
+      "id": "locations-olive-branch-southaven",
+      "url": "https://cynthiabrowndds.com/locations/",
+      "question": "Where can patients see Dr. Cynthia Brown DDS?",
+      "shortAnswer": "Patients can use Dr. Brown’s website to choose booking pathways for Olive Branch and Southaven, Mississippi. Appointment details, treatment availability, insurance, and pricing are handled through the linked practice booking pages.",
+      "audience": [
+        "patients"
+      ],
+      "topic": "locations and booking",
+      "clinicalBoundary": "Booking information only. Not emergency response.",
+      "sourcePage": "locations",
+      "lastReviewed": "2026-06-03"
+    },
+    {
+      "id": "services-dental-care-topics",
+      "url": "https://cynthiabrowndds.com/services/",
+      "question": "What dental topics does Dr. Cynthia Brown DDS explain?",
+      "shortAnswer": "The site explains common patient questions around preventive care, restorative dentistry, cosmetic dentistry, emergency dental care, dentures, implants, whitening, and returning to the dentist after a long gap.",
+      "audience": [
+        "patients"
+      ],
+      "topic": "dental services education",
+      "clinicalBoundary": "Educational only. Treatment recommendations require an exam.",
+      "sourcePage": "services",
+      "lastReviewed": "2026-06-03"
+    }
+  ]
+}

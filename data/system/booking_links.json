@@ -1,0 +1,22 @@
+{
+  "approvedExternalBookingLinks": [
+    "https://www.aspendental.com/providers/cynthia-brown/1194138503/"
+  ],
+  "defaultBookingUrl": "https://www.aspendental.com/providers/cynthia-brown/1194138503/",
+  "locations": [
+    {
+      "id": "olive-branch",
+      "label": "Book in Olive Branch",
+      "city": "Olive Branch",
+      "state": "MS",
+      "bookingUrl": "https://www.aspendental.com/providers/cynthia-brown/1194138503/"
+    },
+    {
+      "id": "southaven",
+      "label": "Book in Southaven",
+      "city": "Southaven",
+      "state": "MS",
+      "bookingUrl": "https://www.aspendental.com/providers/cynthia-brown/1194138503/"
+    }
+  ]
+}

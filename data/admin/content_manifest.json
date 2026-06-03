@@ -1,0 +1,837 @@
+{
+  "generatedAt": "2026-06-03T17:07:23.799Z",
+  "adminSecurityNotice": "The static admin panel is a convenience review dashboard, not real authentication. It must not contain patient data, secrets, or private health information.",
+  "items": [
+    {
+      "id": "2026-01-new-year-smile-reset",
+      "type": "monthly_insight",
+      "title": "The New-Year Smile Reset: What to Do Before You Book Whitening, Aligners, or Cosmetic Dental Work",
+      "slug": "new-year-smile-reset",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-01-15",
+      "wordCount": 953,
+      "minimumWords": 900,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/insights/new-year-smile-reset/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-01-new-year-smile-reset.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "The New-Year Smile Reset: What to Do Before You Book Whitening, Aligners, or Cosmetic Dental Work is not about chasing a perfect smile or letting the internet talk you into a treatment you do not understand. It is about slowing the decision down long enough to protect your health, your money, your enamel, and your confidence. A confident smile starts with information. Before whitening, bonding, veneers, aligners, or any other cosmetic conversation, the first question is not, “What looks good online?” The first question is, “What is actually happening with my teeth and gums right.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "black-women-confidence-care",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-02-dental-anxiety-less-intimidating",
+      "type": "monthly_insight",
+      "title": "Why Dental Anxiety Is So Common — and How to Make Your Next Visit Feel Less Intimidating",
+      "slug": "dental-anxiety-less-intimidating",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-02-15",
+      "wordCount": 954,
+      "minimumWords": 900,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/insights/dental-anxiety-less-intimidating/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-02-dental-anxiety-less-intimidating.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "Why Dental Anxiety Is So Common — and How to Make Your Next Visit Feel Less Intimidating is not about chasing a perfect smile or letting the internet talk you into a treatment you do not understand. It is about slowing the decision down long enough to protect your health, your money, your enamel, and your confidence. A confident smile starts with information. Before whitening, bonding, veneers, aligners, or any other cosmetic conversation, the first question is not, “What looks good online?” The first question is, “What is actually happening with my teeth and gums.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "social-media-cosmetic-pressure",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-03-tiktok-teeth-trends",
+      "type": "monthly_insight",
+      "title": "TikTok Teeth Trends: What Looks Cute Online but May Not Be Safe for Your Smile",
+      "slug": "tiktok-teeth-trends",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-03-15",
+      "wordCount": 952,
+      "minimumWords": 900,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/insights/tiktok-teeth-trends/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-03-tiktok-teeth-trends.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "TikTok Teeth Trends: What Looks Cute Online but May Not Be Safe for Your Smile is not about chasing a perfect smile or letting the internet talk you into a treatment you do not understand. It is about slowing the decision down long enough to protect your health, your money, your enamel, and your confidence. A confident smile starts with information. Before whitening, bonding, veneers, aligners, or any other cosmetic conversation, the first question is not, “What looks good online?” The first question is, “What is actually happening with my teeth and gums right now?”.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "social-media-cosmetic-pressure",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-q1-modern-smile-confidence-guide",
+      "type": "quarterly_white_paper",
+      "title": "The Modern Smile Confidence Guide: A Practical Framework for Whitening, Cosmetic Questions, and First Appointments",
+      "slug": "modern-smile-confidence-guide",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-03-31",
+      "wordCount": 2510,
+      "minimumWords": 2500,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/white-papers/modern-smile-confidence-guide/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/white-papers/2026-q1-modern-smile-confidence-guide.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings",
+        "AP reporting on unlicensed veneer providers"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "A long-form guide for informed, confidence-centered dental decisions. Treatment decisions should be discussed with a licensed dental professional after an exam. This is general education only, not diagnosis or a treatment recommendation. It is designed to help patients slow down decisions, understand common options, prepare better appointment questions, and remember that treatment recommendations require an exam with a licensed dental professional.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "black-women-confidence-care",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-04-millennial-dental-checkup",
+      "type": "monthly_insight",
+      "title": "The Millennial Dental Checkup: What to Ask When You Haven’t Been in a While",
+      "slug": "millennial-dental-checkup",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-04-15",
+      "wordCount": 951,
+      "minimumWords": 900,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/insights/millennial-dental-checkup/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-04-millennial-dental-checkup.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "The Millennial Dental Checkup: What to Ask When You Haven’t Been in a While is not about chasing a perfect smile or letting the internet talk you into a treatment you do not understand. It is about slowing the decision down long enough to protect your health, your money, your enamel, and your confidence. A confident smile starts with information. Before whitening, bonding, veneers, aligners, or any other cosmetic conversation, the first question is not, “What looks good online?” The first question is, “What is actually happening with my teeth and gums right now?” That.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "social-media-cosmetic-pressure",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-05-photo-season-smile-prep",
+      "type": "monthly_insight",
+      "title": "Wedding, Graduation, and Photo-Season Smile Prep: What to Plan Early",
+      "slug": "photo-season-smile-prep",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-05-15",
+      "wordCount": 947,
+      "minimumWords": 900,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/insights/photo-season-smile-prep/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-05-photo-season-smile-prep.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "Wedding, Graduation, and Photo-Season Smile Prep: What to Plan Early is not about chasing a perfect smile or letting the internet talk you into a treatment you do not understand. It is about slowing the decision down long enough to protect your health, your money, your enamel, and your confidence. A confident smile starts with information. Before whitening, bonding, veneers, aligners, or any other cosmetic conversation, the first question is not, “What looks good online?” The first question is, “What is actually happening with my teeth and gums right now?” That distinction matters for young.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "black-women-confidence-care",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-06-whitening-veneers-bonding",
+      "type": "monthly_insight",
+      "title": "Whitening vs. Veneers vs. Bonding: How to Think About Smile Goals Without Rushing",
+      "slug": "whitening-veneers-bonding",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-06-15",
+      "wordCount": 950,
+      "minimumWords": 900,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/insights/whitening-veneers-bonding/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-06-whitening-veneers-bonding.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "Whitening vs. Veneers vs. Bonding: How to Think About Smile Goals Without Rushing is not about chasing a perfect smile or letting the internet talk you into a treatment you do not understand. It is about slowing the decision down long enough to protect your health, your money, your enamel, and your confidence. A confident smile starts with information. Before whitening, bonding, veneers, aligners, or any other cosmetic conversation, the first question is not, “What looks good online?” The first question is, “What is actually happening with my teeth and gums right now?” That distinction.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "social-media-cosmetic-pressure",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-q2-dental-anxiety-avoidance",
+      "type": "quarterly_white_paper",
+      "title": "Dental Anxiety, Avoidance, and the Shame-Free Return to Care",
+      "slug": "dental-anxiety-avoidance",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-06-30",
+      "wordCount": 2504,
+      "minimumWords": 2500,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/white-papers/dental-anxiety-avoidance/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/white-papers/2026-q2-dental-anxiety-avoidance.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings",
+        "AP reporting on unlicensed veneer providers"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "A long-form guide for informed, confidence-centered dental decisions. Treatment decisions should be discussed with a licensed dental professional after an exam. This is general education only, not diagnosis or a treatment recommendation. It is designed to help patients slow down decisions, understand common options, prepare better appointment questions, and remember that treatment recommendations require an exam with a licensed dental professional.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "black-women-confidence-care",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-07-dental-emergencies-real-life",
+      "type": "monthly_insight",
+      "title": "Dental Emergencies in Real Life: Tooth Pain, Chipped Teeth, Swelling, and When to Call",
+      "slug": "dental-emergencies-real-life",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-07-15",
+      "wordCount": 951,
+      "minimumWords": 900,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/insights/dental-emergencies-real-life/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-07-dental-emergencies-real-life.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "Dental Emergencies in Real Life: Tooth Pain, Chipped Teeth, Swelling, and When to Call is not about chasing a perfect smile or letting the internet talk you into a treatment you do not understand. It is about slowing the decision down long enough to protect your health, your money, your enamel, and your confidence. A confident smile starts with information. Before whitening, bonding, veneers, aligners, or any other cosmetic conversation, the first question is not, “What looks good online?” The first question is, “What is actually happening with my teeth and gums right now?” That.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "benefits-emergency-planning",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-08-family-dental-routine",
+      "type": "monthly_insight",
+      "title": "Back-to-School Isn’t Just for Kids: Building a Better Family Dental Routine",
+      "slug": "family-dental-routine",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-08-15",
+      "wordCount": 948,
+      "minimumWords": 900,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/insights/family-dental-routine/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-08-family-dental-routine.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "Back-to-School Isn’t Just for Kids: Building a Better Family Dental Routine is not about chasing a perfect smile or letting the internet talk you into a treatment you do not understand. It is about slowing the decision down long enough to protect your health, your money, your enamel, and your confidence. A confident smile starts with information. Before whitening, bonding, veneers, aligners, or any other cosmetic conversation, the first question is not, “What looks good online?” The first question is, “What is actually happening with my teeth and gums right now?” That distinction matters for.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "benefits-emergency-planning",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-09-gums-bleeding-bad-breath",
+      "type": "monthly_insight",
+      "title": "Gums, Bleeding, and Bad Breath: The Signs People Ignore Until They Get Annoying",
+      "slug": "gums-bleeding-bad-breath",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-09-15",
+      "wordCount": 950,
+      "minimumWords": 900,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/insights/gums-bleeding-bad-breath/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-09-gums-bleeding-bad-breath.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "Gums, Bleeding, and Bad Breath: The Signs People Ignore Until They Get Annoying is not about chasing a perfect smile or letting the internet talk you into a treatment you do not understand. It is about slowing the decision down long enough to protect your health, your money, your enamel, and your confidence. A confident smile starts with information. Before whitening, bonding, veneers, aligners, or any other cosmetic conversation, the first question is not, “What looks good online?” The first question is, “What is actually happening with my teeth and gums right now?” That distinction.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "social-media-cosmetic-pressure",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-q3-social-media-beauty-culture-teeth",
+      "type": "quarterly_white_paper",
+      "title": "Social Media, Beauty Culture, and Your Teeth: A Patient’s Guide to Safer Smile Decisions",
+      "slug": "social-media-beauty-culture-teeth",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-09-30",
+      "wordCount": 2509,
+      "minimumWords": 2500,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/white-papers/social-media-beauty-culture-teeth/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/white-papers/2026-q3-social-media-beauty-culture-teeth.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings",
+        "AP reporting on unlicensed veneer providers"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "A long-form guide for informed, confidence-centered dental decisions. Treatment decisions should be discussed with a licensed dental professional after an exam. This is general education only, not diagnosis or a treatment recommendation. It is designed to help patients slow down decisions, understand common options, prepare better appointment questions, and remember that treatment recommendations require an exam with a licensed dental professional.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "black-women-confidence-care",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-10-candy-coffee-stain-season",
+      "type": "monthly_insight",
+      "title": "Candy Season, Coffee Season, and Stain Season: How Everyday Habits Affect Your Teeth",
+      "slug": "candy-coffee-stain-season",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-10-15",
+      "wordCount": 950,
+      "minimumWords": 900,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/insights/candy-coffee-stain-season/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-10-candy-coffee-stain-season.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "Candy Season, Coffee Season, and Stain Season: How Everyday Habits Affect Your Teeth is not about chasing a perfect smile or letting the internet talk you into a treatment you do not understand. It is about slowing the decision down long enough to protect your health, your money, your enamel, and your confidence. A confident smile starts with information. Before whitening, bonding, veneers, aligners, or any other cosmetic conversation, the first question is not, “What looks good online?” The first question is, “What is actually happening with my teeth and gums right now?” That distinction.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "social-media-cosmetic-pressure",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-11-use-dental-benefits",
+      "type": "monthly_insight",
+      "title": "Using Dental Benefits Before Year-End: What to Know Before December Gets Busy",
+      "slug": "use-dental-benefits",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-11-15",
+      "wordCount": 949,
+      "minimumWords": 900,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/insights/use-dental-benefits/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-11-use-dental-benefits.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "Using Dental Benefits Before Year-End: What to Know Before December Gets Busy is not about chasing a perfect smile or letting the internet talk you into a treatment you do not understand. It is about slowing the decision down long enough to protect your health, your money, your enamel, and your confidence. A confident smile starts with information. Before whitening, bonding, veneers, aligners, or any other cosmetic conversation, the first question is not, “What looks good online?” The first question is, “What is actually happening with my teeth and gums right now?” That distinction matters.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "benefits-emergency-planning",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-12-confidence-smile-plan",
+      "type": "monthly_insight",
+      "title": "A Confidence-Centered Smile Plan for the New Year",
+      "slug": "confidence-smile-plan",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-12-15",
+      "wordCount": 945,
+      "minimumWords": 900,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/insights/confidence-smile-plan/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-12-confidence-smile-plan.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "A Confidence-Centered Smile Plan for the New Year is not about chasing a perfect smile or letting the internet talk you into a treatment you do not understand. It is about slowing the decision down long enough to protect your health, your money, your enamel, and your confidence. A confident smile starts with information. Before whitening, bonding, veneers, aligners, or any other cosmetic conversation, the first question is not, “What looks good online?” The first question is, “What is actually happening with my teeth and gums right now?” That distinction matters for young adults, busy.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "black-women-confidence-care",
+      "aeoPassed": true,
+      "geoPassed": true
+    },
+    {
+      "id": "2026-q4-year-end-oral-health-planning",
+      "type": "quarterly_white_paper",
+      "title": "The Year-End Oral Health Planning Guide: Benefits, Budgets, Emergencies, and Next-Year Smile Goals",
+      "slug": "year-end-oral-health-planning",
+      "status": "ready_for_approval",
+      "scheduledAt": "2026-12-31",
+      "wordCount": 2508,
+      "minimumWords": 2500,
+      "validationPassed": true,
+      "publicPath": null,
+      "previewPath": "/previews/resources/white-papers/year-end-oral-health-planning/",
+      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/white-papers/2026-q4-year-end-oral-health-planning.md",
+      "sourceBasis": [
+        "Tufts Now: young adults skipping dental care",
+        "American Dental Association: harmful social media dental trends",
+        "MouthHealthy: dental trends and DIY dentistry warnings",
+        "ADA whitening topic page",
+        "CDC oral health equity and prevention resources",
+        "CareQuest 2025 oral health access findings",
+        "AP reporting on unlicensed veneer providers"
+      ],
+      "sources": [
+        {
+          "title": "One in Three Young Adults Skip the Dentist—and That's a Problem",
+          "publisher": "Tufts Now",
+          "url": "https://now.tufts.edu/2025/09/18/one-three-young-adults-skip-dentist-and-thats-problem",
+          "accessed": "2026-06-03",
+          "supports": "Young adult dental avoidance, cost, and access context."
+        },
+        {
+          "title": "Social media dental trend warnings",
+          "publisher": "American Dental Association / MouthHealthy",
+          "url": "https://www.mouthhealthy.org/",
+          "accessed": "2026-06-03",
+          "supports": "General patient education and caution around DIY dental trends."
+        },
+        {
+          "title": "Oral Health Basics and Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/oral-health/",
+          "accessed": "2026-06-03",
+          "supports": "General preventive oral health context."
+        }
+      ],
+      "disclaimerRequired": true,
+      "quickAnswer": "A long-form guide for informed, confidence-centered dental decisions. Treatment decisions should be discussed with a licensed dental professional after an exam. This is general education only, not diagnosis or a treatment recommendation. It is designed to help patients slow down decisions, understand common options, prepare better appointment questions, and remember that treatment recommendations require an exam with a licensed dental professional.",
+      "usefulTakeaway": "Start with a real exam, ask clear questions, and make dental decisions from health, timing, and confidence instead of internet pressure.",
+      "queryClusterId": "black-women-confidence-care",
+      "aeoPassed": true,
+      "geoPassed": true
+    }
+  ],
+  "queryIntelligence": {
+    "highPriorityClusterCount": 16,
+    "enabledSourceCount": 1,
+    "disabledApiSources": [
+      "google-trends",
+      "youtube-search",
+      "reddit-approved"
+    ],
+    "policy": "Uses public question patterns and manual/social observations. Raw social posts, usernames, patient data, and private health information are not stored.",
+    "nextAutomationStep": "Month-13 auto-drafting can create ready_for_approval drafts only after an approved LLM provider key is configured."
+  }
+}

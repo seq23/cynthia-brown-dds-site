@@ -1,0 +1,29 @@
+name: Monthly Auto Draft
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 12 15 * *'
+jobs:
+  auto-draft:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scripts/generate_auto_draft.js
+        env:
+          ENABLE_AUTO_DRAFTS: ${{ vars.ENABLE_AUTO_DRAFTS }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      - run: npm run build
+      - run: npm run validate:all
+      - uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: refresh approval-gated dental drafts"
+          title: "Refresh approval-gated dental draft queue"
+          body: "Automated draft queue refresh. Drafts must remain ready_for_approval and cannot publish without human approval."
+          branch: "automation/dental-auto-drafts"
+          delete-branch: true

@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-06-03T17:04:18.854Z",
+  "gaps": [
+    {
+      "id": "avoidance-cost-anxiety",
+      "label": "Dental avoidance, cost, and anxiety",
+      "priority": "high",
+      "mappedResourceCount": 0,
+      "status": "needs_content"
+    },
+    {
+      "id": "social-media-cosmetic-pressure",
+      "label": "Social media cosmetic pressure",
+      "priority": "high",
+      "mappedResourceCount": 6,
+      "status": "covered"
+    },
+    {
+      "id": "black-women-confidence-care",
+      "label": "Confidence-centered culturally aware care",
+      "priority": "high",
+      "mappedResourceCount": 7,
+      "status": "covered"
+    },
+    {
+      "id": "benefits-emergency-planning",
+      "label": "Benefits, emergency, and family planning",
+      "priority": "high",
+      "mappedResourceCount": 3,
+      "status": "covered"
+    }
+  ]
+}
