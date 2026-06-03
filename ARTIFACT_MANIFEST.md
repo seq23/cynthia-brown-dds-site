@@ -1,33 +1,28 @@
-# Artifact Manifest
+# Artifact Manifest — Cynthia Brown DDS Site
 
-Artifact: cynthia-brown-dds-site-main_BASELINE_06-03-26_b71a9c2.zip
+Artifact: cynthia-brown-dds-site-main_BASELINE_06-03-26_d4f8a6c.zip
 Repo: cynthia-brown-dds-site
 Canonical domain: https://cynthiabrowndds.com
-Source basis: latest AEO/GEO baseline ZIP plus hostile code review/mobile hardening pass.
+Packaged root: repository root
+Status: LOCAL BUILD PASSED + STATIC VALIDATION PASSED + STRUCTURALLY CHECKED
 
-## Changed in this pass
+## Changes in this pass
 
-- Added hostile mobile/performance validator.
-- Improved mobile nav behavior and accessibility.
-- Improved mobile CSS, focus states, reduced motion handling, and overflow protection.
-- Added hero image preload, eager loading, fetch priority, and image dimensions.
-- Moved font loading out of CSS `@import` into document head preconnect/link strategy.
-- Added noindex meta for admin and preview pages.
-- Added Cloudflare X-Robots-Tag and cache headers.
-- Fixed undefined CSS variable usage.
-- Added richer Open Graph/Twitter metadata.
-- Preserved AEO/GEO/query-ingestion/approval-gated content architecture.
+- Revised homepage hero image framing to show the full approved dental-coat portrait without aggressive cropping.
+- Replaced repeated blue-blazer portrait usage in the Meet Dr. Brown section with a branded dental-office support illustration featuring a white coat embroidered "Dr. Brown, DDS".
+- Expanded the Meet Dr. Brown homepage section with fuller professional biography and care philosophy copy.
+- Expanded the About page into a fuller provisional bio including St. Mary’s School in Memphis, Spelman College, Meharry Medical College School of Dentistry, and current Olive Branch/Southaven practice-location context.
+- Reworked visible generic SEO/AEO phrasing into more natural, premium human-facing copy.
+- Re-modeled the Resources page after the Hicks Consulting resource layout: featured resource band, content-type cards, currently published resources section, and clear monthly/quarterly lanes.
+- Added an expanded footer with location addresses, hours/availability notes, legal/disclaimer text, and navigation.
 
-## Validation
+## Validation run
 
-- npm run ingest:queries: PASSED
-- npm run build: PASSED
-- npm run validate:all: PASSED
-- ZIP reopen: PASSED
-- Reopened ZIP npm run build: PASSED
-- Reopened ZIP npm run validate:all: PASSED
-- Browser screenshot: ATTEMPTED, blocked by container browser policy; deployed/mobile visual review still required.
+- npm run build — passed
+- npm run validate:all — passed
+- Reopen ZIP structural check — passed
 
-## Status
+## Unproven layers
 
-LOCAL BUILD PASSED + STATIC VALIDATION PASSED + AEO/GEO CONTRACT PASSED + INGESTION CONTRACT PASSED + MOBILE/PERFORMANCE STATIC CONTRACT PASSED + STRUCTURALLY CHECKED — DEPLOYED VISUAL VALIDATION REQUIRED
+- Browser/mobile human visual review must be performed locally at localhost before Cloudflare deployment.
+- Deployed Cloudflare validation not run.

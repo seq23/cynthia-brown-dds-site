@@ -1,10 +1,23 @@
 {
   "name": "Dr. Cynthia Brown, DDS",
-  "tagline": "Dentist and practice owner serving patients in Olive Branch and Southaven, Mississippi.",
+  "tagline": "A Memphis native and dentist serving patients through her Olive Branch and Southaven, Mississippi practice locations.",
   "scriptAccent": "confidence, carefully considered",
   "education": [
-    {"school":"Spelman College", "classYear":"2003", "credential":"Undergraduate studies"},
-    {"school":"Meharry Medical College School of Dentistry", "classYear":"2014", "credential":"Doctor of Dental Surgery"}
+    {
+      "school": "St. Mary\u2019s School",
+      "location": "Memphis, Tennessee",
+      "credential": "Graduate"
+    },
+    {
+      "school": "Spelman College",
+      "classYear": "2003",
+      "credential": "Undergraduate studies"
+    },
+    {
+      "school": "Meharry Medical College School of Dentistry",
+      "classYear": "2014",
+      "credential": "Doctor of Dental Surgery"
+    }
   ],
   "brandRules": [
     "Do not foreground Aspen Dental in visible site copy.",

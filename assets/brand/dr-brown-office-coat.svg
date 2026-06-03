@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050" role="img" aria-labelledby="title desc">
+  <title id="title">Dental office with Dr. Brown coat</title>
+  <desc id="desc">A polished modern dental office with a dental chair, warm lighting, and a white coat embroidered Dr. Brown, DDS.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffaf3"/>
+      <stop offset="0.55" stop-color="#f8f1ea"/>
+      <stop offset="1" stop-color="#ead7cf"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#315c49"/>
+      <stop offset="1" stop-color="#143d2c"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#27201b" flood-opacity="0.16"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="1050" rx="68" fill="url(#bg)"/>
+  <circle cx="198" cy="145" r="210" fill="#e8b8b2" opacity="0.24"/>
+  <circle cx="1208" cy="190" r="250" fill="#c6a15b" opacity="0.18"/>
+  <rect x="94" y="92" width="1212" height="866" rx="54" fill="#fffdf8" opacity="0.72" stroke="#d8b77c" stroke-opacity="0.34"/>
+  <rect x="153" y="146" width="520" height="464" rx="34" fill="#f5f7f5" stroke="#d8e1dc"/>
+  <rect x="184" y="178" width="456" height="398" rx="26" fill="#edf4f2"/>
+  <line x1="412" y1="178" x2="412" y2="576" stroke="#d8e1dc" stroke-width="9" opacity="0.7"/>
+  <line x1="184" y1="377" x2="640" y2="377" stroke="#d8e1dc" stroke-width="9" opacity="0.7"/>
+  <path d="M178 610 C330 552, 488 552, 650 610" fill="none" stroke="#143d2c" stroke-opacity="0.16" stroke-width="8"/>
+  <g filter="url(#shadow)">
+    <path d="M298 748 C344 632, 514 580, 714 618 C840 642, 916 710, 932 790 C950 878, 870 928, 690 922 C492 916, 260 842, 298 748Z" fill="#f7f5f0" stroke="#d9d3c8" stroke-width="6"/>
+    <path d="M380 713 C474 650, 684 658, 806 718 C740 766, 501 768, 380 713Z" fill="#ffffff"/>
+    <path d="M748 704 C792 719, 831 751, 850 792" fill="none" stroke="#143d2c" stroke-opacity="0.18" stroke-width="16" stroke-linecap="round"/>
+    <rect x="528" y="888" width="238" height="30" rx="15" fill="#c6a15b" opacity="0.8"/>
+    <rect x="620" y="806" width="62" height="100" rx="31" fill="#d8d0c5"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="898" y="248" width="252" height="626" rx="36" fill="#f2eee7"/>
+    <path d="M974 246 C1010 332, 1041 332, 1078 246 L1119 268 C1074 394, 1080 544, 1128 858 L936 858 C984 544, 990 394, 945 268Z" fill="#ffffff" stroke="#e5ded4" stroke-width="5"/>
+    <path d="M982 260 L1026 374 L1070 260" fill="none" stroke="#efe2d5" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M946 268 C906 384, 894 568, 915 858" fill="#fff" opacity="0.95"/>
+    <path d="M1118 268 C1158 384, 1170 568, 1149 858" fill="#fff" opacity="0.95"/>
+    <rect x="992" y="445" width="115" height="2" fill="#143d2c" opacity="0.5"/>
+    <text x="1003" y="430" font-family="Georgia, serif" font-size="30" fill="#143d2c" font-weight="700">Dr. Brown</text>
+    <text x="1028" y="472" font-family="Manrope, Arial, sans-serif" font-size="21" fill="#143d2c" font-weight="700" letter-spacing="1.5">DDS</text>
+  </g>
+  <g opacity="0.84">
+    <rect x="1059" y="625" width="162" height="172" rx="24" fill="#143d2c" opacity="0.08"/>
+    <path d="M1137 684 C1122 648, 1083 642, 1065 672 C1045 706, 1089 743, 1136 780 C1182 742, 1227 706, 1207 672 C1189 642, 1150 648, 1137 684Z" fill="#c6a15b" opacity="0.58"/>
+  </g>
+  <text x="142" y="884" font-family="Allura, cursive" font-size="86" fill="#b76e79">confidence, carefully considered</text>
+  <text x="151" y="930" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#746861">A calm, polished setting for thoughtful dental care.</text>
+</svg>
