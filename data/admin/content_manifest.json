@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T17:35:14.974Z",
+  "generatedAt": "2026-06-03T17:53:41.527Z",
   "adminSecurityNotice": "The static admin panel is a convenience review dashboard, not real authentication. It must not contain patient data, secrets, or private health information.",
   "items": [
     {
@@ -14,7 +14,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/insights/new-year-smile-reset/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-01-new-year-smile-reset.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/insights/2026-01-new-year-smile-reset.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -65,7 +65,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/insights/dental-anxiety-less-intimidating/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-02-dental-anxiety-less-intimidating.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/insights/2026-02-dental-anxiety-less-intimidating.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -116,7 +116,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/insights/tiktok-teeth-trends/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-03-tiktok-teeth-trends.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/insights/2026-03-tiktok-teeth-trends.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -167,7 +167,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/white-papers/modern-smile-confidence-guide/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/white-papers/2026-q1-modern-smile-confidence-guide.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/white-papers/2026-q1-modern-smile-confidence-guide.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -219,7 +219,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/insights/millennial-dental-checkup/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-04-millennial-dental-checkup.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/insights/2026-04-millennial-dental-checkup.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -270,7 +270,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/insights/photo-season-smile-prep/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-05-photo-season-smile-prep.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/insights/2026-05-photo-season-smile-prep.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -321,7 +321,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/insights/whitening-veneers-bonding/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-06-whitening-veneers-bonding.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/insights/2026-06-whitening-veneers-bonding.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -372,7 +372,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/white-papers/dental-anxiety-avoidance/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/white-papers/2026-q2-dental-anxiety-avoidance.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/white-papers/2026-q2-dental-anxiety-avoidance.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -424,7 +424,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/insights/dental-emergencies-real-life/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-07-dental-emergencies-real-life.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/insights/2026-07-dental-emergencies-real-life.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -475,7 +475,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/insights/family-dental-routine/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-08-family-dental-routine.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/insights/2026-08-family-dental-routine.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -526,7 +526,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/insights/gums-bleeding-bad-breath/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-09-gums-bleeding-bad-breath.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/insights/2026-09-gums-bleeding-bad-breath.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -577,7 +577,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/white-papers/social-media-beauty-culture-teeth/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/white-papers/2026-q3-social-media-beauty-culture-teeth.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/white-papers/2026-q3-social-media-beauty-culture-teeth.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -629,7 +629,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/insights/candy-coffee-stain-season/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-10-candy-coffee-stain-season.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/insights/2026-10-candy-coffee-stain-season.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -680,7 +680,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/insights/use-dental-benefits/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-11-use-dental-benefits.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/insights/2026-11-use-dental-benefits.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -731,7 +731,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/insights/confidence-smile-plan/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/insights/2026-12-confidence-smile-plan.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/insights/2026-12-confidence-smile-plan.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
@@ -782,7 +782,7 @@
       "validationPassed": true,
       "publicPath": null,
       "previewPath": "/previews/resources/white-papers/year-end-oral-health-planning/",
-      "githubEditUrl": "https://github.com/sequoiataylor/cynthia-brown-dds-site/edit/main/content/white-papers/2026-q4-year-end-oral-health-planning.md",
+      "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/white-papers/2026-q4-year-end-oral-health-planning.md",
       "sourceBasis": [
         "Tufts Now: young adults skipping dental care",
         "American Dental Association: harmful social media dental trends",
