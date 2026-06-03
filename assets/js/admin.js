@@ -1,4 +1,4 @@
-const PASSWORD_HASH = 'ccfdf5b980e67799333966bf8e64499682ef20244c77893d0bb68fba0ecbc63c';
+const PASSWORD_HASH = 'c7ef3319e6cf6aab9035156df95f18dfec2ba2178f733940eda688758805708b';
 let adminItems = [];
 let manifest = {};
 async function sha256(message){const msgBuffer=new TextEncoder().encode(message);const hashBuffer=await crypto.subtle.digest('SHA-256',msgBuffer);return Array.from(new Uint8Array(hashBuffer)).map(b=>b.toString(16).padStart(2,'0')).join('');}
