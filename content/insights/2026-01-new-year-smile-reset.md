@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "The New-Year Smile Reset: What to Do Before You Book Whitening, Aligners, or Cosmetic Dental Work",
   "slug": "new-year-smile-reset",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-01-15",
   "summary": "A clear, confidence-centered guide to smile confidence, cosmetic planning, young adult dental questions.",
   "minimumWords": 900,
