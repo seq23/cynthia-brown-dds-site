@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T17:35:15.033Z",
+  "generatedAt": "2026-06-08T11:57:29.916Z",
   "site": "https://cynthiabrowndds.com",
   "records": [
     {
@@ -40,6 +40,21 @@
       "topic": "dental services education",
       "clinicalBoundary": "Educational only. Treatment recommendations require an exam.",
       "sourcePage": "services",
+      "lastReviewed": "2026-06-03"
+    },
+    {
+      "id": "2026-01-new-year-smile-reset",
+      "url": "https://cynthiabrowndds.com/resources/insights/new-year-smile-reset/",
+      "question": "The New-Year Smile Reset: What to Do Before You Book Whitening, Aligners, or Cosmetic Dental Work",
+      "shortAnswer": "The New-Year Smile Reset: What to Do Before You Book Whitening, Aligners, or Cosmetic Dental Work is not about chasing a perfect smile or letting the internet talk you into a treatment you do not understand. It is about slowing the decision down long enough to protect your health, your money, your enamel, and your confidence. A confident smile starts with information. Before whitening, bonding, veneers, aligners, or any other cosmetic conversation, the first question is not, “What looks good online?” The first question is, “What is actually happening with my teeth and gums right.",
+      "audience": [
+        "patients",
+        "young adults",
+        "millennial patients"
+      ],
+      "topic": "smile confidence, cosmetic planning, young adult dental questions",
+      "clinicalBoundary": "Educational only. Not dental or medical advice. Treatment recommendations require an examination by a licensed dental professional.",
+      "sourcePage": "monthly_insight",
       "lastReviewed": "2026-06-03"
     }
   ]

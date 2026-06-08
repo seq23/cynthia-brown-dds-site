@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T17:53:41.527Z",
+  "generatedAt": "2026-06-08T11:57:29.899Z",
   "adminSecurityNotice": "The static admin panel is a convenience review dashboard, not real authentication. It must not contain patient data, secrets, or private health information.",
   "items": [
     {
@@ -7,12 +7,12 @@
       "type": "monthly_insight",
       "title": "The New-Year Smile Reset: What to Do Before You Book Whitening, Aligners, or Cosmetic Dental Work",
       "slug": "new-year-smile-reset",
-      "status": "ready_for_approval",
+      "status": "published",
       "scheduledAt": "2026-01-15",
       "wordCount": 953,
       "minimumWords": 900,
       "validationPassed": true,
-      "publicPath": null,
+      "publicPath": "/resources/insights/new-year-smile-reset/",
       "previewPath": "/previews/resources/insights/new-year-smile-reset/",
       "githubEditUrl": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/content/insights/2026-01-new-year-smile-reset.md",
       "sourceBasis": [
