@@ -8,7 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -20,10 +19,19 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
       - run: npm run build
       - run: npm run validate:all
-      - uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: "chore: refresh approval-gated dental drafts"
-          title: "Refresh approval-gated dental draft queue"
-          body: "Automated draft queue refresh. Drafts must remain ready_for_approval and cannot publish without human approval."
-          branch: "automation/dental-auto-drafts"
-          delete-branch: true
+      - name: Push automation branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          BRANCH="automation/dental-auto-drafts"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No auto-draft changes to publish."
+            exit 0
+          fi
+          git commit -m "chore: refresh approval-gated dental drafts"
+          git fetch origin "$BRANCH" || true
+          git push --force-with-lease origin HEAD:"$BRANCH"
