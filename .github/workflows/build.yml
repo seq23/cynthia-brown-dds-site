@@ -1,15 +1,55 @@
 name: Build
+
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
+    name: Build and validate static site
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm run build
-      - run: npm run validate:all
+
+      - name: Install dependencies when present
+        shell: bash
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          elif [ -f package.json ]; then
+            npm install --ignore-scripts --no-audit --no-fund
+          fi
+
+      - name: Build and validate
+        run: npm run preflight
+
+      - name: Accessibility contract
+        run: npm run validate:accessibility
+
+      - name: SEO contract
+        run: npm run validate:seo
+
+      - name: AEO contract
+        run: npm run validate:aeo
+
+      - name: GEO contract
+        run: npm run validate:geo
+
+      - name: Ingestion contract
+        run: npm run validate:ingestion
