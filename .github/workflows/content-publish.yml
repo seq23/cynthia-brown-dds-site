@@ -8,17 +8,25 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
       - run: node scripts/publish_approved_content.js
-      - uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: "chore: publish approved dental resources"
-          title: "Publish approved dental resources"
-          body: "Build output refreshed after approved/date-gated resource review."
-          branch: "automation/publish-approved-resources"
-          delete-branch: true
+      - name: Push automation branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          BRANCH="automation/publish-approved-resources"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No approved content changes to publish."
+            exit 0
+          fi
+          git commit -m "chore: publish approved dental resources"
+          git fetch origin "$BRANCH" || true
+          git push --force-with-lease origin HEAD:"$BRANCH"
