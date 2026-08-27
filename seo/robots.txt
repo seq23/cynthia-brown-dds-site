@@ -1,0 +1,125 @@
+# Citation-first crawl policy.
+# Search engines and AI answer engines are explicitly welcome on this site.
+# The per-agent Allow groups below are deliberate: they override any
+# prepended blanket Disallow (e.g. Cloudflare managed robots.txt) for the
+# same agent, because merged same-name groups resolve equal-length
+# Allow/Disallow conflicts in favour of Allow.
+
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: Applebot
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: CCBot
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: meta-externalagent
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: CloudflareBrowserRenderingCrawler
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /previews/
+
+Sitemap: https://cynthiabrowndds.com/sitemap.xml
+LLMs: https://cynthiabrowndds.com/llms.txt
+Answers: https://cynthiabrowndds.com/answers.json

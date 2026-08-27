@@ -146,7 +146,8 @@ writePage('admin', admin);
 
 const urls = ['/', '/about/', '/locations/', '/services/', '/smile-philosophy/', '/resources/', '/book/', '/privacy/', '/disclaimer/', ...publicItems.map(item => `/resources/${item.meta.type === 'quarterly_white_paper' ? 'white-papers' : 'insights'}/${item.meta.slug}/`)];
 fs.writeFileSync(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(u => `<url><loc>${SITE_URL}${u}</loc></url>`).join('')}</urlset>`);
-fs.writeFileSync(path.join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /previews/\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+// robots.txt source of truth lives at seo/robots.txt (citation-first crawl policy).
+copy(path.join(root, 'seo/robots.txt'), path.join(dist, 'robots.txt'));
 console.log(`Built ${urls.length} public pages, ${all.length} previews, plus admin dashboard.`);
 
 require('./post_build_aeo_geo');
