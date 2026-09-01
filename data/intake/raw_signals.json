@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T17:04:18.568Z",
+  "generatedAt": "2026-09-01T15:28:49.461Z",
   "enabledSources": [
     "manual-social-observations"
   ],
@@ -19,7 +19,7 @@
       "dateObserved": "2026-06-03",
       "rawPostStored": false,
       "containsPersonalData": false,
-      "ingestedAt": "2026-06-03T17:04:18.567Z"
+      "ingestedAt": "2026-09-01T15:28:49.461Z"
     },
     {
       "id": "manual-2026-06-002",
@@ -36,7 +36,7 @@
       "dateObserved": "2026-06-03",
       "rawPostStored": false,
       "containsPersonalData": false,
-      "ingestedAt": "2026-06-03T17:04:18.568Z"
+      "ingestedAt": "2026-09-01T15:28:49.461Z"
     }
   ]
 }
