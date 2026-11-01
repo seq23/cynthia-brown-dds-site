@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "Whitening vs. Veneers vs. Bonding: How to Think About Smile Goals Without Rushing",
   "slug": "whitening-veneers-bonding",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-06-15",
   "summary": "A clear, confidence-centered guide to cosmetic options, whitening, veneers, bonding.",
   "minimumWords": 900,

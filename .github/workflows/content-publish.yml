@@ -15,19 +15,17 @@ jobs:
         with:
           node-version: '20'
       - run: node scripts/publish_approved_content.js
-      - name: Push automation branch
+      - name: Commit released resources to main
         shell: bash
         run: |
           set -euo pipefail
-          BRANCH="automation/publish-approved-resources"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -B "$BRANCH"
-          git add -A
+          git add content data/admin
           if git diff --cached --quiet; then
-            echo "No approved content changes to publish."
+            echo "No resources came due this week."
             exit 0
           fi
-          git commit -m "chore: publish approved dental resources"
-          git fetch origin "$BRANCH" || true
-          git push --force-with-lease origin HEAD:"$BRANCH"
+          git commit -m "chore: release scheduled dental resources"
+          for i in 1 2 3; do git push origin HEAD:main && exit 0; git pull --rebase origin main; done
+          echo "NAMED STOP [PUSH_FAILED] could not push released resources to main" >&2; exit 1

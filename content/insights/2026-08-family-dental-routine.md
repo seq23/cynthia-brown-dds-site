@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "Back-to-School Isn’t Just for Kids: Building a Better Family Dental Routine",
   "slug": "family-dental-routine",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-08-15",
   "summary": "A clear, confidence-centered guide to family routines, prevention, busy households.",
   "minimumWords": 900,

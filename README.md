@@ -10,7 +10,7 @@ Static personal-professional website for Dr. Cynthia Brown, DDS, designed for Gi
 
 - This is a static site. There is no backend, no database, no patient intake, and no PHI collection.
 - `/admin/` is a soft-gated static review dashboard. It is not real authentication and must never contain patient data, secrets, or private health information.
-- Resource content is approval-gated. Drafts and ready-for-approval items render only under `/previews/` for review and are disallowed in `robots.txt` and excluded from `sitemap.xml`.
+- No approval step (owner ruling, 1 Nov 2026): resources release on their `scheduledAt` date. Items in `draft` or `needs_revision` render only under `/previews/`, which is disallowed in `robots.txt` and excluded from `sitemap.xml`.
 - Public resources render only when `status` is `published`, or when `status` is `approved` and `scheduledAt` is due at build time.
 - Visible site copy intentionally does not foreground third-party/corporate practice branding. Booking buttons route through the approved external booking page.
 
@@ -21,15 +21,16 @@ npm run build
 npm run validate:all
 ```
 
-## Admin approval workflow
+## Search loop (patient questions)
 
-1. Open `/admin/`.
-2. Enter the soft gate password.
-3. Preview the draft.
-4. Click **Edit in GitHub**.
-5. Edit wording or change `status` from `ready_for_approval` to `approved`.
-6. Merge the change.
-7. The publishing workflow rebuilds the static site and date-gates public resources.
+The shared engine `seq23/search-loop@v1` runs daily (`.github/workflows/search-loop.yml`, config `search-loop.config.json`):
+it finds easy patient searches, writes gated pages to `questions/<slug>/index.html`, and publishes them straight away.
+Every page ends in the one action (Book a visit, `/book/`). The engine's dental gate applies (no outcome claims, never
+painless/pain-free, no medical advice, no invented reviews or credentials); before anything is pushed,
+`.github/scripts/search_loop_post_build.sh` rebuilds the site and runs `scripts/validate_all.js`
+(incl. `validate_dental_compliance.js`, which also blocks "best/top dentist", guarantees and before/after promises on question pages).
+`scripts/build_site.js` folds the pages into `dist/`, the `/questions/` hub and the sitemap. The ledger and the weekly
+`search-loop-week` report live in `data/search-loop/` and the Actions artifacts of this repo only.
 
 ## Content status rules
 
@@ -47,7 +48,7 @@ npm run validate:all
 - No cost promises.
 - No patient symptom submissions.
 - No private health information.
-- Dental resources must remain educational and reviewed before publication.
+- Dental resources must remain educational; the dental-claims check runs on every build.
 
 ## SEO / AEO / GEO System
 
@@ -62,20 +63,10 @@ This repo includes a static authority system for `https://cynthiabrowndds.com`:
 - `data/aeo/citation_targets.json` for AI citation targets
 - `data/geo/query_matrix.json` for query-to-content mapping
 
-Unapproved resources stay out of the public resource archive, sitemap, and public answer records. They render only as preview pages for admin review.
+Resources that are not yet due stay out of the public resource archive, sitemap, and public answer records. They render only as preview pages for admin review.
 
-## Query Intelligence + Month-13 Drafting
+## Query intelligence (retired 1 Nov 2026)
 
-The query-intelligence workflow stores public question patterns only. It does not store raw posts, usernames, patient stories, private data, or PHI.
-
-Current safe source lane:
-
-- `manual-social-observations` enabled
-
-API lanes exist but are disabled until keys and approval exist:
-
-- Google Trends API
-- YouTube Data API
-- approved Reddit API/RSS access
-
-After the first 12-month content calendar, the auto-draft workflow may create `ready_for_approval` draft candidates only. Auto-publish is forbidden by `data/system/automation_policy.json` and validator-enforced by `scripts/validate_auto_draft_contract.js`.
+The monthly query-intelligence and auto-draft workflows were retired; the search loop now does finding and drafting.
+Their data stays in `data/intake/` and `data/geo/` as history (`post_build_aeo_geo.js` still reads it for the admin summary).
+Validators live in one registry, `data/system/validators.json`, which `scripts/validate_all.js` runs.

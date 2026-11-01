@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "Wedding, Graduation, and Photo-Season Smile Prep: What to Plan Early",
   "slug": "photo-season-smile-prep",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-05-15",
   "summary": "A clear, confidence-centered guide to event prep, whitening timing, photo confidence.",
   "minimumWords": 900,

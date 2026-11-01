@@ -10,3 +10,6 @@ coverage/
 playwright-report/
 test-results/
 logs/
+.search-loop-engine/
+.search-loop-run.log
+search-loop-week.json

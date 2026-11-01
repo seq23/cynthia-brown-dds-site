@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "A Confidence-Centered Smile Plan for the New Year",
   "slug": "confidence-smile-plan",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-12-15",
   "summary": "A clear, confidence-centered guide to annual planning, smile goals, confidence.",
   "minimumWords": 900,

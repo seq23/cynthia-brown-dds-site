@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "Dental Emergencies in Real Life: Tooth Pain, Chipped Teeth, Swelling, and When to Call",
   "slug": "dental-emergencies-real-life",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-07-15",
   "summary": "A clear, confidence-centered guide to urgent dental symptoms, tooth pain, chipped tooth.",
   "minimumWords": 900,

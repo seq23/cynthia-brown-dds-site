@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "Gums, Bleeding, and Bad Breath: The Signs People Ignore Until They Get Annoying",
   "slug": "gums-bleeding-bad-breath",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-09-15",
   "summary": "A clear, confidence-centered guide to gum health, bleeding gums, bad breath.",
   "minimumWords": 900,

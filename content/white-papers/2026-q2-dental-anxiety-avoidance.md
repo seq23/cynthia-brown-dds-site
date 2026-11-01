@@ -4,7 +4,7 @@
   "type": "quarterly_white_paper",
   "title": "Dental Anxiety, Avoidance, and the Shame-Free Return to Care",
   "slug": "dental-anxiety-avoidance",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-06-30",
   "summary": "A long-form guide for informed, confidence-centered dental decisions.",
   "minimumWords": 2500,

@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "Using Dental Benefits Before Year-End: What to Know Before December Gets Busy",
   "slug": "use-dental-benefits",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-11-15",
   "summary": "A clear, confidence-centered guide to dental benefits, cost planning, year-end appointments.",
   "minimumWords": 900,

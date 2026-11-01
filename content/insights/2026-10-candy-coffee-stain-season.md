@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "Candy Season, Coffee Season, and Stain Season: How Everyday Habits Affect Your Teeth",
   "slug": "candy-coffee-stain-season",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-10-15",
   "summary": "A clear, confidence-centered guide to coffee stains, candy, habits, prevention.",
   "minimumWords": 900,

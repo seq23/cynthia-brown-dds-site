@@ -7,9 +7,8 @@ schedule); see the notes below for what moved.
 
 | Job | Workflow | When | Cron |
 |---|---|---|---|
-| Content Publish | `content-publish.yml` | Thu 04:10 CT | `10 4 * * 4` |
-| Monthly Auto Draft | `monthly-auto-draft.yml` | day 15 of every month 07:41 CT | `41 7 15 * *` |
-| Monthly Query Intelligence | `monthly-query-intelligence.yml` | day 3 of every month 06:23 CT | `23 6 3 * *` |
+| Content Publish (releases due resources to main) | `content-publish.yml` | Thu 04:10 CT | `10 4 * * 4` |
+| Search Loop (seq23/search-loop@v1) | `search-loop.yml` | daily 06:17 CT (+ engine stagger 0–39 min) | `17 6 * * *` |
 
 ## Notes
 
@@ -19,3 +18,4 @@ schedule); see the notes below for what moved.
 ## Moved on 1 Nov 2026
 - Content Publish: Monday → Thursday 04:10 CT.
 - Monthly Query Intelligence: the 1st → the 3rd, 06:23 CT (monthly jobs no longer pile onto the 1st).
+- Retired 1 Nov 2026: Monthly Auto Draft and Monthly Query Intelligence (both pushed to automation branches nobody merged; the search loop now finds and drafts). Search Loop added.
