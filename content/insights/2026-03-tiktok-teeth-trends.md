@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "TikTok Teeth Trends: What Looks Cute Online but May Not Be Safe for Your Smile",
   "slug": "tiktok-teeth-trends",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-03-15",
   "summary": "A clear, confidence-centered guide to social media, DIY dentistry, enamel safety.",
   "minimumWords": 900,

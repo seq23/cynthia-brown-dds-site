@@ -4,7 +4,7 @@
   "type": "quarterly_white_paper",
   "title": "The Year-End Oral Health Planning Guide: Benefits, Budgets, Emergencies, and Next-Year Smile Goals",
   "slug": "year-end-oral-health-planning",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-12-31",
   "summary": "A long-form guide for informed, confidence-centered dental decisions.",
   "minimumWords": 2500,

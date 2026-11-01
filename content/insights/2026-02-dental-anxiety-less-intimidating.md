@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "Why Dental Anxiety Is So Common — and How to Make Your Next Visit Feel Less Intimidating",
   "slug": "dental-anxiety-less-intimidating",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-02-15",
   "summary": "A clear, confidence-centered guide to dental anxiety, shame-free care, return to care.",
   "minimumWords": 900,

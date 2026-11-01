@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "The Millennial Dental Checkup: What to Ask When You Haven’t Been in a While",
   "slug": "millennial-dental-checkup",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-04-15",
   "summary": "A clear, confidence-centered guide to millennial oral health, comeback visit, preventive care.",
   "minimumWords": 900,

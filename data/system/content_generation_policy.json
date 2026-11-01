@@ -33,8 +33,8 @@
   },
   "publishing": {
     "autoDraftAllowed": true,
-    "autoPublishAllowed": false,
-    "approvalRequired": true
+    "autoPublishAllowed": true,
+    "approvalRequired": false
   },
   "floors": {
     "monthlyInsight": 900,

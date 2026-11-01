@@ -1,0 +1,59 @@
+{
+  "schema": "search-loop-config-v1",
+  "site": "cynthiabrowndds.com",
+  "base_url": "https://cynthiabrowndds.com",
+  "site_name": "Cynthia Brown DDS",
+  "publisher": { "name": "Cynthia Brown DDS", "url": "https://cynthiabrowndds.com/about/" },
+  "audience": "adults in Olive Branch, Southaven and the Memphis area with everyday dental questions, including people returning to the dentist after time away, nervous patients, and people curious about whitening and cosmetic options",
+  "voice": "warm, clear, calm and nonjudgmental; plain language; no shame if it has been a while; educational only, not dental or medical advice; every treatment decision needs an exam by a licensed dental professional; never claims to be the best or top dentist, never guarantees results, never promises a pain-free or painless visit, never promises before-and-after results; no prices, no insurance promises, no hours",
+  "topics": [
+    "dentist olive branch ms",
+    "dentist southaven ms",
+    "dental anxiety",
+    "going to the dentist after years",
+    "teeth whitening options",
+    "veneers vs bonding",
+    "bleeding gums",
+    "bad breath causes",
+    "dental emergency what to do",
+    "dental cleaning how often",
+    "cavity signs",
+    "dentures vs implants",
+    "using dental insurance benefits before the end of the year",
+    "coffee stains on teeth"
+  ],
+  "find": {
+    "exclude_words": ["best", "top rated", "top dentist", "cheapest", "cheap", "free", "painless", "pain free", "guaranteed", "before and after", "aspen", "coupon", "reviews", "lawsuit", "near me open now", "24 hour"]
+  },
+  "action": { "label": "Book a visit in Olive Branch or Southaven", "url": "/book/" },
+  "allowed_link_targets": [
+    "https://cynthiabrowndds.com",
+    "https://www.aspendental.com/providers/cynthia-brown/1194138503/"
+  ],
+  "mode": "normal",
+  "pace": { "start_per_day": 10, "step_per_week": 5, "cap": 30 },
+  "menu_pages_need_approval": false,
+  "health_gate": "dental",
+  "health": {
+    "real_facts": {
+      "services": ["preventive care", "restorative care", "cosmetic dentistry", "emergency dental care", "dentures and implants", "whitening"]
+    }
+  },
+  "local": { "city": "Olive Branch", "neighbourhoods": ["Southaven", "Horn Lake", "Hernando", "Memphis"] },
+  "protected_paths": ["content", "assets", "admin", "data/system", "data/admin", "scripts", "seo", "_headers", "index.html"],
+  "output": { "dir": "questions", "format": "dir-index", "url_prefix": "/questions/" },
+  "template": {
+    "section_name": "Patient questions",
+    "stylesheets": ["/assets/css/styles.css"],
+    "og_image": { "url": "https://cynthiabrowndds.com/assets/og/cynthia-brown-dds-og.png", "width": 1200, "height": 630 },
+    "header_html": "<header class=\"nav\"><div class=\"container nav-inner\"><a class=\"brand\" href=\"/\">Dr. Cynthia Brown, DDS</a><a class=\"btn\" href=\"/book/\">Book a Visit</a></div></header>",
+    "footer_html": "<footer class=\"footer\"><div class=\"container\"><p class=\"fine-print\">Educational only, not dental or medical advice. Treatment recommendations require an exam by a licensed dental professional. Do not submit private health information through this website.</p><p><a href=\"/questions/\">All patient questions</a> · <a href=\"/resources/\">Resources</a> · <a href=\"/locations/\">Locations</a> · <a href=\"/privacy/\">Privacy</a> · <a href=\"/disclaimer/\">Disclaimer</a></p></div></footer>"
+  },
+  "related": { "max_pages_per_new_page": 2, "scan_dirs": ["questions"], "skip_dirs": [] },
+  "gsc": { "site_url": "sc-domain:cynthiabrowndds.com" },
+  "indexnow": { "key": "7ca6d924edc87277c3a90d870e8c579f", "key_location": "https://cynthiabrowndds.com/7ca6d924edc87277c3a90d870e8c579f.txt" },
+  "analytics": { "ai_referrals": "none", "ai_bot_hits": "none" },
+  "conversions": { "source": "none" },
+  "shares_audience_with": [],
+  "ledger_dir": "data/search-loop"
+}

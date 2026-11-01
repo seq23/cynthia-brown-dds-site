@@ -91,7 +91,7 @@ if (fs.existsSync(manifestPath)) {
     enabledSourceCount: sources.sources.filter(s => s.enabled).length,
     disabledApiSources: sources.sources.filter(s => !s.enabled && s.requiresSecret).map(s => s.id),
     policy: 'Uses public question patterns and manual/social observations. Raw social posts, usernames, patient data, and private health information are not stored.',
-    nextAutomationStep: 'Month-13 auto-drafting can create ready_for_approval drafts only after an approved LLM provider key is configured.'
+    nextAutomationStep: 'New patient-question pages are published daily by the shared search loop (seq23/search-loop) under /questions/.'
   };
   manifest.items = manifest.items.map(item => {
     const content = contents.find(c => c.meta.id === item.id);

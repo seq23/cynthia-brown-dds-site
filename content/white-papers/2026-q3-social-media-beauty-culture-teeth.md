@@ -4,7 +4,7 @@
   "type": "quarterly_white_paper",
   "title": "Social Media, Beauty Culture, and Your Teeth: A Patient’s Guide to Safer Smile Decisions",
   "slug": "social-media-beauty-culture-teeth",
-  "status": "ready_for_approval",
+  "status": "approved",
   "scheduledAt": "2026-09-30",
   "summary": "A long-form guide for informed, confidence-centered dental decisions.",
   "minimumWords": 2500,

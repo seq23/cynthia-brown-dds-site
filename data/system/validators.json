@@ -1,0 +1,14 @@
+{
+  "note": "The one validator registry. scripts/validate_all.js runs exactly this list and fails if it is empty or a listed file is missing.",
+  "validators": [
+    {"name": "validate_dental_compliance.js", "protects": "no dental claims go public: guarantees, best/top dentist, pain-free/painless, before/after promises, cures, visible third-party practice branding; resources keep the educational disclaimer and exam boundary", "why": "owner ruling 1 Nov 2026 (no claims; dental industry bounds) and health-advertising risk", "kind": "safety", "runs": "pr"},
+    {"name": "validate_no_phi_forms.js", "protects": "no page collects patient health information (no textarea, file upload or symptom/insurance form)", "why": "static site must never collect PHI", "kind": "safety", "runs": "pr"},
+    {"name": "validate_admin_protection.js", "protects": "admin dashboard keeps its hash gate and carries no plaintext password or secret-like strings", "why": "public repo; admin JS ships to every visitor", "kind": "safety", "runs": "pr"},
+    {"name": "validate_booking_links.js", "protects": "every external link is an approved booking page or a known host; question pages may cite sources but any booking/scheduling link must be the approved one", "why": "patients must only be sent to the practice's real booking page", "kind": "safety", "runs": "pr"},
+    {"name": "validate_approval_gate.js", "protects": "content not yet due never renders publicly; due content does; previews and admin stay noindex", "why": "scheduled release: drafts and future items must not leak", "kind": "behaviour", "runs": "pr"},
+    {"name": "validate_sitemap.js", "protects": "sitemap lists every public resource and question page, never admin, previews or not-yet-due items; robots disallows admin and previews", "why": "what is public and indexable must match what is released", "kind": "behaviour", "runs": "pr"},
+    {"name": "validate_admin_manifest.js", "protects": "admin manifest is generated with every item, its preview path and a real GitHub edit link", "why": "admin dashboard reads this file; a broken manifest silently empties it", "kind": "behaviour", "runs": "pr"},
+    {"name": "validate_resource_sources.js", "protects": "each dental resource carries at least two complete source records", "why": "health content must be sourced, never invented", "kind": "safety", "runs": "pr"},
+    {"name": "validate_site_config.js", "protects": "site config points at the real domain and repo; no OWNER/example.com placeholders reach the sitemap, robots or manifest", "why": "a placeholder domain would canonicalise the site away", "kind": "behaviour", "runs": "pr"}
+  ]
+}
