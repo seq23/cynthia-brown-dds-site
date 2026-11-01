@@ -2,7 +2,8 @@ name: Monthly Query Intelligence
 on:
   workflow_dispatch:
   schedule:
-    - cron: '23 11 1 * *'
+    - cron: '23 6 3 * *'  # America/Chicago, all year
+      timezone: America/Chicago
 jobs:
   query-intelligence:
     runs-on: ubuntu-latest

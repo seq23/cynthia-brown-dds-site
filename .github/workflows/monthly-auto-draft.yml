@@ -2,7 +2,8 @@ name: Monthly Auto Draft
 on:
   workflow_dispatch:
   schedule:
-    - cron: '41 12 15 * *'
+    - cron: '41 7 15 * *'  # America/Chicago, all year
+      timezone: America/Chicago
 jobs:
   auto-draft:
     runs-on: ubuntu-latest
