@@ -11,6 +11,8 @@ on:
   schedule:
     - cron: '17 6 * * *'  # America/Chicago, all year
       timezone: America/Chicago
+  push:
+    branches: [search-loop-adopt]  # TEMP proof run; removed before merge
   workflow_dispatch:
     inputs:
       stage:
