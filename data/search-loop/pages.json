@@ -1,6 +1,188 @@
 {
   "schema": "search-loop-pages-v1",
-  "pages": [],
+  "pages": [
+    {
+      "slug": "dentist-olive-branch-mississippi",
+      "query": "dentist olive branch mississippi",
+      "score": 45,
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "local": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/dentist-olive-branch-mississippi/index.html",
+      "route": "/questions/dentist-olive-branch-mississippi/",
+      "url": "https://cynthiabrowndds.com/questions/dentist-olive-branch-mississippi/",
+      "published_at": "2026-11-02",
+      "status": "live",
+      "hash": "738051e0298acf335b809f3daa69912a307f1c27321b6cefdeb6a2256f127348",
+      "model": "free-route",
+      "facts": [
+        "https://www.nidcr.nih.gov/health-info/gum-disease",
+        "https://www.cdc.gov/oral-health/about/index.html"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "indexnow_at": "2026-11-02"
+    },
+    {
+      "slug": "how-to-ease-dental-anxiety",
+      "query": "how to ease dental anxiety",
+      "score": 45,
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/how-to-ease-dental-anxiety/index.html",
+      "route": "/questions/how-to-ease-dental-anxiety/",
+      "url": "https://cynthiabrowndds.com/questions/how-to-ease-dental-anxiety/",
+      "published_at": "2026-11-02",
+      "status": "live",
+      "hash": "d61fdb6cb6e5a6da9b66ffb1f55550acda91206640b7cd9566afa30c49f97148",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Dental_fear",
+        "https://www.health.harvard.edu/mind-and-mood/relaxation-techniques-breath-control-helps-quell-errant-stress-response",
+        "https://www.mouthhealthy.org/en/az-topics/a/anxiety"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "indexnow_at": "2026-11-02"
+    },
+    {
+      "slug": "why-do-i-have-dental-anxiety",
+      "query": "why do i have dental anxiety",
+      "score": 45,
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/why-do-i-have-dental-anxiety/index.html",
+      "route": "/questions/why-do-i-have-dental-anxiety/",
+      "url": "https://cynthiabrowndds.com/questions/why-do-i-have-dental-anxiety/",
+      "published_at": "2026-11-02",
+      "status": "live",
+      "hash": "c15ca205b4883bf429a288474f64bb05d2a86e0a59a26173a8c4cc7d5548fd98",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Dental_fear",
+        "https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/dental-anxiety-and-phobia"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "indexnow_at": "2026-11-02"
+    },
+    {
+      "slug": "dental-anxiety-in-adults",
+      "query": "dental anxiety in adults",
+      "score": 40,
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/dental-anxiety-in-adults/index.html",
+      "route": "/questions/dental-anxiety-in-adults/",
+      "url": "https://cynthiabrowndds.com/questions/dental-anxiety-in-adults/",
+      "published_at": "2026-11-02",
+      "status": "live",
+      "hash": "849956bd485d4ebfb33ba8307794256e37e2af9a824dbc22f1aec5223d56c56f",
+      "model": "free-route",
+      "facts": [
+        "https://www.apa.org/topics/anxiety"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "indexnow_at": "2026-11-02"
+    },
+    {
+      "slug": "teeth-whitening-options-at-dentist",
+      "query": "teeth whitening options at dentist",
+      "score": 40,
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/teeth-whitening-options-at-dentist/index.html",
+      "route": "/questions/teeth-whitening-options-at-dentist/",
+      "url": "https://cynthiabrowndds.com/questions/teeth-whitening-options-at-dentist/",
+      "published_at": "2026-11-02",
+      "status": "live",
+      "hash": "14ee3c2fe8750b4543fcb0be91854c3d72b9b1937580c950989692828fecbd1a",
+      "model": "free-route",
+      "facts": [
+        "https://www.ada.org/resources/research/science-and-research-institute/oral-health-topics/whitening",
+        "https://www.cdc.gov/oral-health/about/index.html"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "indexnow_at": "2026-11-02"
+    },
+    {
+      "slug": "veneers-vs-composite-bonding",
+      "query": "veneers vs composite bonding",
+      "score": 40,
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/veneers-vs-composite-bonding/index.html",
+      "route": "/questions/veneers-vs-composite-bonding/",
+      "url": "https://cynthiabrowndds.com/questions/veneers-vs-composite-bonding/",
+      "published_at": "2026-11-02",
+      "status": "live",
+      "hash": "d80eb0032d062971f2be4642a0a5159053325e7b62ebbd98e29ff1a4bd5117eb",
+      "model": "free-route",
+      "facts": [
+        "https://www.colgate.com/en-us/oral-health/cosmetic-dentistry/bonding"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "indexnow_at": "2026-11-02"
+    },
+    {
+      "slug": "dental-olive-branch-ms",
+      "query": "dental olive branch ms",
+      "score": 30,
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "local": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/dental-olive-branch-ms/index.html",
+      "route": "/questions/dental-olive-branch-ms/",
+      "url": "https://cynthiabrowndds.com/questions/dental-olive-branch-ms/",
+      "published_at": "2026-11-02",
+      "status": "live",
+      "hash": "7c32b0e07ac12d116f046b216c433a9d145914d298c30b4913c33e91f2fb1cfd",
+      "model": "free-route",
+      "facts": [
+        "https://www.nidcr.nih.gov/health-info/oral-hygiene"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "indexnow_at": "2026-11-02"
+    }
+  ],
   "dropped": [
     {
       "query": "dentist olive branch ms",
@@ -11,6 +193,142 @@
         "b5 FAQ answer is 25 words (needs 40-60): \"What should I bring to my first appointment?\"",
         "b5 FAQ answer is 23 words (needs 40-60): \"Can I get a cleaning and exam on the same day?\"",
         "b5 FAQ answer is 23 words (needs 40-60): \"What if I have a dental emergency after hours?\""
+      ]
+    },
+    {
+      "query": "dentist office olive branch ms",
+      "at": "2026-11-02",
+      "reason": [
+        "b4 direct answer under the H1 is 39 words (needs 40-60)",
+        "b5 FAQ answer is 34 words (needs 40-60): \"What should I do if I have a sudden toothache?\"",
+        "b5 FAQ answer is 29 words (needs 40-60): \"How often should adults visit the dentist?\"",
+        "b5 FAQ answer is 30 words (needs 40-60): \"Can I get your services if I have dental anxiety?\"",
+        "b5 FAQ answer is 31 words (needs 40-60): \"Are cosmetic treatments suitable for everyone?\""
+      ]
+    },
+    {
+      "query": "dentist southaven ms church rd",
+      "at": "2026-11-02",
+      "reason": [
+        "b5 FAQ answer is 37 words (needs 40-60): \"What should I look for in a local Southaven dentis\"",
+        "b5 FAQ answer is 36 words (needs 40-60): \"What if I haven't been to the dentist in several y\"",
+        "b5 FAQ answer is 35 words (needs 40-60): \"What is the difference between preventive and rest\"",
+        "b5 FAQ answer is 38 words (needs 40-60): \"How do I know if I am a candidate for teeth whiten\""
+      ]
+    },
+    {
+      "query": "how to calm dental anxiety",
+      "at": "2026-11-02",
+      "reason": [
+        "b5 FAQ answer is 39 words (needs 40-60): \"Is it normal to feel embarrassed if it has been ye\"",
+        "b5 FAQ answer is 38 words (needs 40-60): \"How can music help reduce stress in the dental cha\""
+      ]
+    },
+    {
+      "query": "how to treat dental anxiety",
+      "at": "2026-11-02",
+      "reason": [
+        "b5 FAQ answer is 39 words (needs 40-60): \"What should I tell the dentist about my anxiety?\"",
+        "b5 FAQ answer is 39 words (needs 40-60): \"What if I feel panicked during a procedure?\"",
+        "b5 FAQ answer is 37 words (needs 40-60): \"Do I have to get all my dental work done on the fi\""
+      ]
+    },
+    {
+      "query": "how to help dental anxiety",
+      "at": "2026-11-02",
+      "reason": [
+        "b5 FAQ answer is 39 words (needs 40-60): \"Can I bring someone with me to my appointment?\""
+      ]
+    },
+    {
+      "query": "what is dentist anxiety",
+      "at": "2026-11-02",
+      "reason": [
+        "b5 FAQ answer is 36 words (needs 40-60): \"Can I ask the dentist to pause during my appointme\"",
+        "b5 FAQ answer is 34 words (needs 40-60): \"How can I make my dental visit feel more comfortab\""
+      ]
+    },
+    {
+      "query": "why do people have dental anxiety",
+      "at": "2026-11-02",
+      "reason": [
+        "b5 FAQ answer is 36 words (needs 40-60): \"Is dental anxiety normal?\"",
+        "b5 FAQ answer is 36 words (needs 40-60): \"Will the dentist judge my teeth?\"",
+        "b5 FAQ answer is 37 words (needs 40-60): \"Can I take breaks during an exam?\"",
+        "b5 FAQ answer is 38 words (needs 40-60): \"What should I do if I am too nervous to call?\""
+      ]
+    },
+    {
+      "query": "how common is dental anxiety",
+      "at": "2026-11-02",
+      "reason": [
+        "b5 FAQ answer is 38 words (needs 40-60): \"Can I take a break during my dental exam?\"",
+        "b5 FAQ answer is 38 words (needs 40-60): \"What services do you offer for restoring teeth?\"",
+        "b5 FAQ answer is 37 words (needs 40-60): \"How can I brighten the appearance of my teeth?\""
+      ]
+    },
+    {
+      "query": "veneers vs bonding teeth",
+      "at": "2026-11-02",
+      "reason": [
+        "b5 FAQ answer is 38 words (needs 40-60): \"How long does the dental bonding procedure take?\"",
+        "b5 FAQ answer is 36 words (needs 40-60): \"Are veneers painful to get?\""
+      ]
+    },
+    {
+      "query": "veneers vs bonding front teeth",
+      "at": "2026-11-02",
+      "reason": [
+        "b5 FAQ answer is 35 words (needs 40-60): \"Can dental bonding stain over time?\"",
+        "b5 FAQ answer is 32 words (needs 40-60): \"Do veneers ruin your natural teeth?\"",
+        "b5 FAQ answer is 30 words (needs 40-60): \"Which option lasts longer?\"",
+        "b5 FAQ answer is 36 words (needs 40-60): \"Can I whiten my bonding or veneers?\"",
+        "facts: needs at least one fact whose source URL answered 200"
+      ]
+    },
+    {
+      "query": "veneers vs dental bonding",
+      "at": "2026-11-02",
+      "reason": [
+        "b4 direct answer under the H1 is 38 words (needs 40-60)",
+        "b5 FAQ answer is 36 words (needs 40-60): \"Can dental bonding stain over time?\"",
+        "b5 FAQ answer is 35 words (needs 40-60): \"Do veneers require removing tooth enamel?\"",
+        "b5 FAQ answer is 36 words (needs 40-60): \"How long do veneers typically last?\"",
+        "b5 FAQ answer is 36 words (needs 40-60): \"Is dental bonding reversible?\""
+      ]
+    },
+    {
+      "query": "dentist southaven ms",
+      "at": "2026-11-02",
+      "reason": [
+        "b4 direct answer under the H1 is 36 words (needs 40-60)",
+        "health: outcome or treatment claim \"guarantees\""
+      ]
+    },
+    {
+      "query": "dental southaven ms",
+      "at": "2026-11-02",
+      "reason": [
+        "b4 direct answer must define: \"X is ...\"",
+        "b5 FAQ answer is 39 words (needs 40-60): \"What should I do if I have a dental emergency?\"",
+        "b5 FAQ answer is 35 words (needs 40-60): \"How often should I visit the dentist for a cleanin\"",
+        "b5 FAQ answer is 35 words (needs 40-60): \"Can I get my teeth whitened if I have dental resto\"",
+        "b5 FAQ answer is 36 words (needs 40-60): \"What happens during a routine checkup after a long\""
+      ]
+    },
+    {
+      "query": "dentist olive branch ms hacks cross",
+      "at": "2026-11-02",
+      "reason": [
+        "facts: needs at least one fact whose source URL answered 200"
+      ]
+    },
+    {
+      "query": "emergency dentist olive branch ms",
+      "at": "2026-11-02",
+      "reason": [
+        "b4 direct answer under the H1 is 39 words (needs 40-60)",
+        "facts: needs at least one fact whose source URL answered 200"
       ]
     }
   ]
