@@ -1,11 +1,17 @@
 {
   "schema": "search-loop-discovery-v1",
   "site": "cynthiabrowndds.com",
-  "week": "2026-W44",
-  "generated_at": "2026-11-01T16:47:23.456Z",
+  "week": "2026-W45",
+  "generated_at": "2026-11-02T12:27:33.777Z",
   "paid_calls": 0,
   "cost_usd": 0,
   "hosts": {
+    "ssl.bing.com": {
+      "calls": 1,
+      "ok": 0,
+      "failed": 1,
+      "cost_usd": 0
+    },
     "suggestqueries.google.com": {
       "calls": 40,
       "ok": 40,
@@ -21,10 +27,10 @@
   },
   "sources": {
     "search_console": "not read: HTTP 403 User does not have sufficient permission for site 'sc-domain:cynthiabrowndds.com'. See also: https:/",
-    "bing_webmaster": "not read: BING_WEBMASTER_API_KEY is not set",
+    "bing_webmaster": "ok: 0 rows",
     "suggestqueries.google.com": "ok",
     "api.bing.com": "ok",
-    "relevance_screen": "not read: every free lane is out — workers: Workers AI refused the token (HTTP 401); gemini:gemini-2.5-flash: free daily quota used (skipped this run); openrouter:nvidia/nemotron-3-ultra-550b-a55b:free: timed out after 60s (skipped this run); openrouter:nvidia/nemotron-3.5-super-vl:free: timed out after 8s (skipped this run) (openrouter:gemma-4-31b-it:free:http_429, openrouter:gemma-4-26b-a4b-it:free:http_429, openrouter:dots-3-note-preview:free:empty, openrouter:xing4.0-29b-a4b:free:http_429, openrouter:nemotron-3.5-super-vl:free:timeout, all::call budget 240s used) (lexical floor only)"
+    "relevance_screen": "ok: kept 108 of 150 (free model)"
   },
   "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)",
   "notes": [
@@ -32,7 +38,7 @@
   ],
   "counts": {
     "candidates": 227,
-    "targets": 227,
+    "targets": 108,
     "strengthen_candidates": 0,
     "dropped_shared_audience": 0
   }

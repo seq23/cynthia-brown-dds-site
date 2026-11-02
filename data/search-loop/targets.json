@@ -1,14 +1,14 @@
 {
   "schema": "search-loop-targets-v1",
   "site": "cynthiabrowndds.com",
-  "week": "2026-W44",
-  "generated_at": "2026-11-01T16:47:23.456Z",
+  "week": "2026-W45",
+  "generated_at": "2026-11-02T12:27:33.777Z",
   "sources": {
     "search_console": "not read: HTTP 403 User does not have sufficient permission for site 'sc-domain:cynthiabrowndds.com'. See also: https:/",
-    "bing_webmaster": "not read: BING_WEBMASTER_API_KEY is not set",
+    "bing_webmaster": "ok: 0 rows",
     "suggestqueries.google.com": "ok",
     "api.bing.com": "ok",
-    "relevance_screen": "not read: every free lane is out — workers: Workers AI refused the token (HTTP 401); gemini:gemini-2.5-flash: free daily quota used (skipped this run); openrouter:nvidia/nemotron-3-ultra-550b-a55b:free: timed out after 60s (skipped this run); openrouter:nvidia/nemotron-3.5-super-vl:free: timed out after 8s (skipped this run) (openrouter:gemma-4-31b-it:free:http_429, openrouter:gemma-4-26b-a4b-it:free:http_429, openrouter:dots-3-note-preview:free:empty, openrouter:xing4.0-29b-a4b:free:http_429, openrouter:nemotron-3.5-super-vl:free:timeout, all::call budget 240s used) (lexical floor only)"
+    "relevance_screen": "ok: kept 108 of 150 (free model)"
   },
   "targets": [
     {
@@ -42,20 +42,6 @@
       "kind": "new"
     },
     {
-      "query": "pediatric dentist olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "local": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 45,
-      "kind": "new"
-    },
-    {
       "query": "dentist office olive branch ms",
       "variants": [
         "dentist office in olive branch ms"
@@ -78,22 +64,6 @@
       ],
       "signals": {
         "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "local": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 45,
-      "kind": "new"
-    },
-    {
-      "query": "pediatric dentist southaven ms",
-      "variants": [
-        "pediatric dentist in southaven ms"
-      ],
-      "signals": {
-        "words": 4,
         "question": false,
         "google_suggest": true,
         "local": true,
@@ -216,19 +186,6 @@
       "kind": "new"
     },
     {
-      "query": "dental anxiety icd 10",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 40,
-      "kind": "new"
-    },
-    {
       "query": "dental anxiety in adults",
       "variants": [],
       "signals": {
@@ -246,19 +203,6 @@
       "variants": [
         "teeth whitening options at the dentist"
       ],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 40,
-      "kind": "new"
-    },
-    {
-      "query": "teeth whitening options at home",
-      "variants": [],
       "signals": {
         "words": 5,
         "question": false,
@@ -335,58 +279,6 @@
       "kind": "new"
     },
     {
-      "query": "is olive branch ms safe",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "google_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 35,
-      "kind": "new"
-    },
-    {
-      "query": "what is olive branch ms known for",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 35,
-      "kind": "new"
-    },
-    {
-      "query": "what to eat in olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 35,
-      "kind": "new"
-    },
-    {
-      "query": "where is olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "google_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 35,
-      "kind": "new"
-    },
-    {
       "query": "dentist southaven ms",
       "variants": [
         "dentist in southaven ms"
@@ -421,19 +313,6 @@
       "variants": [],
       "signals": {
         "words": 6,
-        "question": false,
-        "google_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "orthodontist olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 4,
         "question": false,
         "google_suggest": true,
         "local": true,
@@ -495,58 +374,6 @@
       "kind": "new"
     },
     {
-      "query": "bars in olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "olive branch ms temp services",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "olive branch ms crime rate",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "whats in olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
       "query": "dentist near olive branch ms",
       "variants": [],
       "signals": {
@@ -577,19 +404,6 @@
       "variants": [],
       "signals": {
         "words": 6,
-        "question": false,
-        "google_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "dentist southaven ms for kids",
-      "variants": [],
-      "signals": {
-        "words": 5,
         "question": false,
         "google_suggest": true,
         "local": true,
@@ -704,18 +518,6 @@
       "variants": [],
       "signals": {
         "words": 5,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "what is the modified dental anxiety scale",
-      "variants": [],
-      "signals": {
-        "words": 7,
         "question": true,
         "google_suggest": true,
         "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
@@ -1235,137 +1037,7 @@
       "kind": "new"
     },
     {
-      "query": "mark gilbert dentist olive branch",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "jeff moore dentist olive branch",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "dr gilbert dentist olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "randy curbo dentist olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "olive branch dental care olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
       "query": "dental care olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "american family dentistry in olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "olive branch eye care olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "jackson family dentistry olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "smile center olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "pediatric dental olive branch ms",
       "variants": [],
       "signals": {
         "words": 5,
@@ -1404,71 +1076,6 @@
       "kind": "new"
     },
     {
-      "query": "doctor offices in olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "dental assistant program olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "olive branch family dentistry",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "primary care doctors in olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "all smiles olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
       "query": "dental in olive branch",
       "variants": [],
       "signals": {
@@ -1495,62 +1102,10 @@
       "kind": "new"
     },
     {
-      "query": "dr alexander dentist olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
       "query": "affordable dentures olive branch mississippi",
       "variants": [],
       "signals": {
         "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "directions to olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "goodman road dental olive branch ms",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "children dentist southaven ms",
-      "variants": [],
-      "signals": {
-        "words": 4,
         "question": false,
         "bing_suggest": true,
         "local": true,
@@ -1566,19 +1121,6 @@
       ],
       "signals": {
         "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "silo dentist southaven ms",
-      "variants": [],
-      "signals": {
-        "words": 4,
         "question": false,
         "bing_suggest": true,
         "local": true,
@@ -1640,32 +1182,6 @@
       "kind": "new"
     },
     {
-      "query": "smile center dental southaven ms",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "black dentist in southaven ms",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
       "query": "dental southaven mississippi location",
       "variants": [],
       "signals": {
@@ -1680,19 +1196,6 @@
     },
     {
       "query": "dental southaven mississippi appointment",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "american dentistry southaven ms",
       "variants": [],
       "signals": {
         "words": 4,
@@ -1735,19 +1238,6 @@
       "variants": [],
       "signals": {
         "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "smile center in southaven ms",
-      "variants": [],
-      "signals": {
-        "words": 5,
         "question": false,
         "bing_suggest": true,
         "local": true,
@@ -1917,34 +1407,10 @@
       "kind": "new"
     },
     {
-      "query": "how many years for dentist",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
       "query": "going to dentist after long time",
       "variants": [],
       "signals": {
         "words": 6,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "at what age do you stop going to the dentist",
-      "variants": [],
-      "signals": {
-        "words": 10,
         "question": false,
         "google_suggest": true,
         "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
@@ -1962,634 +1428,6 @@
         "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
       },
       "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "can a dentist date a patient",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what to do before a dentist appointment",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "teeth whitening options for sensitive teeth",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "teeth whitening options for kids",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "teeth whitening options uk",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "does teeth whitening work",
-      "variants": [
-        "whitening teeth that actually works"
-      ],
-      "signals": {
-        "words": 4,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how effective is teeth whitening",
-      "variants": [
-        "teeth whitening that actually is effective"
-      ],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what is teeth whitening",
-      "variants": [
-        "can i whiten my teeth",
-        "should i get my teeth whitened"
-      ],
-      "signals": {
-        "words": 4,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what is more effective for whitening teeth",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "is teeth whitening healthy",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "can you permanently whiten your teeth",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "veneers vs bonding cost",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "veneers and bonding near me",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "veneers or bonding pictures",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "orthodontist southaven ms",
-      "variants": [],
-      "signals": {
-        "words": 3,
-        "question": false,
-        "google_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "dds southaven ms",
-      "variants": [],
-      "signals": {
-        "words": 3,
-        "question": false,
-        "google_suggest": true,
-        "local": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "dental anxiety in children",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "dental anxiety icd code",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "dental anxiety icd 10 code",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "tips to overcome dental anxiety and fear",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "dental anxiety treatment options",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "dental work help for anxiety",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "dental information for patients with anxiety",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "medicine for dental anxiety",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "natural anti anxiety for dental visits",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "clinical guide for dental anxiety management",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "not going to the dentist for years",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "going to the dentist",
-      "variants": [
-        "when to start going to the dentist",
-        "when you go to the dentist",
-        "why go to the dentist",
-        "how to go to the dentist"
-      ],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "people going to the dentist",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "first dentist visit after years",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "havent gone to the dentist in years",
-      "variants": [
-        "havent gone to dentist in years"
-      ],
-      "signals": {
-        "words": 7,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "havent been to dentist in 20 years",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "havent been to dentist in 10 years",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "havent been to dentist in 2 years",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "dentist taking new patients",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "benefits of going to the dentist",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "fun facts about being a dentist",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "facts about being a dentist",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "things to do before a dental appointment",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "teeth whitening options roseville",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "teeth whitening options diy",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "teeth whitening options 2021",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "teeth whitening options cost",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "teeth whitening options natural",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "teeth whitening options near me",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "teeth whitening options comparison",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "invisalign teeth whitening options",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "professional teeth whitening options",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "fluorosis teeth whitening options",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "mottled teeth whitening options",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "softer teeth whitening options",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
       "kind": "new"
     }
   ],

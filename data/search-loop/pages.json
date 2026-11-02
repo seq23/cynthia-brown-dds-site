@@ -1,5 +1,17 @@
 {
   "schema": "search-loop-pages-v1",
   "pages": [],
-  "dropped": []
+  "dropped": [
+    {
+      "query": "dentist olive branch ms",
+      "at": "2026-11-02",
+      "reason": [
+        "b4 direct answer under the H1 is 34 words (needs 40-60)",
+        "b5 FAQ answer is 18 words (needs 40-60): \"Do I need a referral to see a dentist in Olive Bra\"",
+        "b5 FAQ answer is 25 words (needs 40-60): \"What should I bring to my first appointment?\"",
+        "b5 FAQ answer is 23 words (needs 40-60): \"Can I get a cleaning and exam on the same day?\"",
+        "b5 FAQ answer is 23 words (needs 40-60): \"What if I have a dental emergency after hours?\""
+      ]
+    }
+  ]
 }
