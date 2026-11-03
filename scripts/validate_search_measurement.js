@@ -162,6 +162,18 @@ try {
   bad(`scripts/weekly_outcome_report.js --self-check failed: ${String(e.stdout || e.message).split('\n').slice(-3).join(' ')}`);
 }
 
+// ─── 6. The CSP lets Cloudflare Web Analytics run ───────────────────────────
+// Cloudflare injects the visit beacon at the edge; with a CSP that does not allow its two hosts
+// the script is injected and then blocked, so no visit (AI-tool visits included) is recorded.
+{
+  const csp = (/^\s*Content-Security-Policy:\s*(.+)$/im.exec(fs.readFileSync(path.join(ROOT, '_headers'), 'utf8')) || [])[1] || '';
+  const directive = (name) => ((new RegExp(`(?:^|;)\\s*${name}\\s+([^;]*)`).exec(csp) || [])[1] || '').split(/\s+/);
+  if (!csp) bad('_headers carries no Content-Security-Policy to check');
+  else if (!directive('script-src').includes('https://static.cloudflareinsights.com') || !directive('connect-src').includes('https://cloudflareinsights.com')) {
+    bad('_headers CSP blocks the Cloudflare Web Analytics beacon (needs script-src https://static.cloudflareinsights.com and connect-src https://cloudflareinsights.com)');
+  } else good('_headers CSP allows the Cloudflare Web Analytics beacon');
+}
+
 // ─── Verdict ────────────────────────────────────────────────────────────────
 if (proved < 12) bad(`NAMED STOP [TOO_FEW_PROOFS] only ${proved} things were proved; this validator cannot have run over the real tree`);
 if (problems.length) {
