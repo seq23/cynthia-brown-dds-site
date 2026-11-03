@@ -56,6 +56,22 @@ const siteConfig = readJson('data/system/site_config.json');
 const booking = readJson('data/system/booking_links.json');
 const SITE_URL = siteConfig.siteUrl.replace(/\/$/, '');
 const pageMeta = readJson('data/seo/page_meta.json');
+const entity = readJson('entity.json');
+// ── Who put their name to this page (Search Readiness c6) ───────────────────────────────────────
+// Every content page used to carry no named author or reviewer, so the Monday quality sample read
+// /smile-philosophy/ as a page nobody had signed (3 Nov 2026 brief so-cynthiabrowndds.com-quality).
+// The name, credential and About link are NEVER typed here: they are entity.json's author block,
+// the same one scripts/post_build_aeo_geo.js publishes as the page's author node, and
+// scripts/validate_page_byline.js refuses a build where the two disagree.
+// No date: a "last reviewed" line would be a freshness claim this build cannot prove.
+const AUTHOR = entity.author;
+if (!AUTHOR || !AUTHOR.name) { console.error('NAMED STOP [ENTITY_AUTHOR_MISSING] entity.json has no author.name; no page could carry a named reviewer'); process.exit(1); }
+if (!AUTHOR.url) { console.error('NAMED STOP [ENTITY_AUTHOR_URL_MISSING] entity.json author has no url; the byline would name a reviewer with no page to stand behind'); process.exit(1); }
+const AUTHOR_PATH = AUTHOR.url.replace(SITE_URL, '') || '/about/';
+function byline() {
+  return `<p class="page-byline">Reviewed by <a rel="author" href="${esc(AUTHOR_PATH)}">${esc(AUTHOR.name)}</a>${AUTHOR.jobTitle ? ` · ${esc(AUTHOR.jobTitle)}` : ''}</p>`;
+}
+
 // The <title> and description for a page the build writes itself (Search Readiness b1/b2).
 // A route missing from data/seo/page_meta.json is a NAMED STOP, never a silently short title.
 function meta(route) {
@@ -79,7 +95,7 @@ function footer() {
 }
 function writePage(route, html) { const dir = path.join(dist, route); mkdir(dir); fs.writeFileSync(path.join(dir, 'index.html'), html); }
 function hero() {
-  return `<section class="hero"><div class="container hero-grid"><div><div class="eyebrow">Olive Branch + Southaven, Mississippi</div><h1 class="word-reveal"><span>Dr.</span> <span>Cynthia</span> <span>Brown,</span> <span>DDS</span></h1><p class="lede">A Memphis native and dentist serving patients through her Olive Branch and Southaven, Mississippi practice locations.</p><div class="script">confidence, carefully considered</div><div class="hero-actions"><a class="btn" href="/book/">Book a Visit</a><a class="btn secondary" href="/locations/">Choose a Location</a><a class="btn secondary" href="/about/">Meet Dr. Brown</a></div></div><div class="portrait-frame hero-portrait full-portrait">${img('cynthia-brown-dds-dental-coat-portrait','Professional portrait of Dr. Cynthia Brown, DDS in a dental coat','', {loading:'eager', fetchpriority:'high'})}</div></div></section>`;
+  return `<section class="hero"><div class="container hero-grid"><div><div class="eyebrow">Olive Branch + Southaven, Mississippi</div><h1 class="word-reveal"><span>Dr.</span> <span>Cynthia</span> <span>Brown,</span> <span>DDS</span></h1><p class="lede">A Memphis native and dentist serving patients through her Olive Branch and Southaven, Mississippi practice locations.</p><div class="script">confidence, carefully considered</div><div class="hero-actions"><a class="btn" href="/book/">Book a Visit</a><a class="btn secondary" href="/locations/">Choose a Location</a><a class="btn secondary" href="/about/">Meet Dr. Brown</a></div>${byline()}</div><div class="portrait-frame hero-portrait full-portrait">${img('cynthia-brown-dds-dental-coat-portrait','Professional portrait of Dr. Cynthia Brown, DDS in a dental coat','', {loading:'eager', fetchpriority:'high'})}</div></div></section>`;
 }
 function cards() {
   return `<section class="section"><div class="container"><h2 class="section-title">Dental care should feel clear before it feels complicated.</h2><p class="section-copy">This site gives patients a calm place to learn about Dr. Brown’s approach, choose a location, and read practical dental education without pressure, jargon, or shame.</p><div class="grid three"><div class="card"><h3>Clarity</h3><p>Plain-language guidance for patients who want to understand their options before making decisions.</p></div><div class="card"><h3>Confidence</h3><p>A smile-forward point of view that respects health, function, beauty, and real life.</p></div><div class="card"><h3>Care</h3><p>A polished, patient-first experience rooted in respect, warmth, and thoughtful communication.</p></div></div></div></section>`;
@@ -104,7 +120,7 @@ function resourcesPreview(items) {
   const cards = visible.length ? visible.slice(0, 3).map(item => resourceCard(item)).join('') : `<div class="card"><h3>Resources coming soon</h3><p>Monthly insights and quarterly guides are in review. Approved resources will appear here after review and date gating.</p><a class="btn secondary" href="/resources/">Visit Resources</a></div>`;
   return `<section class="section alt"><div class="container"><div class="eyebrow">Resources</div><h2 class="section-title">Monthly insights and quarterly guides.</h2><p class="section-copy">Fresh, useful dental education for patients who want confidence without internet chaos.</p><div class="resource-grid">${cards}</div><p style="margin-top:28px"><a class="btn secondary" href="/resources/">View Resources</a></p></div></section>`;
 }
-function pageHero(title, copy) { return `<section class="page-hero section"><div class="container"><div class="eyebrow">Dr. Cynthia Brown, DDS</div><h1>${esc(title)}</h1><p>${esc(copy)}</p></div></section>`; }
+function pageHero(title, copy, opts = {}) { return `<section class="page-hero section"><div class="container"><div class="eyebrow">Dr. Cynthia Brown, DDS</div><h1>${esc(title)}</h1><p>${esc(copy)}</p>${opts.byline === false ? '' : byline()}</div></section>`; }
 function articlePage(item, isPreview = false) {
   const isWhite = item.meta.type === 'quarterly_white_paper';
   const statusNote = isPreview ? `<p class="disclaimer"><strong>Preview status:</strong> ${esc(item.meta.status)}. This draft is for review only and is not linked from the public resources archive until approved and date-gated.</p>` : '';
@@ -113,7 +129,7 @@ function articlePage(item, isPreview = false) {
   const faqs = Array.isArray(item.meta.faqs) && item.meta.faqs.length ? `<section class="faq-block"><h2>Questions patients often ask</h2>${item.meta.faqs.map(f => `<details><summary>${esc(f.question)}</summary><p>${esc(f.answer)}</p></details>`).join('')}</section>` : '';
   const trace = item.meta.queryClusterId ? `<p class="source-note"><strong>Query cluster:</strong> ${esc(item.meta.queryClusterId)}</p>` : '';
   if (!item.meta.seoTitle || !item.meta.seoDescription) { console.error(`NAMED STOP [RESOURCE_SEO_MISSING] ${item.file} has no seoTitle/seoDescription (Search Readiness b1/b2)`); process.exit(1); }
-  return layout(item.meta.seoTitle, item.meta.seoDescription, `<main class="article"><div class="container article-inner"><span class="tag">${isWhite ? 'Quarterly white paper' : 'Monthly insight'}</span><h1>${esc(item.meta.title)}</h1><p><strong>Scheduled:</strong> ${esc(item.meta.scheduledAt)} · <strong>${item.wordCount} words</strong></p>${statusNote}${quick}${takeaway}${trace}${mdToHtml(item.body)}${faqs}</div></main>`, '', { noindex: isPreview });
+  return layout(item.meta.seoTitle, item.meta.seoDescription, `<main class="article"><div class="container article-inner"><span class="tag">${isWhite ? 'Quarterly white paper' : 'Monthly insight'}</span><h1>${esc(item.meta.title)}</h1>${byline()}<p><strong>Scheduled:</strong> ${esc(item.meta.scheduledAt)} · <strong>${item.wordCount} words</strong></p>${statusNote}${quick}${takeaway}${trace}${mdToHtml(item.body)}${faqs}</div></main>`, '', { noindex: isPreview });
 }
 
 rm(dist); mkdir(dist);
@@ -132,8 +148,8 @@ writePage('locations', layout(meta('locations').title, meta('locations').descrip
 writePage('services', layout(meta('services').title, meta('services').description, pageHero('Services', 'A clear overview of common dental care conversations: prevention, restoration, cosmetics, emergencies, dentures, implants, and whitening.') + `<section class="section"><div class="container"><p class="disclaimer">Treatment recommendations require an in-person exam and clinical judgment by a licensed dental professional. This page is educational only.</p><div class="grid three">${['Preventive care','Restorative care','Cosmetic dentistry','Emergency dental care','Dentures and implants','Whitening questions'].map(t => `<div class="card"><h3>${t}</h3><p>Use this site to prepare better questions before an appointment. Treatment recommendations require an exam by a licensed dental professional.</p></div>`).join('')}</div></div></section>`));
 writePage('smile-philosophy', layout(meta('smile-philosophy').title, meta('smile-philosophy').description, pageHero('Smile Philosophy', 'A confident smile is not only about appearance. It is about health, clarity, comfort, and feeling informed.') + `<section class="section"><div class="container split"><div class="editorial-img">${img('cynthia-brown-dds-navy-lifestyle-portrait','Lifestyle professional portrait of Dr. Cynthia Brown')}</div><div><h2 class="section-title">The internet is loud. Your care should be clear.</h2><p class="section-copy">This philosophy keeps the focus on informed decisions, realistic expectations, and the health underneath every smile goal.</p><div class="script">informed confidence</div></div></div></section>`));
 writePage('book', layout(meta('book').title, meta('book').description, pageHero('Book a Visit', 'Choose a location and continue to the approved external booking page.') + locationsBlock() + `<section class="section"><div class="container"><p class="disclaimer">Appointments, insurance, pricing, and treatment availability are handled through the linked practice booking pages. Do not submit private health information through this website. Dental pain, swelling, trauma, fever, or signs of infection may require urgent evaluation. Use the linked scheduling page or contact the office directly for urgent concerns.</p></div></section>`));
-writePage('privacy', layout(meta('privacy').title, meta('privacy').description, pageHero('Privacy', 'This static website does not collect patient health information.') + `<section class="section"><div class="container"><p class="section-copy">This site does not provide patient intake, diagnosis, treatment planning, or emergency response. It may use standard static hosting logs provided by the hosting platform. Do not send private health information through this site.</p></div></section>`));
-writePage('disclaimer', layout(meta('disclaimer').title, meta('disclaimer').description, pageHero('Disclaimer', 'Educational information only.') + `<section class="section"><div class="container"><p class="disclaimer">This website is for general educational purposes only and is not dental or medical advice. It does not diagnose conditions, recommend a specific treatment, or replace an examination by a licensed dental professional. If you have pain, swelling, trauma, infection symptoms, or urgent concerns, contact a dental professional or seek appropriate care.</p></div></section>`));
+writePage('privacy', layout(meta('privacy').title, meta('privacy').description, pageHero('Privacy', 'This static website does not collect patient health information.', { byline: false }) + `<section class="section"><div class="container"><p class="section-copy">This site does not provide patient intake, diagnosis, treatment planning, or emergency response. It may use standard static hosting logs provided by the hosting platform. Do not send private health information through this site.</p></div></section>`));
+writePage('disclaimer', layout(meta('disclaimer').title, meta('disclaimer').description, pageHero('Disclaimer', 'Educational information only.', { byline: false }) + `<section class="section"><div class="container"><p class="disclaimer">This website is for general educational purposes only and is not dental or medical advice. It does not diagnose conditions, recommend a specific treatment, or replace an examination by a licensed dental professional. If you have pain, swelling, trauma, infection symptoms, or urgent concerns, contact a dental professional or seek appropriate care.</p></div></section>`));
 writePage('resources', layout(meta('resources').title, meta('resources').description, pageHero('Resources', 'Insights, guides, and white papers for confident, informed dental care.') + `<section class="section featured-resource"><div class="container split"><div><div class="eyebrow">Featured resource</div><h2 class="section-title">The Smile Confidence Starter Guide</h2><p class="section-copy">Start here before reading deeper monthly insights or quarterly white papers. This resource hub is designed to help patients think clearly about prevention, cosmetic questions, dental anxiety, urgent symptoms, and what to ask before an appointment.</p><a class="btn secondary" href="/smile-philosophy/">Explore the Smile Philosophy</a></div></div></section><section class="section alt"><div class="container"><div class="resource-type-grid"><a class="card resource-type-card" href="#monthly-insights"><span class="tag">Insights</span><h3>Short monthly insights</h3><p>Practical, patient-friendly reflections on dental anxiety, smile confidence, whitening questions, social media trends, and oral-health routines.</p></a><a class="card resource-type-card" href="#white-papers"><span class="tag">White Papers</span><h3>Quarterly deep dives</h3><p>Long-form guides for bigger questions around cosmetic decision-making, returning to care, social media pressure, and year-end planning.</p></a><a class="card resource-type-card" href="/smile-philosophy/"><span class="tag">Philosophy</span><h3>Smile confidence</h3><p>A more personal look at how Dr. Brown thinks about confidence, clarity, and care that respects the whole patient.</p></a><a class="card resource-type-card" href="/questions/"><span class="tag">Questions</span><h3>Patient questions</h3><p>Short, plain-language answers to everyday dental questions, from bleeding gums to whitening options.</p></a><a class="card resource-type-card" href="/book/"><span class="tag">Next step</span><h3>Choose a location</h3><p>When you are ready to schedule, choose Olive Branch or Southaven and continue to the current booking page.</p></a></div></div></section><section class="section" id="monthly-insights"><div class="container"><div class="eyebrow">Now reading</div><h2 class="section-title">Currently published resources</h2><p class="section-copy">Start with the resources below as they are released. New monthly insights and quarterly white papers will appear here after review.</p><h3 class="resource-subhead">Monthly insights</h3>${publicItems.filter(i => i.meta.type === 'monthly_insight').length ? `<div class="resource-grid">${publicItems.filter(i => i.meta.type === 'monthly_insight').map(i => resourceCard(i)).join('')}</div>` : `<p class="section-copy">Monthly insights are currently in review. Approved, date-gated resources will appear here.</p>`}<h3 class="resource-subhead" id="white-papers">Quarterly white papers</h3>${publicItems.filter(i => i.meta.type === 'quarterly_white_paper').length ? `<div class="resource-grid">${publicItems.filter(i => i.meta.type === 'quarterly_white_paper').map(i => resourceCard(i)).join('')}</div>` : `<p class="section-copy">Quarterly white papers are currently in review. Approved, date-gated resources will appear here.</p>`}</div></section>`));
 
 for (const item of all) {
@@ -154,8 +170,12 @@ const admin = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta 
 writePage('admin', admin);
 
 // Patient-question pages published by the shared search engine (seq23/search-loop) live in
-// questions/<slug>/index.html as finished HTML. They are copied as-is, listed on the
+// questions/<slug>/index.html as finished HTML. They are copied, listed on the
 // /questions/ hub (linked from /resources/ and every question page footer) and in the sitemap.
+// The one thing added on the way through is the reviewer byline (Search Readiness c6): the shared
+// engine names her in the page's Article schema but prints no byline a reader can see, so the
+// published page gets the same line every other page carries, built from entity.json. Added only
+// when the page does not already carry a rel="author" of its own, so a later engine change wins.
 const questionPages = [];
 const questionsDir = path.join(root, 'questions');
 if (fs.existsSync(questionsDir)) {
@@ -165,6 +185,14 @@ if (fs.existsSync(questionsDir)) {
     const html = fs.readFileSync(file, 'utf8');
     const h1 = (html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || slug.replace(/-/g, ' ');
     copy(path.join(questionsDir, slug), path.join(dist, 'questions', slug));
+    if (!/rel=["']author["']/i.test(html)) {
+      const dates = html.match(/<p class="page-dates">[\s\S]*?<\/p>/i);
+      const withByline = dates
+        ? html.replace(dates[0], `${dates[0]}${byline()}`)
+        : html.replace(/<\/h1>/i, `</h1>${byline()}`);
+      if (withByline === html) { console.error(`NAMED STOP [QUESTION_BYLINE_NOT_PLACED] /questions/${slug}/ has neither a page-dates line nor an H1 to put the reviewer byline after`); process.exit(1); }
+      fs.writeFileSync(path.join(dist, 'questions', slug, 'index.html'), withByline);
+    }
     questionPages.push({ route: `/questions/${slug}/`, h1: h1.replace(/<[^>]+>/g, '').trim() });
   }
 }
@@ -194,7 +222,7 @@ fs.writeFileSync(path.join(dist, 'site.webmanifest'), JSON.stringify({
 }, null, 2));
 fs.writeFileSync(path.join(dist, '404.html'), layout(
   meta('404').title, meta('404').description,
-  pageHero('That page is not here', 'The link may be old or mistyped. Everything on this site is one step away below.') +
+  pageHero('That page is not here', 'The link may be old or mistyped. Everything on this site is one step away below.', { byline: false }) +
   `<section class="section"><div class="container"><div class="grid three"><div class="card"><h3>Meet Dr. Brown</h3><p>Education, background, and what patients can expect in the chair.</p><p><a class="btn secondary" href="/about/">About</a></p></div><div class="card"><h3>Patient questions</h3><p>Plain-language answers to everyday dental questions, from bleeding gums to whitening.</p><p><a class="btn secondary" href="/questions/">Questions</a></p></div><div class="card"><h3>Book a visit</h3><p>Choose Olive Branch or Southaven and continue to the current scheduling page.</p><p><a class="btn" href="/book/">Book</a></p></div></div></div></section>`,
   '', { noindex: true, canonical: `${SITE_URL}/404.html` }
 ));

@@ -1,9 +1,12 @@
 {
-  "$comment": "The one statement of who this site is. scripts/post_build_aeo_geo.js builds the published Dentist/LocalBusiness node from this file (name, logo, description, sameAs) and writes it into the head of every page; scripts/validate_entity_graph.js refuses the build if this file and the served pages ever disagree; scripts/entity_backlink_watch.js (.github/workflows/entity-backlink-watch.yml, weekly) refetches every profile and self-heals. sameAs lists ONLY third-party pages that are this same real-world practitioner and resolve now. Never a URL on this site's own host, and never a profile nobody has verified.",
+  "$comment": "The one statement of who this site is. scripts/post_build_aeo_geo.js builds the published Dentist/LocalBusiness node from this file (name, logo, description, sameAs) and the page author node from its author block and writes it into the head of every page; scripts/validate_entity_graph.js refuses the build if this file and the served pages ever disagree; scripts/entity_backlink_watch.js (.github/workflows/entity-backlink-watch.yml, weekly) refetches every profile and self-heals. sameAs lists ONLY third-party pages that are this same real-world practitioner and resolve now. Never a URL on this site's own host, and never a profile nobody has verified.",
   "schema_version": "1.0",
   "updated_at": "2026-11-03",
   "@id": "https://cynthiabrowndds.com/#practice",
-  "@type": ["Dentist", "LocalBusiness"],
+  "@type": [
+    "Dentist",
+    "LocalBusiness"
+  ],
   "name": "Dr. Cynthia Brown, DDS",
   "alternateName": [
     "Cynthia Brown DDS",
@@ -19,6 +22,21 @@
   },
   "description": "Dr. Cynthia Brown, DDS — dentist seeing patients in Olive Branch and Southaven, Mississippi.",
   "medicalSpecialty": "Dentistry",
+  "author": {
+    "@type": "Person",
+    "@id": "https://cynthiabrowndds.com/#practitioner",
+    "name": "Dr. Cynthia Brown, DDS",
+    "honorificSuffix": "DDS",
+    "jobTitle": "Dentist, Olive Branch and Southaven, Mississippi",
+    "url": "https://cynthiabrowndds.com/about/",
+    "worksFor": {
+      "@id": "https://cynthiabrowndds.com/#practice"
+    },
+    "sameAs": [
+      "https://www.aspendental.com/providers/cynthia-brown/1194138503/"
+    ]
+  },
+  "author_why": "Search Readiness c6 (3 Nov 2026): every content page used to carry no named author or reviewer, so a reader and an answer engine met pages nobody had put their name to. This is the one statement of who reviews the words on this site. scripts/build_site.js renders the visible byline from it and scripts/post_build_aeo_geo.js publishes it as the author of every page's WebPage node; scripts/validate_page_byline.js refuses a build where a page, the byline and this file disagree. She is a real, named dentist reviewing her own site's copy through /admin/ — never an invented byline or credential. Only a name and credential, never a date: a review date would be a freshness claim nothing here can prove.",
   "entity_parent": "client",
   "parentOrganization": null,
   "parentOrganization_note": "Deliberately none. This is a client's own professional practice, not part of any portfolio, so no parent organisation is published (Search Readiness k4 for a client site: naming one would be an invented relationship).",
