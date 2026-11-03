@@ -1,0 +1,41 @@
+{
+  "$comment": "The one statement of who this site is. scripts/post_build_aeo_geo.js builds the published Dentist/LocalBusiness node from this file (name, logo, description, sameAs) and writes it into the head of every page; scripts/validate_entity_graph.js refuses the build if this file and the served pages ever disagree; scripts/entity_backlink_watch.js (.github/workflows/entity-backlink-watch.yml, weekly) refetches every profile and self-heals. sameAs lists ONLY third-party pages that are this same real-world practitioner and resolve now. Never a URL on this site's own host, and never a profile nobody has verified.",
+  "schema_version": "1.0",
+  "updated_at": "2026-11-03",
+  "@id": "https://cynthiabrowndds.com/#practice",
+  "@type": ["Dentist", "LocalBusiness"],
+  "name": "Dr. Cynthia Brown, DDS",
+  "alternateName": [
+    "Cynthia Brown DDS",
+    "Dr. Cyndi Brown, DDS"
+  ],
+  "url": "https://cynthiabrowndds.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://cynthiabrowndds.com/assets/icons/icon-512.png",
+    "width": 512,
+    "height": 512,
+    "caption": "Dr. Cynthia Brown, DDS"
+  },
+  "description": "Dr. Cynthia Brown, DDS — dentist seeing patients in Olive Branch and Southaven, Mississippi.",
+  "medicalSpecialty": "Dentistry",
+  "entity_parent": "client",
+  "parentOrganization": null,
+  "parentOrganization_note": "Deliberately none. This is a client's own professional practice, not part of any portfolio, so no parent organisation is published (Search Readiness k4 for a client site: naming one would be an invented relationship).",
+  "sameAs": [
+    "https://www.aspendental.com/providers/cynthia-brown/1194138503/"
+  ],
+  "sameAs_evidence": {
+    "https://www.aspendental.com/providers/cynthia-brown/1194138503/": {
+      "what": "The practitioner's own provider profile on the practice group that publishes her schedule — the same real-world dentist, and already this site's only approved booking destination (data/system/booking_links.json defaultBookingUrl).",
+      "probed": "2026-11-03: HTTP 200 after redirects, read with a desktop browser user agent.",
+      "linkback_expected": false,
+      "linkback_why": "A third-party provider directory page the practice does not edit. It is listed because it is the same entity and it resolves; a missing link back from it is not a defect anyone here can fix, so the weekly watch records its state and raises nothing."
+    }
+  },
+  "profiles_pending": [],
+  "profiles_pending_why": "Empty on purpose. A profile is added here only once it exists and someone has read it; the site never publishes a guessed or aspirational profile URL.",
+  "own_hosts": [
+    "cynthiabrowndds.com"
+  ]
+}
