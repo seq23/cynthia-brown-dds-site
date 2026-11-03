@@ -1,0 +1,82 @@
+name: Weekly outcome report
+
+# i9 (Search Readiness, 3 Nov 2026): without a report nobody notices a drop for a month, and without
+# an issue that closes itself the list of problems rots into a list nobody reads.
+#
+# Reads only what this repository already records - the daily Search Console files - and writes
+# weekly-outcome-report.json, uploaded as the artifact `weekly-outcome-report` for Boss OS to word
+# into her weekly email. Any number that cannot be read is said as "not read: <reason>", never 0.
+#
+# A red week opens ONE issue (label `weekly-outcome`, title fixed) or updates the open one; the first
+# green week closes it. Nothing is emailed, committed or deployed from here.
+#
+# Mondays 06:49 America/Chicago, after that morning's search-intelligence run at 06:40.
+
+on:
+  schedule:
+    - cron: '49 6 * * 1'  # Mondays, America/Chicago
+      timezone: America/Chicago
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: weekly-outcome-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    name: Week over week, and one self-closing issue
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # last week's gsc_truth.json comes out of git history
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Self-check the verdict before trusting it
+        run: node scripts/weekly_outcome_report.js --self-check
+
+      - name: Write the week
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node scripts/weekly_outcome_report.js
+
+      - name: Upload the report
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-outcome-report
+          path: weekly-outcome-report.json
+          if-no-files-found: error
+
+      - name: One self-closing issue for a red week
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          TITLE='Weekly outcome: cynthiabrowndds.com is red'
+          VERDICT="$(node -e 'console.log(JSON.parse(require("fs").readFileSync("weekly-outcome-report.json","utf8")).verdict)')"
+          OPEN="$(gh issue list --repo "$REPO" --state open --label weekly-outcome --json number --jq '.[0].number // ""')"
+          if [ "$VERDICT" = "red" ]; then
+            BODY="$(node -e 'const r=JSON.parse(require("fs").readFileSync("weekly-outcome-report.json","utf8"));console.log(["This week the site is red:","",...r.reasons.map(x=>`- ${x}`),"","Clicks: "+r.search.clicks+" · impressions: "+r.search.impressions+" (last week "+r.search.impressions_last_week+")","Indexed: "+r.coverage.indexed+" · crawled and not indexed: "+r.coverage.crawled_not_indexed+" · discovered: "+r.coverage.discovered,"","This issue closes itself on the first week none of those is true.","",process.env.RUN_URL||""].join("\n"))')"
+            if [ -n "$OPEN" ]; then
+              gh issue comment "$OPEN" --repo "$REPO" --body "$BODY"
+            else
+              gh label create weekly-outcome --repo "$REPO" --description "The weekly outcome report opened this" --color B60205 2>/dev/null || true
+              gh issue create --repo "$REPO" --title "$TITLE" --label weekly-outcome --body "$BODY"
+            fi
+          elif [ -n "$OPEN" ]; then
+            gh issue close "$OPEN" --repo "$REPO" --comment "Green this week; closing. $RUN_URL"
+          else
+            echo "green, and no open weekly-outcome issue: nothing to do"
+          fi

@@ -1,0 +1,12 @@
+{
+  "schema": "cbdds-gsc-query-history-v1",
+  "site": "sc-domain:cynthiabrowndds.com",
+  "why": "Search Console forgets a query after 28 days. This file does not: every query ever seen, with when it was first and last in the window and the best position it reached.",
+  "queries": {},
+  "updated_at": "2026-11-03T13:53:22.863Z",
+  "counts": {
+    "known": 0,
+    "in_window_today": 0,
+    "new_today": 0
+  }
+}

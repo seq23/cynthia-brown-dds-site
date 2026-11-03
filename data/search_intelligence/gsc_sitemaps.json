@@ -1,0 +1,17 @@
+{
+  "schema": "cbdds-gsc-sitemaps-v1",
+  "site": "sc-domain:cynthiabrowndds.com",
+  "collected_at": "2026-11-03T13:53:23.187Z",
+  "day": "2026-11-03",
+  "sitemaps": [
+    {
+      "path": "https://cynthiabrowndds.com/sitemap.xml",
+      "last_submitted": "2026-11-03T13:32:40.516Z",
+      "last_downloaded": "2026-11-03T13:32:43.315Z",
+      "errors": 0,
+      "warnings": 0,
+      "is_pending": false,
+      "submitted_urls": 40
+    }
+  ]
+}
