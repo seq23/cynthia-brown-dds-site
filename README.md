@@ -9,7 +9,7 @@ Static personal-professional website for Dr. Cynthia Brown, DDS, designed for Gi
 ## Important architecture notes
 
 - This is a static site. There is no backend, no database, no patient intake, and no PHI collection.
-- `/admin/` is a soft-gated static review dashboard. It is not real authentication and must never contain patient data, secrets, or private health information.
+- `/admin/` is an open, unindexed static review dashboard over data the site already serves publicly. It has no login (a client-side password check is not protection, so none ships) and must never contain patient data, secrets, or private health information.
 - No approval step (owner ruling, 1 Nov 2026): resources release on their `scheduledAt` date. Items in `draft` or `needs_revision` render only under `/previews/`, which is disallowed in `robots.txt` and excluded from `sitemap.xml`.
 - Public resources render only when `status` is `published`, or when `status` is `approved` and `scheduledAt` is due at build time.
 - Visible site copy intentionally does not foreground third-party/corporate practice branding. Booking buttons route through the approved external booking page.
