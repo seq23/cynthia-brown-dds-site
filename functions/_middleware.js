@@ -13,9 +13,27 @@ const SESSION_SECONDS = 8 * 3600;
 const MAX_FAILS = 5;
 const LOCK_SECONDS = 15 * 60;
 
+// The path as the asset server will resolve it: percent-decoded until it stops changing (so
+// /%61dmin and /%2561dmin are /admin), lowercased, duplicate slashes collapsed, a trailing
+// /index.html dropped. null = it cannot be decoded, and the caller refuses it (400).
+export function normalisePath(raw) {
+  let p = String(raw || '/');
+  for (let i = 0; i < 5; i += 1) {
+    let next;
+    try { next = decodeURIComponent(p); } catch { return null; }
+    if (next === p) break;
+    p = next;
+    if (i === 4) return null;
+  }
+  p = p.replace(/\\/g, '/').toLowerCase().replace(/\/{2,}/g, '/');
+  if (p.endsWith('/index.html')) p = p.slice(0, -'index.html'.length);
+  return p;
+}
+
+// Gate by default: anything that resolves under /admin (incl. /admin.html) or /data/admin, or to
+// the admin script.
 export function isProtected(pathname) {
-  return pathname === '/admin' || pathname.startsWith('/admin/') || pathname === '/admin.html'
-    || pathname.startsWith('/data/admin/') || pathname === '/assets/js/admin.js';
+  return pathname.startsWith('/admin') || pathname.startsWith('/data/admin') || pathname === '/assets/js/admin.js';
 }
 
 const enc = new TextEncoder();
@@ -63,7 +81,9 @@ function page(status, message) {
 export async function onRequest(context) {
   const { request, env, next } = context;
   const url = new URL(request.url);
-  if (!isProtected(url.pathname)) return next();
+  const path = normalisePath(url.pathname);
+  if (path === null) return new Response('Bad request.', { status: 400, headers: { 'cache-control': 'no-store' } });
+  if (!isProtected(path)) return next();
   const now = Date.now();
   const noStore = { 'cache-control': 'no-store' };
 
@@ -71,7 +91,7 @@ export async function onRequest(context) {
     return new Response('Admin is not configured.', { status: 503, headers: noStore });
   }
 
-  if (url.pathname === '/admin/login' && request.method === 'POST') {
+  if (path === '/admin/login' && request.method === 'POST') {
     const ip = request.headers.get('cf-connecting-ip') || '';
     const fails = await failCount(ip);
     if (fails >= MAX_FAILS) return page(429, 'Too many tries. Please wait 15 minutes and try again.');
@@ -92,6 +112,6 @@ export async function onRequest(context) {
     out.headers.set('cache-control', 'no-store');
     return out;
   }
-  const wantsHtml = url.pathname.startsWith('/admin') && !url.pathname.endsWith('.js');
+  const wantsHtml = path.startsWith('/admin') && !path.endsWith('.js');
   return wantsHtml ? page(401, '') : new Response('Sign in at /admin/.', { status: 401, headers: noStore });
 }
