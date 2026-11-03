@@ -1,0 +1,85 @@
+{
+  "schema": "search-loop-week-v1",
+  "week": "2026-W45",
+  "site": "cynthiabrowndds.com",
+  "generated_at": "2026-11-03T19:14:50.599Z",
+  "state": "running",
+  "published": 17,
+  "indexed": "not read: no page old enough to inspect yet (14 days)",
+  "pace": 10,
+  "ai_visitors": 0,
+  "ai_bot_hits": 130,
+  "conversions": "not read: no conversion source configured for this site (form fills / checkouts)",
+  "wins": 0,
+  "undone": 0,
+  "merged": 0,
+  "held_by_cap": 0,
+  "redirected": [
+    {
+      "query": "affordable dentist olive branch ms",
+      "strengthen": "https://cynthiabrowndds.com/questions/dentist-olive-branch-mississippi/",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "at": "2026-11-03"
+    },
+    {
+      "query": "dentist near olive branch ms",
+      "strengthen": "https://cynthiabrowndds.com/questions/dentist-olive-branch-mississippi/",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "at": "2026-11-03"
+    },
+    {
+      "query": "dentist southaven ms accepting payment plans",
+      "strengthen": "https://cynthiabrowndds.com/questions/dentist-olive-branch-mississippi/",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "at": "2026-11-03"
+    },
+    {
+      "query": "dental anxiety",
+      "strengthen": "https://cynthiabrowndds.com/questions/how-to-ease-dental-anxiety/",
+      "matched_by": "high token overlap (0.67 >= 0.6)",
+      "at": "2026-11-03"
+    },
+    {
+      "query": "dental anxiety dentist",
+      "strengthen": "https://cynthiabrowndds.com/questions/dental-olive-branch-ms/",
+      "matched_by": "same 3 intent words plus modifiers",
+      "at": "2026-11-03"
+    }
+  ],
+  "cap": {
+    "max_live_pages": 20,
+    "live": 17,
+    "room": 3,
+    "why": "held at 20: no Search Console numbers to judge results (Search Console: HTTP 403 User does not have sufficient permission for site 'sc-domain:cynthiabrowndds.com'. See also: https:/); the cap never grows without data"
+  },
+  "notes": [
+    "AI totals cover 1 measured day(s): 2026-11-03. Unread days are excluded, never zero-filled. Bot counts are requests, not people; referrals come from aggregate hostname-only analytics."
+  ],
+  "lanes": {
+    "ratio": {
+      "can_be_one": 2,
+      "striking": 1
+    },
+    "can_be_one": {
+      "pages": 0,
+      "measured": 0,
+      "top3": 0,
+      "hit_rate": "not read: no page in this lane has reached its 2-week check yet"
+    },
+    "striking": {
+      "pages": 17,
+      "measured": 0,
+      "top3": 0,
+      "hit_rate": "not read: no page in this lane has reached its 2-week check yet"
+    },
+    "weights": {
+      "neighbour": 35,
+      "unanswered": 30,
+      "weak_top10": 40,
+      "demand": 10
+    },
+    "weight_changes": [],
+    "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+  },
+  "run_url": null
+}

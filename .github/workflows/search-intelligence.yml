@@ -64,6 +64,19 @@ jobs:
           GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
         run: node scripts/search_intelligence/collect_index_coverage.js
 
+      - name: Read the shared free analytics collector
+        uses: actions/checkout@v4
+        with:
+          repository: seq23/search-loop
+          ref: v1
+          path: .search-loop-engine
+
+      - name: Measure AI referrals and bot reads without publishing content
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.SEARCH_LOOP_ANALYTICS_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.SEARCH_LOOP_CF_ACCOUNT_ID }}
+        run: node scripts/collect_ai_analytics.mjs
+
       - name: Prove the files before committing them
         run: node scripts/validate_search_measurement.js
 
@@ -72,7 +85,7 @@ jobs:
           set -euo pipefail
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/search_intelligence
+          git add data/search_intelligence data/search-loop/ai-daily.json data/search-loop/reports
           if git diff --cached --quiet; then
             echo "::error::NO_MEASUREMENT_WRITTEN the collectors exited 0 but changed nothing; the day was not recorded"
             exit 1
