@@ -24,3 +24,21 @@ What is still only central: whether Google indexes a page, the Search Console nu
 and anything about the live host between two deploys. `scripts/live_check.js` narrows that last one —
 it is the repo's own look at the live edge after every deploy of `main` — but it is a fault detector
 after the fact, not a merge gate, because the thing it checks does not exist until the deploy does.
+
+Added 3 Nov 2026 (Search Readiness k1, k2, k3, k6): `entity.json` is the one statement of who this
+site is, and `validate_entity_graph.js` is a merge gate over it - the file is about this host, names
+at least one third-party profile with an evidence record, never names this site's own host, and every
+built page publishes exactly that identity as the first JSON-LD a reader meets. The build itself stops
+with a named stop rather than publishing an identity with no external profile. What a merge gate
+cannot decide is whether those profiles are still alive out in the world, so that is the weekly
+`entity-backlink-watch.yml`: it refetches each one, parks a dead profile and promotes a verified
+pending one as a PR, and opens one self-closing issue when a profile that is supposed to link back
+stops doing so. Its classifier and self-heal are proved by `--self-test` before the job trusts them.
+
+Added 3 Nov 2026 (Search Readiness i10): the $0 language-model ceiling was enforced in
+`scripts/llm/router.js` but written down nowhere, so the next agent in the repo had no way to find it
+before adding a paid call. `CLAUDE.md` now carries the rule where an agent starts reading and
+`docs/cost/zero-paid-llm.md` holds it in full. `validate_search_measurement.js` guards the three
+things that can rot - the rule line is there, every file the doc points at still exists, and the
+ceiling the doc states is the ceiling `config/llm_routing.json` actually allows. It does not pin any
+wording: a doc that claims $0 while the config allows spending is the defect, not a phrasing change.

@@ -38,20 +38,43 @@ const booking = readJson('data/system/booking_links.json');
 // Telephone and address come from data/system/locations.json, read from the approved external
 // booking page; nothing here is typed twice or estimated.
 const mapsUrl = (l) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${l.streetAddress}, ${l.addressLocality}, ${l.addressRegion} ${l.postalCode}`)}`;
-const LOGO = `${SITE}/assets/icons/icon-512.png`;
-// The practice's own provider profile, already the site's approved booking destination: the one
-// external page that is the same real-world entity. Never a guessed or invented profile URL.
-const SAME_AS = [booking.defaultBookingUrl];
+
+// ── Who this site is, read from ONE file ────────────────────────────────────────────────────────
+// Search Readiness k1 and k3 (3 Nov 2026). The name, logo, description and external profiles used
+// to be typed into this script, so the published identity and the repository's idea of it could
+// drift apart with nobody noticing. entity.json is now the only statement of it; this file is the
+// published form, scripts/validate_entity_graph.js proves the two still agree, and
+// scripts/entity_backlink_watch.js rechecks the profiles every week.
+const entity = readJson('entity.json');
+const LOGO = typeof entity.logo === 'string' ? entity.logo : entity.logo?.url;
+if (!LOGO) throw new Error('NAMED STOP [ENTITY_LOGO_MISSING] entity.json has no logo url');
+if (!entity.name) throw new Error('NAMED STOP [ENTITY_NAME_MISSING] entity.json has no name');
+// k3: at least one external profile, and never a URL on our own host (k2).
+const ownHosts = new Set([...(entity.own_hosts || []), new URL(SITE).hostname.replace(/^www\./, '')]);
+const SAME_AS = Array.isArray(entity.sameAs) ? entity.sameAs : [];
+if (!SAME_AS.length) {
+  throw new Error('NAMED STOP [ENTITY_SAMEAS_EMPTY] entity.json lists no external profile in sameAs; the site would publish an identity nothing outside it can be reconciled against');
+}
+const selfSameAs = SAME_AS.filter((u) => ownHosts.has(new URL(u).hostname.replace(/^www\./, '')));
+if (selfSameAs.length) {
+  throw new Error(`NAMED STOP [ENTITY_SAMEAS_SELF] entity.json sameAs points at this site's own host: ${selfSameAs.join(', ')}`);
+}
+// The approved booking page is the same real-world entity, so it belongs in the identity. Kept in
+// step here rather than typed twice: if it is ever dropped from entity.json by hand, this notices.
+if (!SAME_AS.includes(booking.defaultBookingUrl)) {
+  throw new Error(`NAMED STOP [ENTITY_BOOKING_NOT_IN_SAMEAS] entity.json sameAs does not list the approved booking page ${booking.defaultBookingUrl}`);
+}
 const byId = (id) => locations.locations.find((l) => l.id === id);
 const postal = (l) => ({"@type":"PostalAddress","streetAddress":l.streetAddress,"addressLocality":l.addressLocality,"addressRegion":l.addressRegion,"postalCode":l.postalCode,"addressCountry":l.addressCountry});
 function practice(l, suffix) {
   return {
-    "@type": ["Dentist", "LocalBusiness"],
-    "@id": `${SITE}/#${suffix}`,
-    "name": suffix === 'practice' ? site.brandName : `${site.brandName} — ${l.name}`,
+    "@type": entity["@type"],
+    "@id": suffix === 'practice' ? entity["@id"] : `${SITE}/#${suffix}`,
+    "name": suffix === 'practice' ? entity.name : `${entity.name} — ${l.name}`,
     "url": suffix === 'practice' ? SITE : `${SITE}/locations/`,
     "logo": LOGO,
     "image": `${SITE}${site.defaultOgImage}`,
+    "description": suffix === 'practice' ? entity.description : undefined,
     "sameAs": SAME_AS,
     "telephone": l.telephone,
     "address": postal(l),

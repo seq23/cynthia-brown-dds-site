@@ -14,6 +14,9 @@
  *   4. The scheduled workflows that write and report on all this exist, are parseable, carry the
  *      cron they claim, and never deploy.
  *   5. The weekly report's verdict passes its own self-check.
+ *   6. The zero-paid rule is written where an agent entering the repo finds it (CLAUDE.md and
+ *      docs/cost/zero-paid-llm.md), its file pointers all resolve, and the ceiling it states is the
+ *      ceiling config/llm_routing.json actually allows (i10).
  *
  * It hard-fails on zero items: a run that found no sitemap URLs, no models or no workflows has not
  * proved anything and must not pass.
@@ -119,6 +122,37 @@ if (routing) {
     delete require.cache[require.resolve('./llm/router.js')];
   }
 
+  // --- i10: the rule is written where the next agent finds it, and it does not lie ---------------
+  // Search Readiness i10 (3 Nov 2026): "a rule no code reads is a wish". The ceiling was enforced in
+  // the router but written down nowhere, so the next agent in this repo had no way to find it before
+  // adding a paid call. This proves the three things that can actually rot, and NOT any wording:
+  //   - the cost doc and CLAUDE.md exist and carry the rule;
+  //   - every repository file the doc points at still exists (a doc pointing at a deleted file is a
+  //     wish again);
+  //   - every dollar ceiling the doc states equals config/llm_routing.json's max_cost_usd. A doc
+  //     that claims $0 while the config allows spending is worse than no doc.
+  const costDoc = path.join(ROOT, 'docs/cost/zero-paid-llm.md');
+  let doc = null;
+  try { doc = fs.readFileSync(costDoc, 'utf8'); } catch { bad('docs/cost/zero-paid-llm.md does not exist: the $0 ceiling is enforced in the router but written down nowhere'); }
+  let claude = null;
+  try { claude = fs.readFileSync(path.join(ROOT, 'CLAUDE.md'), 'utf8'); } catch { bad('CLAUDE.md does not exist: an agent entering this repo is told nothing about the cost ceiling'); }
+  if (claude !== null && !/nothing paid/i.test(claude)) bad('CLAUDE.md does not carry the "nothing paid" rule, so the ceiling is three files deep from where an agent starts');
+  else if (claude !== null) good('CLAUDE.md carries the "nothing paid" rule where an agent starts reading');
+  if (doc !== null) {
+    const ceiling = Number(routing.policy && routing.policy.max_cost_usd);
+    const stated = [...doc.matchAll(/\$([0-9]+(?:\.[0-9]+)?)/g)].map((m) => Number(m[1]));
+    if (!stated.length) bad('docs/cost/zero-paid-llm.md states no dollar ceiling, so nothing in it can be compared with config/llm_routing.json');
+    const wrong = stated.filter((n) => n !== ceiling);
+    if (wrong.length) bad(`docs/cost/zero-paid-llm.md states a ceiling of $${wrong.join(', $')} while config/llm_routing.json allows $${ceiling}`);
+    const linked = [...doc.matchAll(/\]\((\.{1,2}\/[^)#]+)\)/g)].map((m) => m[1]);
+    const missing = linked.filter((l) => !fs.existsSync(path.resolve(path.dirname(costDoc), l)));
+    if (missing.length) bad(`docs/cost/zero-paid-llm.md points at files that do not exist: ${missing.join(', ')}`);
+    if (!linked.length) bad('docs/cost/zero-paid-llm.md points at no file, so it describes a rule rather than locating it');
+    if (!wrong.length && !missing.length && stated.length && linked.length) {
+      good(`docs/cost/zero-paid-llm.md states $${ceiling}, matches config/llm_routing.json, and its ${linked.length} file pointers all resolve`);
+    }
+  }
+
   // No script in this repository may name a provider model outside the router and its config.
   const offenders = [];
   const walk = (dir) => {
@@ -175,7 +209,7 @@ try {
 }
 
 // ─── Verdict ────────────────────────────────────────────────────────────────
-if (proved < 12) bad(`NAMED STOP [TOO_FEW_PROOFS] only ${proved} things were proved; this validator cannot have run over the real tree`);
+if (proved < 14) bad(`NAMED STOP [TOO_FEW_PROOFS] only ${proved} things were proved; this validator cannot have run over the real tree`);
 if (problems.length) {
   console.error(`\nFAIL: ${problems.length} problem(s) in the measurement lane`);
   for (const p of problems) console.error(`  - ${p}`);

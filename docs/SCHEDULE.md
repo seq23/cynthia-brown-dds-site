@@ -11,6 +11,7 @@ schedule); see the notes below for what moved.
 | Search Loop (seq23/search-loop@v1) | `search-loop.yml` | daily 06:17 CT (+ engine stagger 0–39 min) | `17 6 * * *` |
 | Search Intelligence (Search Console truth, index coverage, sitemap status) | `search-intelligence.yml` | daily 06:40 CT | `40 6 * * *` |
 | Weekly Outcome Report (week over week, one self-closing issue) | `weekly-outcome-report.yml` | Mon 06:49 CT | `49 6 * * 1` |
+| Entity Backlink Watch (refetch every sameAs profile, self-heal `entity.json`) | `entity-backlink-watch.yml` | Wed 05:25 CT | `25 5 * * 3` |
 
 ## Notes
 
@@ -20,6 +21,12 @@ schedule); see the notes below for what moved.
   search loop, because both commit to `main` and a race would lose one of them. The Monday
   06:49 CT report is deliberately inside the otherwise-clear Monday window: it only reads files and
   opens an issue, and it has to land before her Monday morning.
+- Added 3 Nov 2026 (Search Readiness k6): Entity Backlink Watch runs Wednesdays 05:25 CT - clear of
+  Thursday's content publish, of the 06:17 search loop and 06:40 search intelligence, and of the
+  Monday window. It also runs on any push to `main` that touches `entity.json` or its own script, so
+  a profile added in a PR is proved the moment it lands rather than up to a week later. It opens a PR
+  when it heals the file and one self-closing issue when a profile stops naming the site; it never
+  commits to `main` and never deploys.
 - `post-deploy-live-check.yml` has no cron. It runs on every push to `main`, waits for the
   Cloudflare Pages check run on that commit, then looks at the live host.
 - Monday 04:00–08:00 CT is kept clear: this repo's Monday jobs moved to quiet early-morning
