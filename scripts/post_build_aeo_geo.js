@@ -23,6 +23,53 @@ function htmlFiles(dir){
 }
 const site = readJson('data/system/site_config.json');
 const SITE = site.siteUrl.replace(/\/$/,'');
+const locations = readJson('data/system/locations.json');
+const booking = readJson('data/system/booking_links.json');
+
+// ── The site's own entity, on EVERY page ────────────────────────────────────────────────────────
+// Search Readiness c1 and c3. Two separate defects were behind them:
+//   - Inner pages carried no Organization at all, and the homepage's Dentist node had no logo and
+//     no sameAs, so nothing told an answer engine which real-world business these pages belong to.
+//   - /questions/ pages are finished HTML from the shared search loop (seq23/search-loop). Their
+//     Article carries a nested author/publisher Organization with only a name and a url. This file
+//     used to skip schema injection entirely for any page that already had JSON-LD, so those pages
+//     never got the site's own entity. The site entity is now injected FIRST in the head of every
+//     page, and page-level schema is still only added where there is none.
+// Telephone and address come from data/system/locations.json, read from the approved external
+// booking page; nothing here is typed twice or estimated.
+const mapsUrl = (l) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${l.streetAddress}, ${l.addressLocality}, ${l.addressRegion} ${l.postalCode}`)}`;
+const LOGO = `${SITE}/assets/icons/icon-512.png`;
+// The practice's own provider profile, already the site's approved booking destination: the one
+// external page that is the same real-world entity. Never a guessed or invented profile URL.
+const SAME_AS = [booking.defaultBookingUrl];
+const byId = (id) => locations.locations.find((l) => l.id === id);
+const postal = (l) => ({"@type":"PostalAddress","streetAddress":l.streetAddress,"addressLocality":l.addressLocality,"addressRegion":l.addressRegion,"postalCode":l.postalCode,"addressCountry":l.addressCountry});
+function practice(l, suffix) {
+  return {
+    "@type": ["Dentist", "LocalBusiness"],
+    "@id": `${SITE}/#${suffix}`,
+    "name": suffix === 'practice' ? site.brandName : `${site.brandName} — ${l.name}`,
+    "url": suffix === 'practice' ? SITE : `${SITE}/locations/`,
+    "logo": LOGO,
+    "image": `${SITE}${site.defaultOgImage}`,
+    "sameAs": SAME_AS,
+    "telephone": l.telephone,
+    "address": postal(l),
+    "hasMap": mapsUrl(l),
+    "areaServed": suffix === 'practice' ? locations.areaServed : [`${l.addressLocality}, Mississippi`],
+    "medicalSpecialty": "Dentistry"
+  };
+}
+const primary = byId(locations.primary);
+if (!primary) throw new Error(`NAMED STOP [LOCATIONS_PRIMARY_MISSING] data/system/locations.json primary "${locations.primary}" is not in its own locations list`);
+const siteEntity = {
+  "@context": "https://schema.org",
+  "@graph": [
+    { ...practice(primary, 'practice'),
+      "department": locations.locations.filter((l) => l.id !== locations.primary).map((l) => practice(l, l.id)) }
+  ]
+};
+const siteEntityScript = `<script type="application/ld+json">${JSON.stringify(siteEntity)}</script>`;
 const contents = [...fs.readdirSync(path.join(root,'content/insights')).map(f=>path.join(root,'content/insights',f)), ...fs.readdirSync(path.join(root,'content/white-papers')).map(f=>path.join(root,'content/white-papers',f))].filter(f=>f.endsWith('.md')).map(parseMd);
 const publicItems = contents.filter(item=>isPublic(item.meta));
 
@@ -37,6 +84,8 @@ for(const file of htmlFiles(dist)){
   if(route === '/'){
     schema = [
       {"@context":"https://schema.org","@type":"WebSite","name":"Dr. Cynthia Brown, DDS","url":SITE,"description":"Personal professional website for Dr. Cynthia Brown, DDS."},
+      // Search Readiness c2: WebSite belongs on the homepage, WebPage on EVERY page, this one included.
+      {"@context":"https://schema.org","@type":"WebPage","name":(html.match(/<title>(.*?)<\/title>/)||[])[1]||'Dr. Cynthia Brown DDS',"url":url,"isPartOf":{"@id":`${SITE}/#practice`}},
       {"@context":"https://schema.org","@type":"Dentist","name":"Dr. Cynthia Brown, DDS","url":SITE,"image":`${SITE}${site.defaultOgImage}`,"areaServed":["Olive Branch, Mississippi","Southaven, Mississippi"],"alumniOf":[{"@type":"CollegeOrUniversity","name":"Spelman College"},{"@type":"CollegeOrUniversity","name":"Meharry Medical College School of Dentistry"}],"knowsAbout":["preventive dentistry","restorative dentistry","cosmetic dentistry","dental anxiety","smile confidence","dentures","implants","whitening","emergency dental care"]}
     ];
   } else {
@@ -54,7 +103,9 @@ for(const file of htmlFiles(dist)){
   }
   schema.push({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":SITE},{"@type":"ListItem","position":2,"name":route==='/'?'Home':rel.split('/').map(s=>s.replace(/-/g,' ')).join(' / '),"item":url}]});
   const script = `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
-  html = html.includes('application/ld+json') ? html : html.replace('</head>', `${script}</head>`);
+  if (!html.includes('application/ld+json')) html = html.replace('</head>', `${script}</head>`);
+  // First in the head, so the site's entity is the first Organization a reader meets on the page.
+  html = html.replace('<head>', `<head>${siteEntityScript}`);
   fs.writeFileSync(file, html);
 }
 

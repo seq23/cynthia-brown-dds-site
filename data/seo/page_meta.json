@@ -1,6 +1,47 @@
 {
+  "_why": "The <title> and meta description for every page build_site.js writes itself. One file so Search Readiness b1 (title 30-65, unique) and b2 (description 120-160) are checked in one place; scripts/validate_head_and_schema.js enforces both against the built pages, and the build stops on a route that is missing here. Resource and question pages carry their own: resources from seoTitle/seoDescription in their frontmatter, question pages from the shared search loop.",
   "/": {
-    "title": "Dr. Cynthia Brown, DDS | Olive Branch + Southaven Dentist",
-    "description": "Personal professional website for Dr. Cynthia Brown, DDS, dentist and practice owner serving patients in Olive Branch and Southaven, Mississippi."
+    "title": "Dr. Cynthia Brown, DDS | Olive Branch and Southaven Dentist",
+    "description": "Dr. Cynthia Brown, DDS is a dentist and practice owner seeing patients in Olive Branch and Southaven, Mississippi. Clear dental education, no pressure."
+  },
+  "about": {
+    "title": "About Dr. Cynthia Brown, DDS | Olive Branch Dentist",
+    "description": "A Memphis native, Spelman graduate and Meharry-trained dentist. Dr. Brown on her background, her approach in the chair, and what a visit is like."
+  },
+  "locations": {
+    "title": "Locations | Dr. Cynthia Brown, DDS",
+    "description": "Dr. Cynthia Brown, DDS sees patients in Olive Branch and Southaven, Mississippi. Choose a location and continue to the current scheduling page to book."
+  },
+  "services": {
+    "title": "Services | Dr. Cynthia Brown, DDS",
+    "description": "An educational overview of preventive, restorative and cosmetic dental care, emergencies, dentures, implants and whitening questions, in plain language."
+  },
+  "smile-philosophy": {
+    "title": "Smile Philosophy | Dr. Cynthia Brown, DDS",
+    "description": "Confidence is not only appearance. How Dr. Brown thinks about health, comfort and clarity together, and why informed patients make calmer decisions."
+  },
+  "book": {
+    "title": "Book a Visit | Dr. Cynthia Brown, DDS",
+    "description": "Choose Olive Branch or Southaven, Mississippi and continue to the approved scheduling page. Appointments and insurance are handled by the practice office."
+  },
+  "privacy": {
+    "title": "Privacy | Dr. Cynthia Brown, DDS",
+    "description": "This static website collects no patient health information, runs no intake forms and provides no emergency response. What the host logs, and what it does not."
+  },
+  "disclaimer": {
+    "title": "Disclaimer | Dr. Cynthia Brown, DDS",
+    "description": "This website is general dental education only. It is not dental or medical advice and does not replace an examination by a licensed dental professional."
+  },
+  "resources": {
+    "title": "Resources | Dr. Cynthia Brown, DDS",
+    "description": "Monthly dental insights and quarterly guides on anxiety, whitening, prevention and urgent symptoms, written for patients who want clarity before an appointment."
+  },
+  "questions": {
+    "title": "Patient Questions | Dr. Cynthia Brown, DDS",
+    "description": "Plain-language answers to everyday dental questions from patients in Olive Branch and Southaven, Mississippi, from bleeding gums to whitening options."
+  },
+  "404": {
+    "title": "Page Not Found | Dr. Cynthia Brown, DDS",
+    "description": "That page is not on this site. Use the links here to reach About, Services, Locations, Resources, patient questions, or the booking page for either office."
   }
 }

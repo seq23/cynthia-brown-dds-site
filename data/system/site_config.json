@@ -3,6 +3,11 @@
   "githubRepoUrl": "https://github.com/seq23/cynthia-brown-dds-site",
   "githubEditBase": "https://github.com/seq23/cynthia-brown-dds-site/edit/main/",
   "brandName": "Dr. Cynthia Brown, DDS",
-  "defaultOgImage": "/assets/portraits/optimized/cynthia-brown-dds-dental-coat-portrait-1200.webp",
-  "adminSecurityNotice": "The static admin panel is a convenience review dashboard, not real authentication. It must not contain patient data, secrets, or private health information."
+  "defaultOgImage": "/assets/og/cynthia-brown-dds-og.png",
+  "adminSecurityNotice": "The static admin panel is a convenience review dashboard, not real authentication. It must not contain patient data, secrets, or private health information.",
+  "defaultOgImageSize": {
+    "width": 1200,
+    "height": 630
+  },
+  "_ogImageWhy": "A 1200x630 card on the site's own host, the same one the shared search loop already uses on /questions/ pages. The portrait PNGs are 1122x1402 and are not a social card."
 }
