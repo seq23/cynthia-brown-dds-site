@@ -1,0 +1,34 @@
+{
+  "_why": "The practice locations in one place, read by the build for the LocalBusiness/Dentist JSON-LD (telephone, address, hasMap, areaServed) and by nothing else. Search Readiness item c3: a local business node without a phone and a map link is not read by the local pack.",
+  "_source": "Street address and telephone for each location were read on 2026-11-03 from the practice's approved external booking page (data/system/booking_links.json -> defaultBookingUrl), which publishes them as facility data. The same addresses already appear in the site footer. Nothing here is estimated; if a location's details change, re-read that page.",
+  "_noGeoWhy": "No latitude/longitude: coordinates were not published by that source, and an estimated coordinate is an invented fact. hasMap is built from the verified postal address instead.",
+  "_verifiedOn": "2026-11-03",
+  "primary": "olive-branch",
+  "locations": [
+    {
+      "id": "olive-branch",
+      "name": "Olive Branch",
+      "streetAddress": "8179 McGregor Crossing",
+      "addressLocality": "Olive Branch",
+      "addressRegion": "MS",
+      "postalCode": "38654",
+      "addressCountry": "US",
+      "telephone": "+1-662-408-3352"
+    },
+    {
+      "id": "southaven",
+      "name": "Southaven",
+      "streetAddress": "50 Goodman Road West, STE 2",
+      "addressLocality": "Southaven",
+      "addressRegion": "MS",
+      "postalCode": "38671",
+      "addressCountry": "US",
+      "telephone": "+1-662-470-2284"
+    }
+  ],
+  "areaServed": [
+    "Olive Branch, Mississippi",
+    "Southaven, Mississippi"
+  ],
+  "_areaServedWhy": "Only the two places the site itself says Dr. Brown sees patients. Nearby towns are not added: an areaServed the site does not claim in its own copy would be an unsupported claim."
+}

@@ -61,7 +61,7 @@ function layout(title, desc, body, extra = '', opts = {}) {
   const robots = opts.noindex ? '<meta name="robots" content="noindex, nofollow, noarchive">' : '';
   const preloadHero = opts.preloadHero ? `<link rel="preload" as="image" href="/assets/portraits/optimized/cynthia-brown-dds-dental-coat-portrait-1000.webp" imagesrcset="/assets/portraits/optimized/cynthia-brown-dds-dental-coat-portrait-700.webp 700w, /assets/portraits/optimized/cynthia-brown-dds-dental-coat-portrait-1000.webp 1000w, /assets/portraits/optimized/cynthia-brown-dds-dental-coat-portrait-1200.webp 1200w" imagesizes="(max-width: 640px) 92vw, (max-width: 980px) 78vw, 48vw">` : '';
   return `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(title)}</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="${canonical}">${robots}<meta name="theme-color" content="#143d2c"><meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${SITE_URL}${esc(siteConfig.defaultOgImage)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}"><meta name="twitter:image" content="${SITE_URL}${esc(siteConfig.defaultOgImage)}"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">${preloadHero}<link rel="stylesheet" href="/assets/css/styles.css"></head><body>${nav()}${body}${footer()}<script src="/assets/js/site.js" defer></script>${extra}</body></html>`;
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(title)}</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="${canonical}">${robots}<meta name="theme-color" content="#143d2c"><meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${canonical}"><meta property="og:site_name" content="${esc(siteConfig.brandName)}"><meta property="og:image" content="${SITE_URL}${esc(siteConfig.defaultOgImage)}"><meta property="og:image:width" content="${siteConfig.defaultOgImageSize.width}"><meta property="og:image:height" content="${siteConfig.defaultOgImageSize.height}"><meta property="og:image:alt" content="${esc(siteConfig.brandName)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}"><meta name="twitter:image" content="${SITE_URL}${esc(siteConfig.defaultOgImage)}"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">${preloadHero}<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/icon-192.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="stylesheet" href="/assets/css/styles.css"></head><body>${nav()}${body}${footer()}<script src="/assets/js/site.js" defer></script>${extra}</body></html>`;
 }
 function nav() {
   return `<header class="nav"><div class="container nav-inner"><a class="brand" href="/">Dr. Cynthia Brown, DDS</a><button class="menu-toggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="Open navigation menu">Menu</button><nav class="nav-links" id="primaryNav"><a href="/about/">About</a><a href="/services/">Services</a><a href="/locations/">Locations</a><a href="/resources/">Resources</a><a href="/book/" class="btn">Book a Visit</a></nav></div></header>`;
@@ -163,6 +163,34 @@ writePage('questions', layout('Patient Questions | Dr. Cynthia Brown, DDS', 'Pla
 
 const urls = ['/', '/about/', '/locations/', '/services/', '/smile-philosophy/', '/resources/', '/questions/', '/book/', '/privacy/', '/disclaimer/', ...publicItems.map(item => `/resources/${item.meta.type === 'quarterly_white_paper' ? 'white-papers' : 'insights'}/${item.meta.slug}/`), ...questionPages.map(q => q.route)];
 fs.writeFileSync(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(u => `<url><loc>${SITE_URL}${u}</loc></url>`).join('')}</urlset>`);
+// ── Root files every browser and crawler asks for by a fixed path ────────────────────────────
+// Cloudflare Pages serves index.html with a 200 for ANY unmatched path when a project has no
+// 404.html. That soft-404 made /favicon.ico, /apple-touch-icon.png, /site.webmanifest and every
+// typo'd URL answer 200 with the homepage (Search Readiness a9, 3 Nov 2026). A real 404.html makes
+// Pages answer 404, and the icons below are real files at the paths browsers actually request.
+fs.copyFileSync(path.join(root, 'assets/icons/favicon.ico'), path.join(dist, 'favicon.ico'));
+fs.copyFileSync(path.join(root, 'assets/icons/apple-touch-icon.png'), path.join(dist, 'apple-touch-icon.png'));
+fs.writeFileSync(path.join(dist, 'site.webmanifest'), JSON.stringify({
+  name: siteConfig.brandName,
+  short_name: 'Dr. Brown, DDS',
+  start_url: '/',
+  scope: '/',
+  display: 'standalone',
+  background_color: '#fbf6ee',
+  theme_color: '#143d2c',
+  icons: [
+    { src: '/assets/icons/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+    { src: '/assets/icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' }
+  ]
+}, null, 2));
+fs.writeFileSync(path.join(dist, '404.html'), layout(
+  'Page Not Found | Dr. Cynthia Brown, DDS',
+  'That page is not on this site. Use the links here to reach About, Services, Locations, Resources, patient questions, or the booking page for Olive Branch and Southaven.',
+  pageHero('That page is not here', 'The link may be old or mistyped. Everything on this site is one step away below.') +
+  `<section class="section"><div class="container"><div class="grid three"><div class="card"><h3>Meet Dr. Brown</h3><p>Education, background, and what patients can expect in the chair.</p><p><a class="btn secondary" href="/about/">About</a></p></div><div class="card"><h3>Patient questions</h3><p>Plain-language answers to everyday dental questions, from bleeding gums to whitening.</p><p><a class="btn secondary" href="/questions/">Questions</a></p></div><div class="card"><h3>Book a visit</h3><p>Choose Olive Branch or Southaven and continue to the current scheduling page.</p><p><a class="btn" href="/book/">Book</a></p></div></div></div></section>`,
+  '', { noindex: true, canonical: `${SITE_URL}/404.html` }
+));
+
 // robots.txt source of truth lives at seo/robots.txt (citation-first crawl policy).
 copy(path.join(root, 'seo/robots.txt'), path.join(dist, 'robots.txt'));
 // IndexNow key file(s): seo/<key>.txt served at the site root (key is public by design).
