@@ -34,3 +34,11 @@ cannot decide is whether those profiles are still alive out in the world, so tha
 `entity-backlink-watch.yml`: it refetches each one, parks a dead profile and promotes a verified
 pending one as a PR, and opens one self-closing issue when a profile that is supposed to link back
 stops doing so. Its classifier and self-heal are proved by `--self-test` before the job trusts them.
+
+Added 3 Nov 2026 (Search Readiness i10): the $0 language-model ceiling was enforced in
+`scripts/llm/router.js` but written down nowhere, so the next agent in the repo had no way to find it
+before adding a paid call. `CLAUDE.md` now carries the rule where an agent starts reading and
+`docs/cost/zero-paid-llm.md` holds it in full. `validate_search_measurement.js` guards the three
+things that can rot - the rule line is there, every file the doc points at still exists, and the
+ceiling the doc states is the ceiling `config/llm_routing.json` actually allows. It does not pin any
+wording: a doc that claims $0 while the config allows spending is the defect, not a phrasing change.
