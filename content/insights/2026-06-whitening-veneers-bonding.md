@@ -64,7 +64,9 @@
     }
   ],
   "schemaType": "Article",
-  "lastReviewed": "2026-06-03"
+  "lastReviewed": "2026-06-03",
+  "seoTitle": "Whitening vs Veneers vs Bonding | Dr. Brown, DDS",
+  "seoDescription": "Whitening, veneers and bonding answer different questions. How to think about each, what an exam looks at first, and how to avoid rushing a smile decision."
 }
 ---
 

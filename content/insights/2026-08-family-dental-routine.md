@@ -64,7 +64,9 @@
     }
   ],
   "schemaType": "Article",
-  "lastReviewed": "2026-06-03"
+  "lastReviewed": "2026-06-03",
+  "seoTitle": "Building a Better Family Dental Routine | Dr. Brown",
+  "seoDescription": "A family dental routine that survives a busy school year: habits worth keeping, what preventive visits are for, and how to space appointments sensibly."
 }
 ---
 

@@ -64,7 +64,9 @@
     }
   ],
   "schemaType": "Article",
-  "lastReviewed": "2026-06-03"
+  "lastReviewed": "2026-06-03",
+  "seoTitle": "A Confidence-Centered Smile Plan for the New Year",
+  "seoDescription": "A calm way to plan a year of dental care: health first, realistic cosmetic goals, and the conversations worth having with a licensed dental professional."
 }
 ---
 
