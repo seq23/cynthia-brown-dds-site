@@ -1,0 +1,22 @@
+{
+  "schema": "cbdds-gsc-truth-v1",
+  "site": "sc-domain:cynthiabrowndds.com",
+  "collected_at": "2026-11-03T13:53:22.863Z",
+  "day": "2026-11-03",
+  "window": {
+    "start": "2026-10-04",
+    "end": "2026-11-01",
+    "days": 28,
+    "lag_days": 2
+  },
+  "totals": {
+    "clicks": 0,
+    "impressions": 0,
+    "ctr": 0,
+    "position": 0,
+    "source": "searchAnalytics with no dimensions, the same window as the rows below"
+  },
+  "queries": [],
+  "pages": [],
+  "days": []
+}

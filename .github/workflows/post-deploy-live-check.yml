@@ -1,0 +1,67 @@
+name: Post-deploy live check
+
+# h4 (Search Readiness, 3 Nov 2026): every other check in this repository reads `dist/`. Between
+# `dist/` and a patient sit the Cloudflare Pages project, a zone-level `www` redirect rule, the
+# /admin Pages Function middleware and Cloudflare's cache - and three of those are configured
+# outside this repository. scripts/live_check.js is the only look at the live host: crawl files,
+# icons, the share card, the homepage's schema frame, a real 404, the www 301, every measured
+# sitemap URL answering 200 on the FIRST hop, the IndexNow key file, and /admin still shut.
+#
+# Cloudflare Pages deploys main outside GitHub Actions and reports back as the "Cloudflare Pages"
+# check run on the commit, so this waits for that check before touching the live site. Read-only and
+# credential-free: every request is an unauthenticated GET or HEAD. No deploy step here.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  checks: read
+
+concurrency:
+  group: post-deploy-live-check
+  cancel-in-progress: true
+
+jobs:
+  live-check:
+    name: Check what the edge serves
+    runs-on: ubuntu-latest
+    timeout-minutes: 22  # a 15-minute deploy-wait ceiling plus the check; a fault detector, not a budget
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Wait for the Cloudflare Pages deploy of this commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ github.sha }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          deadline=$(( $(date +%s) + 900 ))
+          while :; do
+            conclusion="$(gh api "repos/${REPO}/commits/${SHA}/check-runs" --jq '[.check_runs[] | select(.name | startswith("Cloudflare Pages")) | select(.status == "completed") | .conclusion][0] // ""')"
+            if [ "$conclusion" = "success" ]; then echo "DEPLOYED ${SHA}"; break; fi
+            if [ -n "$conclusion" ]; then
+              echo "::error::DEPLOY_NOT_GREEN Cloudflare Pages concluded ${conclusion} for ${SHA}; the live check did not run"
+              exit 1
+            fi
+            if [ "$(date +%s)" -ge "$deadline" ]; then
+              echo "::error::DEPLOY_WAIT_TIMEOUT no completed Cloudflare Pages check for ${SHA} after 15 min"
+              exit 1
+            fi
+            sleep 20
+          done
+
+      - name: Build so the measured URL list is this commit's sitemap
+        run: npm run build
+
+      - name: What the edge serves
+        run: node scripts/live_check.js

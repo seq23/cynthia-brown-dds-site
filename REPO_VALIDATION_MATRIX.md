@@ -12,3 +12,15 @@ by a fixed path. A central audit runs weekly and is not a merge gate, so between
 could ship — and did, on 3 Nov 2026 — 139-character titles, a soft 404 on every unknown path, and
 pages that named no business. Anything the central audit measures that the build cannot decide
 (indexing, Search Console, live hosts) is still checked only centrally.
+
+Added 3 Nov 2026 (Search Readiness e4, e5, h4, i3, i6, i9): `validate_search_measurement.js` is a
+merge gate over the measurement lane — the daily Search Console files, the index-coverage arithmetic,
+the query history that may never shrink, the `:free`-only LLM router, and the three workflows that
+write and report on all of it. It proves behaviour by making it happen (a paid model id is actually
+put into the router's config and refused), and it hard-fails under twelve proofs so it cannot pass
+having looked at nothing.
+
+What is still only central: whether Google indexes a page, the Search Console numbers themselves,
+and anything about the live host between two deploys. `scripts/live_check.js` narrows that last one —
+it is the repo's own look at the live edge after every deploy of `main` — but it is a fault detector
+after the fact, not a merge gate, because the thing it checks does not exist until the deploy does.

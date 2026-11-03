@@ -7,7 +7,13 @@
     "build": "node scripts/build_site.js",
     "validate": "node scripts/validate_all.js",
     "validate:all": "node scripts/validate_all.js",
-    "preflight": "node scripts/build_site.js && node scripts/validate_all.js"
+    "preflight": "node scripts/build_site.js && node scripts/validate_all.js",
+    "search:truth": "node scripts/search_intelligence/collect_gsc_truth.js",
+    "search:coverage": "node scripts/search_intelligence/collect_index_coverage.js",
+    "search:sitemaps": "node scripts/search_intelligence/collect_gsc_sitemaps.js",
+    "search:measure": "npm run build && npm run search:truth && npm run search:sitemaps && npm run search:coverage",
+    "report:weekly": "node scripts/weekly_outcome_report.js",
+    "live-check": "node scripts/build_site.js && node scripts/live_check.js"
   },
   "engines": {
     "node": ">=18"

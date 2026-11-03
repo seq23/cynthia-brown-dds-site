@@ -1,0 +1,82 @@
+name: Search intelligence (daily)
+
+# e4, e5, i6 (Search Readiness, 3 Nov 2026): the only true search numbers for this site, free, and
+# committed here so every other job can read them instead of guessing.
+#
+#   data/search_intelligence/gsc_truth.json          the rolling 28-day window: queries and pages
+#   data/search_intelligence/gsc_query_history.json  every query ever seen, append-only
+#   data/search_intelligence/index_coverage.json     indexed / crawled-not-indexed / discovered per URL
+#   data/search_intelligence/gsc_sitemaps.json       what Search Console says about the sitemap
+#
+# Read-only against Google: the gsc-bot service account owns sc-domain:cynthiabrowndds.com
+# (docs/HOSTING_AND_SEARCH_CONSOLE.md) and GSC_SERVICE_ACCOUNT_JSON is the Actions secret. A missing
+# or refused credential is a NAMED STOP that fails the job - never an empty file committed over a
+# real one. No deploy here: Cloudflare Pages deploys main on its own.
+#
+# 06:40 America/Chicago, ahead of the 06:49 weekly report and clear of the 06:17 search loop, which
+# shares the `main-automation` concurrency group so the two never push over each other.
+
+on:
+  schedule:
+    - cron: '40 6 * * *'  # daily, America/Chicago
+      timezone: America/Chicago
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: main-automation
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    name: Collect Search Console truth, coverage and sitemap status
+    runs-on: ubuntu-latest
+    timeout-minutes: 25  # 150 URL inspections, 8 in flight, is the long pole
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build the site so the sitemap is the real target list
+        run: npm run build
+
+      - name: Search Console query truth and the query history
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+        run: node scripts/search_intelligence/collect_gsc_truth.js
+
+      - name: Sitemap status in Search Console
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+        run: node scripts/search_intelligence/collect_gsc_sitemaps.js
+
+      - name: Index coverage, 150 URLs a day
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+        run: node scripts/search_intelligence/collect_index_coverage.js
+
+      - name: Prove the files before committing them
+        run: node scripts/validate_search_measurement.js
+
+      - name: Commit the day's measurement
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/search_intelligence
+          if git diff --cached --quiet; then
+            echo "::error::NO_MEASUREMENT_WRITTEN the collectors exited 0 but changed nothing; the day was not recorded"
+            exit 1
+          fi
+          git commit -m "search intelligence: Search Console truth, coverage and sitemap status"
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main

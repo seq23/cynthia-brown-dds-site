@@ -52,7 +52,7 @@
   "related": { "max_pages_per_new_page": 2, "scan_dirs": ["questions"], "skip_dirs": [] },
   "gsc": { "site_url": "sc-domain:cynthiabrowndds.com" },
   "indexnow": { "key": "7ca6d924edc87277c3a90d870e8c579f", "key_location": "https://cynthiabrowndds.com/7ca6d924edc87277c3a90d870e8c579f.txt" },
-  "analytics": { "ai_referrals": "none", "ai_bot_hits": "none" },
+  "analytics": { "ai_referrals": "cloudflare", "ai_bot_hits": "cloudflare", "zone": "cynthiabrowndds.com" },
   "conversions": { "source": "none" },
   "shares_audience_with": [],
   "ledger_dir": "data/search-loop"
