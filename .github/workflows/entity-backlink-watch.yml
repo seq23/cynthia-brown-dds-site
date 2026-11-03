@@ -1,0 +1,108 @@
+name: entity backlink watch
+
+# k6 (Search Readiness, authority audit 30 Oct 2026): profiles die, get renamed or stop linking
+# back, and nothing notices. Every week every profile in entity.json is refetched with a desktop
+# browser user agent and given one named state (scripts/entity_backlink_watch.js decides; this file
+# only turns its result into something a person sees):
+#   - a self-heal (a dead sameAs removed and parked, a pending profile promoted) becomes a PR;
+#   - a missing link-back that WAS expected becomes ONE open issue, updated each week while it
+#     lasts and closed by the first run that finds the link again.
+# Rule 0 lives in the script: zero profiles examined fails this job.
+#
+# It also runs on a push to main that touches the entity files, because k6 wants the newest run
+# green and under eight days old: the commit that adds or changes a profile proves it the moment it
+# lands, instead of waiting up to a week for the cron.
+#
+# Wednesdays 05:25 America/Chicago - clear of Thursday's content publish, of the 06:17 search loop
+# and 06:40 search intelligence, and of the Monday 04:00-08:00 window this repo keeps free.
+
+on:
+  schedule:
+    - cron: '25 5 * * 3'  # Wednesdays, America/Chicago
+      timezone: America/Chicago
+  push:
+    branches: [main]
+    paths:
+      - 'entity.json'
+      - 'scripts/entity_backlink_watch.js'
+      - '.github/workflows/entity-backlink-watch.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: entity-backlink-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    name: Refetch every profile, self-heal entity.json
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Prove the classifier and the self-heal before trusting them
+        run: node scripts/entity_backlink_watch.js --self-test
+
+      - name: Fetch every profile, classify, self-heal entity.json
+        env:
+          WATCH_REPORT: ${{ runner.temp }}/entity-watch.json
+        run: node scripts/entity_backlink_watch.js | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: The healed entity.json is still a valid identity
+        run: npm run -s build && node scripts/validate_entity_graph.js
+
+      - name: Self-heal as a pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- entity.json; then echo "entity.json unchanged"; exit 0; fi
+          BRANCH="entity-watch/$(date -u +%Y-%m-%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$BRANCH"
+          git add entity.json
+          git commit -m "entity-watch: self-heal sameAs ($(date -u +%Y-%m-%d))"
+          git push -f origin "$BRANCH"
+          BODY="$(node -e 'const r=JSON.parse(require("fs").readFileSync(process.env.RUNNER_TEMP+"/entity-watch.json","utf8"));console.log(["The weekly entity backlink watch changed entity.json:","",...r.changes.map(c=>`- ${c}`)].join("\n"))')"
+          gh pr view "$BRANCH" --repo "$REPO" >/dev/null 2>&1 \
+            || gh pr create --repo "$REPO" --head "$BRANCH" --base main --title "entity-watch: self-heal sameAs" --body "$BODY"
+
+      - name: A missing link-back as one self-closing issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          REPORT: ${{ runner.temp }}/entity-watch.json
+        run: |
+          set -euo pipefail
+          REPORT="$RUNNER_TEMP/entity-watch.json"
+          [ -f "$REPORT" ] || { echo "no report to read"; exit 0; }
+          TITLE='Named stop: an entity profile stopped naming cynthiabrowndds.com'
+          STOPS="$(node -e 'console.log(JSON.parse(require("fs").readFileSync(process.env.REPORT,"utf8")).stops.join("\n\n"))')"
+          OPEN="$(gh issue list --repo "$REPO" --state open --label entity-linkback --json number --jq '.[0].number // ""')"
+          if [ -n "$STOPS" ]; then
+            BODY="$(printf '%s\n\nChecked %s by the weekly entity backlink watch. Closes itself on the first run that finds the link.' "$STOPS" "$(date -u +%Y-%m-%d)")"
+            if [ -n "$OPEN" ]; then
+              gh issue comment "$OPEN" --repo "$REPO" --body "$BODY"
+            else
+              gh label create entity-linkback --repo "$REPO" --description "The weekly entity backlink watch opened this" --color B60205 2>/dev/null || true
+              gh issue create --repo "$REPO" --title "$TITLE" --label entity-linkback --body "$BODY"
+            fi
+          elif [ -n "$OPEN" ]; then
+            gh issue close "$OPEN" --repo "$REPO" --comment "Every profile named the site again on $(date -u +%Y-%m-%d); cleared by the weekly watch."
+          else
+            echo "every profile accounted for, and no open entity-linkback issue: nothing to do"
+          fi
