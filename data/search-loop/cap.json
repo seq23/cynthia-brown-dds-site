@@ -1,0 +1,23 @@
+{
+  "schema": "search-loop-cap-v1",
+  "max_live_pages": 20,
+  "config_value": null,
+  "reason": "held at 20: no Search Console numbers to judge results (Search Console: HTTP 403 User does not have sufficient permission for site 'sc-domain:cynthiabrowndds.com'. See also: https:/); the cap never grows without data",
+  "last_eval_week": "2026-W45",
+  "history": [
+    {
+      "at": "2026-11-03T12:42:21.771Z",
+      "from": null,
+      "to": 20,
+      "reason": "started at 20: the site's 7 distinct live engine page(s), raised to the starting floor of 20"
+    },
+    {
+      "at": "2026-11-03T12:27:21.078Z",
+      "week": "2026-W45",
+      "from": 20,
+      "to": 20,
+      "reason": "held at 20: no Search Console numbers to judge results (Search Console: HTTP 403 User does not have sufficient permission for site 'sc-domain:cynthiabrowndds.com'. See also: https:/); the cap never grows without data"
+    }
+  ],
+  "held": {}
+}

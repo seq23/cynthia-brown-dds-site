@@ -1431,5 +1431,51 @@
       "kind": "new"
     }
   ],
-  "strengthen": []
+  "strengthen": [
+    {
+      "query": "dental anxiety dentist",
+      "page": "/questions/dental-olive-branch-ms/",
+      "url": "https://cynthiabrowndds.com/questions/dental-olive-branch-ms/",
+      "score": 30,
+      "from": "distinct-gate",
+      "matched_by": "same 3 intent words plus modifiers",
+      "at": "2026-11-03"
+    },
+    {
+      "query": "dental anxiety",
+      "page": "/questions/how-to-ease-dental-anxiety/",
+      "url": "https://cynthiabrowndds.com/questions/how-to-ease-dental-anxiety/",
+      "score": 30,
+      "from": "distinct-gate",
+      "matched_by": "high token overlap (0.67 >= 0.6)",
+      "at": "2026-11-03"
+    },
+    {
+      "query": "dentist southaven ms accepting payment plans",
+      "page": "/questions/dentist-olive-branch-mississippi/",
+      "url": "https://cynthiabrowndds.com/questions/dentist-olive-branch-mississippi/",
+      "score": 30,
+      "from": "distinct-gate",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "at": "2026-11-03"
+    },
+    {
+      "query": "dentist near olive branch ms",
+      "page": "/questions/dentist-olive-branch-mississippi/",
+      "url": "https://cynthiabrowndds.com/questions/dentist-olive-branch-mississippi/",
+      "score": 30,
+      "from": "distinct-gate",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "at": "2026-11-03"
+    },
+    {
+      "query": "affordable dentist olive branch ms",
+      "page": "/questions/dentist-olive-branch-mississippi/",
+      "url": "https://cynthiabrowndds.com/questions/dentist-olive-branch-mississippi/",
+      "score": 30,
+      "from": "distinct-gate",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "at": "2026-11-03"
+    }
+  ]
 }

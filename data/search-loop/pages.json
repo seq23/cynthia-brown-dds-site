@@ -26,7 +26,12 @@
       ],
       "linked_from": [],
       "checks": {},
-      "indexnow_at": "2026-11-02"
+      "indexnow_at": "2026-11-02",
+      "extra_queries": [
+        "affordable dentist olive branch ms",
+        "dentist near olive branch ms",
+        "dentist southaven ms accepting payment plans"
+      ]
     },
     {
       "slug": "how-to-ease-dental-anxiety",
@@ -53,7 +58,10 @@
       ],
       "linked_from": [],
       "checks": {},
-      "indexnow_at": "2026-11-02"
+      "indexnow_at": "2026-11-02",
+      "extra_queries": [
+        "dental anxiety"
+      ]
     },
     {
       "slug": "why-do-i-have-dental-anxiety",
@@ -180,7 +188,399 @@
       ],
       "linked_from": [],
       "checks": {},
-      "indexnow_at": "2026-11-02"
+      "indexnow_at": "2026-11-02",
+      "extra_queries": [
+        "dental anxiety dentist"
+      ]
+    },
+    {
+      "slug": "dentist-in-olive-branch-ms-on-goodman-rd",
+      "query": "dentist in olive branch ms on goodman rd",
+      "score": 30,
+      "signals": {
+        "words": 8,
+        "question": false,
+        "google_suggest": true,
+        "local": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/dentist-in-olive-branch-ms-on-goodman-rd/index.html",
+      "route": "/questions/dentist-in-olive-branch-ms-on-goodman-rd/",
+      "url": "https://cynthiabrowndds.com/questions/dentist-in-olive-branch-ms-on-goodman-rd/",
+      "published_at": "2026-11-03",
+      "status": "live",
+      "hash": "454e35e53b1b88cb5c4a56e220761d04fab2f8303cbb2a43c853343ef4c14fd7",
+      "model": "free-route",
+      "facts": [
+        "https://www.cdc.gov/oral-health/about/index.html",
+        "https://www.nidcr.nih.gov/health-info/gum-disease"
+      ],
+      "linked_from": [
+        {
+          "rel": "questions/dental-olive-branch-ms/index.html",
+          "route": "/questions/dental-olive-branch-ms/",
+          "before_hash": "7c32b0e07ac12d116f046b216c433a9d145914d298c30b4913c33e91f2fb1cfd",
+          "after_hash": "82559c0fc45def8317b5ea49cde231432116358c2c09132cc6ebac6591c1eda8"
+        },
+        {
+          "rel": "questions/dentist-olive-branch-mississippi/index.html",
+          "route": "/questions/dentist-olive-branch-mississippi/",
+          "before_hash": "738051e0298acf335b809f3daa69912a307f1c27321b6cefdeb6a2256f127348",
+          "after_hash": "00c3e1c6ce52e8aea2d2c42a3531f03bf8b5c501822809f8f25c4fb559ba8bc1"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 37 words (aim 40-60): \"What services are available at a dental office on \"",
+        "b5 FAQ answer is 34 words (aim 40-60): \"What should I do if I feel nervous about visiting \"",
+        "b5 FAQ answer is 34 words (aim 40-60): \"How often should adults schedule a routine dental \"",
+        "b5 FAQ answer is 34 words (aim 40-60): \"Can I improve the appearance of stained or discolo\""
+      ],
+      "indexnow_at": "2026-11-03"
+    },
+    {
+      "slug": "dentist-southaven-ms-getwell",
+      "query": "dentist southaven ms getwell",
+      "score": 30,
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "local": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/dentist-southaven-ms-getwell/index.html",
+      "route": "/questions/dentist-southaven-ms-getwell/",
+      "url": "https://cynthiabrowndds.com/questions/dentist-southaven-ms-getwell/",
+      "published_at": "2026-11-03",
+      "status": "live",
+      "hash": "cb1ac40c20d4d30c785fa6d62f0754937376c1a025ef5d85156e5a6ccb9da97a",
+      "model": "free-route",
+      "facts": [
+        "https://www.nidcr.nih.gov/health-info/gum-disease"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 39 words (aim 40-60): \"How often should I see a dentist for preventive ca\"",
+        "b5 FAQ answer is 37 words (aim 40-60): \"Can I get help for stained or discolored teeth?\"",
+        "b5 FAQ answer is 35 words (aim 40-60): \"What happens during an emergency dental visit?\""
+      ],
+      "indexnow_at": "2026-11-03"
+    },
+    {
+      "slug": "emergency-dentist-southaven-ms",
+      "query": "emergency dentist southaven ms",
+      "score": 30,
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "local": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/emergency-dentist-southaven-ms/index.html",
+      "route": "/questions/emergency-dentist-southaven-ms/",
+      "url": "https://cynthiabrowndds.com/questions/emergency-dentist-southaven-ms/",
+      "published_at": "2026-11-03",
+      "status": "live",
+      "hash": "ecf4db3925ceb0fff5e45106566526b3e6a9236723e0bbde1bb1b0c1663c194a",
+      "model": "free-route",
+      "facts": [
+        "https://www.nidcr.nih.gov/"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 37 words (aim 40-60): \"What should I do if a tooth gets knocked out?\"",
+        "b5 FAQ answer is 33 words (aim 40-60): \"Is a severe toothache always an emergency?\"",
+        "b5 FAQ answer is 34 words (aim 40-60): \"What if I broke a crown or filling?\"",
+        "b5 FAQ answer is 37 words (aim 40-60): \"How can I prepare for an emergency dental visit?\""
+      ],
+      "indexnow_at": "2026-11-03"
+    },
+    {
+      "slug": "dental-anxiety-medication",
+      "query": "dental anxiety medication",
+      "score": 30,
+      "signals": {
+        "words": 3,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/dental-anxiety-medication/index.html",
+      "route": "/questions/dental-anxiety-medication/",
+      "url": "https://cynthiabrowndds.com/questions/dental-anxiety-medication/",
+      "published_at": "2026-11-03",
+      "status": "live",
+      "hash": "b92f45e195d6b4fd31be5838fe8c036ddf4afe5fa25ec8b713556896674246df",
+      "model": "free-route",
+      "facts": [
+        "https://www.ncbi.nlm.nih.gov/pmc/"
+      ],
+      "linked_from": [
+        {
+          "rel": "questions/dental-anxiety-in-adults/index.html",
+          "route": "/questions/dental-anxiety-in-adults/",
+          "before_hash": "849956bd485d4ebfb33ba8307794256e37e2af9a824dbc22f1aec5223d56c56f",
+          "after_hash": "e1ea71de72fb4abf51a2d8f77de6008dc3a8ff921760c7e36c79bc7e1e18c82d"
+        },
+        {
+          "rel": "questions/how-to-ease-dental-anxiety/index.html",
+          "route": "/questions/how-to-ease-dental-anxiety/",
+          "before_hash": "d61fdb6cb6e5a6da9b66ffb1f55550acda91206640b7cd9566afa30c49f97148",
+          "after_hash": "2b3caf3dc6cc11f80afe7c5ec31f2ccfb1aea97ef7e849e724557eeac2fa928d"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 37 words (aim 40-60): \"Is it normal to feel nervous about seeing the dent\""
+      ],
+      "indexnow_at": "2026-11-03"
+    },
+    {
+      "slug": "dental-anxiety-management",
+      "query": "dental anxiety management",
+      "score": 30,
+      "signals": {
+        "words": 3,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/dental-anxiety-management/index.html",
+      "route": "/questions/dental-anxiety-management/",
+      "url": "https://cynthiabrowndds.com/questions/dental-anxiety-management/",
+      "published_at": "2026-11-03",
+      "status": "live",
+      "hash": "2c8d6222d9897f8f0078161d8b28b95210219b1c6bdc405e0d8f470962ff4583",
+      "model": "free-route",
+      "facts": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4728557/"
+      ],
+      "linked_from": [
+        {
+          "rel": "questions/dental-anxiety-in-adults/index.html",
+          "route": "/questions/dental-anxiety-in-adults/",
+          "before_hash": "e1ea71de72fb4abf51a2d8f77de6008dc3a8ff921760c7e36c79bc7e1e18c82d",
+          "after_hash": "a1d3cd99c3a76041a15e7125592c491af6978b445d1a4f7363e751117919a7a7"
+        },
+        {
+          "rel": "questions/how-to-ease-dental-anxiety/index.html",
+          "route": "/questions/how-to-ease-dental-anxiety/",
+          "before_hash": "2b3caf3dc6cc11f80afe7c5ec31f2ccfb1aea97ef7e849e724557eeac2fa928d",
+          "after_hash": "1ab6f4b48716274e8df7cd9514ffd016103544cd463409b22fdc3e83e89274e0"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 37 words (aim 40-60): \"What if it has been many years since my last denta\"",
+        "b5 FAQ answer is 33 words (aim 40-60): \"Can I take a break during my dental exam or cleani\"",
+        "b5 FAQ answer is 34 words (aim 40-60): \"How do I talk to the dental team about my anxiety?\"",
+        "b5 FAQ answer is 31 words (aim 40-60): \"What types of care are available once I feel comfo\""
+      ],
+      "indexnow_at": "2026-11-03"
+    },
+    {
+      "slug": "how-to-relieve-dental-anxiety",
+      "query": "how to relieve dental anxiety",
+      "score": 30,
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/how-to-relieve-dental-anxiety/index.html",
+      "route": "/questions/how-to-relieve-dental-anxiety/",
+      "url": "https://cynthiabrowndds.com/questions/how-to-relieve-dental-anxiety/",
+      "published_at": "2026-11-03",
+      "status": "live",
+      "hash": "5a50e236ca113e91f537bef220cce16a9a7c70548084dc48aefa0da1d7e8a380",
+      "model": "free-route",
+      "facts": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4754160/"
+      ],
+      "linked_from": [
+        {
+          "rel": "questions/dental-anxiety-in-adults/index.html",
+          "route": "/questions/dental-anxiety-in-adults/",
+          "before_hash": "a1d3cd99c3a76041a15e7125592c491af6978b445d1a4f7363e751117919a7a7",
+          "after_hash": "021d06b323c8da73ebfbff94ddf7db5587612acf4e8411f6527984960354a0fb"
+        },
+        {
+          "rel": "questions/how-to-ease-dental-anxiety/index.html",
+          "route": "/questions/how-to-ease-dental-anxiety/",
+          "before_hash": "1ab6f4b48716274e8df7cd9514ffd016103544cd463409b22fdc3e83e89274e0",
+          "after_hash": "c71f7690bf99a0b59bf286cde8b832eef847ae44c6803e1f641affc9cb8c1c64"
+        }
+      ],
+      "checks": {},
+      "indexnow_at": "2026-11-03"
+    },
+    {
+      "slug": "what-is-dental-anxiety-called",
+      "query": "what is dental anxiety called",
+      "score": 30,
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/what-is-dental-anxiety-called/index.html",
+      "route": "/questions/what-is-dental-anxiety-called/",
+      "url": "https://cynthiabrowndds.com/questions/what-is-dental-anxiety-called/",
+      "published_at": "2026-11-03",
+      "status": "live",
+      "hash": "84c1c1ac4af426e8ac8a8711d96e6537970c656bd2dfd1a78dfea5ce91f84874",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Dental_fear",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4795743/"
+      ],
+      "linked_from": [
+        {
+          "rel": "questions/dental-anxiety-in-adults/index.html",
+          "route": "/questions/dental-anxiety-in-adults/",
+          "before_hash": "021d06b323c8da73ebfbff94ddf7db5587612acf4e8411f6527984960354a0fb",
+          "after_hash": "d7ef1331e370172eb38cee406453ce0283d99e74ecfdb5ac69e453ddb8d7ceae"
+        },
+        {
+          "rel": "questions/how-to-ease-dental-anxiety/index.html",
+          "route": "/questions/how-to-ease-dental-anxiety/",
+          "before_hash": "c71f7690bf99a0b59bf286cde8b832eef847ae44c6803e1f641affc9cb8c1c64",
+          "after_hash": "263f51382d2929ef41a71cbc7a23a0d84db7ed2af5bdc2c8d7f6587b5896e173"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 38 words (aim 40-60): \"Is it normal to feel nervous about going to the de\"",
+        "b5 FAQ answer is 39 words (aim 40-60): \"What should I do if I have not been to the dentist\"",
+        "b5 FAQ answer is 39 words (aim 40-60): \"Can my dental team help me relax during my visit?\""
+      ],
+      "indexnow_at": "2026-11-03"
+    },
+    {
+      "slug": "what-is-severe-dental-anxiety",
+      "query": "what is severe dental anxiety",
+      "score": 30,
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/what-is-severe-dental-anxiety/index.html",
+      "route": "/questions/what-is-severe-dental-anxiety/",
+      "url": "https://cynthiabrowndds.com/questions/what-is-severe-dental-anxiety/",
+      "published_at": "2026-11-03",
+      "status": "live",
+      "hash": "9d2e3948f4f059b3826c0f7c88fc91e10c1cf25a6ac44dd3af8cbffd300d90c3",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Dental_fear",
+        "https://www.nidcr.nih.gov/"
+      ],
+      "linked_from": [
+        {
+          "rel": "questions/dental-anxiety-in-adults/index.html",
+          "route": "/questions/dental-anxiety-in-adults/",
+          "before_hash": "d7ef1331e370172eb38cee406453ce0283d99e74ecfdb5ac69e453ddb8d7ceae",
+          "after_hash": "b667dfcb6b96bc0d324f245f181d658e2e0aba17679cb4f0cfab2d40deddd2b2"
+        },
+        {
+          "rel": "questions/how-to-ease-dental-anxiety/index.html",
+          "route": "/questions/how-to-ease-dental-anxiety/",
+          "before_hash": "263f51382d2929ef41a71cbc7a23a0d84db7ed2af5bdc2c8d7f6587b5896e173",
+          "after_hash": "27e44f2490a7b0b171a18e8c362152d4b1323a3c190ae605d5e14d825a9456c3"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 36 words (aim 40-60): \"What is the difference between mild nervousness an\""
+      ],
+      "indexnow_at": "2026-11-03"
+    },
+    {
+      "slug": "what-causes-dental-anxiety",
+      "query": "what causes dental anxiety",
+      "score": 30,
+      "signals": {
+        "words": 4,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/what-causes-dental-anxiety/index.html",
+      "route": "/questions/what-causes-dental-anxiety/",
+      "url": "https://cynthiabrowndds.com/questions/what-causes-dental-anxiety/",
+      "published_at": "2026-11-03",
+      "status": "live",
+      "hash": "7815e5e1101efa310d70e454a70fd37e2529aab54a11b5006850514368980d10",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Dental_fear",
+        "https://www.nidcr.nih.gov/"
+      ],
+      "linked_from": [
+        {
+          "rel": "questions/dental-anxiety-in-adults/index.html",
+          "route": "/questions/dental-anxiety-in-adults/",
+          "before_hash": "b667dfcb6b96bc0d324f245f181d658e2e0aba17679cb4f0cfab2d40deddd2b2",
+          "after_hash": "d5441f7781038ca44087b6eebd1ca6b017b4d4cdc721e4006f10317a5e56838c"
+        },
+        {
+          "rel": "questions/how-to-ease-dental-anxiety/index.html",
+          "route": "/questions/how-to-ease-dental-anxiety/",
+          "before_hash": "27e44f2490a7b0b171a18e8c362152d4b1323a3c190ae605d5e14d825a9456c3",
+          "after_hash": "d42cf196c7d3155c986265a4f6e277343c8118e77af896c5f957001eb9c98a6c"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 38 words (aim 40-60)",
+        "b5 FAQ answer is 38 words (aim 40-60): \"Is dental anxiety common among adults?\"",
+        "b5 FAQ answer is 39 words (aim 40-60): \"What should I do if it has been a long time since \"",
+        "b5 FAQ answer is 30 words (aim 40-60): \"Can I take breaks during a dental appointment?\"",
+        "b5 FAQ answer is 33 words (aim 40-60): \"How can I reduce the sounds and sights at the offi\""
+      ],
+      "indexnow_at": "2026-11-03"
+    },
+    {
+      "slug": "why-is-dental-anxiety-so-common",
+      "query": "why is dental anxiety so common",
+      "score": 30,
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/why-is-dental-anxiety-so-common/index.html",
+      "route": "/questions/why-is-dental-anxiety-so-common/",
+      "url": "https://cynthiabrowndds.com/questions/why-is-dental-anxiety-so-common/",
+      "published_at": "2026-11-03",
+      "status": "live",
+      "hash": "8969482732daea4d6efd081be65a124d2249b18c6823e02c6c1ea1df904a9c8d",
+      "model": "free-route",
+      "facts": [
+        "https://www.nidcr.nih.gov/",
+        "https://www.ncbi.nlm.nih.gov/pmc/"
+      ],
+      "linked_from": [
+        {
+          "rel": "questions/why-do-i-have-dental-anxiety/index.html",
+          "route": "/questions/why-do-i-have-dental-anxiety/",
+          "before_hash": "c15ca205b4883bf429a288474f64bb05d2a86e0a59a26173a8c4cc7d5548fd98",
+          "after_hash": "45e02c4baf346fbf0967d6053110bd8cf15d5ab44f79e40b9e7ca18b02a668c6"
+        }
+      ],
+      "checks": {},
+      "indexnow_at": "2026-11-03"
     }
   ],
   "dropped": [
@@ -330,6 +730,58 @@
         "b4 direct answer under the H1 is 39 words (needs 40-60)",
         "facts: needs at least one fact whose source URL answered 200"
       ]
+    }
+  ],
+  "redirected": [
+    {
+      "query": "affordable dentist olive branch ms",
+      "at": "2026-11-03",
+      "url": "https://cynthiabrowndds.com/questions/dentist-olive-branch-mississippi/",
+      "route": "/questions/dentist-olive-branch-mississippi/",
+      "kind": "engine",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "matched_text": "dentist olive branch mississippi",
+      "stage": "search"
+    },
+    {
+      "query": "dentist near olive branch ms",
+      "at": "2026-11-03",
+      "url": "https://cynthiabrowndds.com/questions/dentist-olive-branch-mississippi/",
+      "route": "/questions/dentist-olive-branch-mississippi/",
+      "kind": "engine",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "matched_text": "dentist olive branch mississippi",
+      "stage": "search"
+    },
+    {
+      "query": "dentist southaven ms accepting payment plans",
+      "at": "2026-11-03",
+      "url": "https://cynthiabrowndds.com/questions/dentist-olive-branch-mississippi/",
+      "route": "/questions/dentist-olive-branch-mississippi/",
+      "kind": "engine",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "matched_text": "dentist olive branch mississippi",
+      "stage": "draft"
+    },
+    {
+      "query": "dental anxiety",
+      "at": "2026-11-03",
+      "url": "https://cynthiabrowndds.com/questions/how-to-ease-dental-anxiety/",
+      "route": "/questions/how-to-ease-dental-anxiety/",
+      "kind": "engine",
+      "matched_by": "high token overlap (0.67 >= 0.6)",
+      "matched_text": "how to ease dental anxiety",
+      "stage": "search"
+    },
+    {
+      "query": "dental anxiety dentist",
+      "at": "2026-11-03",
+      "url": "https://cynthiabrowndds.com/questions/dental-olive-branch-ms/",
+      "route": "/questions/dental-olive-branch-ms/",
+      "kind": "engine",
+      "matched_by": "same 3 intent words plus modifiers",
+      "matched_text": "dental olive branch ms",
+      "stage": "draft"
     }
   ]
 }
