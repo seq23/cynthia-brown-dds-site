@@ -2,7 +2,7 @@
 
 Repository: `cynthia-brown-dds-site`
 
-Purpose: Static personal-professional website for Dr. Cynthia Brown, DDS, with a resource library, approval-gated editorial workflow, and an open, unindexed admin preview dashboard.
+Purpose: Static personal-professional website for Dr. Cynthia Brown, DDS, with a resource library, approval-gated editorial workflow, and a server-gated, unindexed admin preview dashboard.
 
 Deployment target: Cloudflare Pages static deployment.
 
@@ -10,4 +10,4 @@ Public positioning: Dr. Cynthia Brown, DDS — dentist and practice owner servin
 
 Important brand rule: Do not foreground Aspen Dental in visible site copy. External booking links may route to current approved booking/provider pages.
 
-Security note: `/admin/` is an open, unindexed static review dashboard over public data only (no client-side password gate). It must never expose patient data, PHI, real secrets, or production credentials.
+Security note: `/admin/` is a static review dashboard behind a server-side password gate (`functions/_middleware.js`); no password or hash ships to the browser. It must never expose patient data, PHI, real secrets, or production credentials.

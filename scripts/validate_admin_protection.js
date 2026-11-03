@@ -1,5 +1,5 @@
-// The admin dashboard is a static page over data the site already serves publicly
-// (/data/admin/content_manifest.json, /previews/). A password check in the browser protects
+// The admin dashboard is gated on the server (functions/_middleware.js, validate_admin_gate.js).
+// A password check in the browser protects
 // nothing and shipping its hash hands the password to every visitor (security sweep, 3 Nov 2026),
 // so the served admin JS must carry no password, password hash or secret-like string, and the
 // page must stay unindexed.
