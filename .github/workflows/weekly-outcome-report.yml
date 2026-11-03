@@ -50,6 +50,23 @@ jobs:
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: node scripts/weekly_outcome_report.js
 
+      - name: Read the shared report builder
+        uses: actions/checkout@v4
+        with:
+          repository: seq23/search-loop
+          ref: v1
+          path: .search-loop-engine
+
+      - name: Report measured AI traffic (never run the content writer)
+        run: node scripts/collect_ai_analytics.mjs --report-only
+
+      - name: Upload the search-loop week
+        uses: actions/upload-artifact@v4
+        with:
+          name: search-loop-week
+          path: search-loop-week.json
+          if-no-files-found: error
+
       - name: Upload the report
         uses: actions/upload-artifact@v4
         with:

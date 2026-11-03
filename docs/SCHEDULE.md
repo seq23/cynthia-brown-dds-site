@@ -36,3 +36,8 @@ schedule); see the notes below for what moved.
 - Content Publish: Monday → Thursday 04:10 CT.
 - Monthly Query Intelligence: the 1st → the 3rd, 06:23 CT (monthly jobs no longer pile onto the 1st).
 - Retired 1 Nov 2026: Monthly Auto Draft and Monthly Query Intelligence (both pushed to automation branches nobody merged; the search loop now finds and drafts). Search Loop added.
+
+- Search Intelligence also collects aggregate AI referrals and AI-bot requests (f11), using the
+  read-only `SEARCH_LOOP_ANALYTICS_TOKEN` Actions secret. It does not run the writer or checkpoint
+  repair. Weekly Outcome Report uploads the shared `search-loop-week` schema from this ledger;
+  unread days remain unread and a stale measurement fails the report instead of publishing zero.

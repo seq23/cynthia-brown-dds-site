@@ -8,7 +8,32 @@
       "not_read": "no free analytics source configured for this site (analytics.ai_referrals)"
     },
     "2026-11-03": {
-      "not_read": "no free analytics source configured for this site (analytics.ai_referrals)"
+      "ai_visitors": {
+        "total": 0,
+        "by_engine": {},
+        "by_path": {},
+        "source": "web-analytics"
+      },
+      "ai_bot_hits": {
+        "total": 130,
+        "by_bot": {
+          "Amazonbot": 5,
+          "ChatGPT-User (ChatGPT fetch)": 18,
+          "OAI-SearchBot (ChatGPT search)": 16,
+          "Claude-User": 9,
+          "DuckAssistBot": 15,
+          "CCBot (Common Crawl)": 4,
+          "PerplexityBot": 6,
+          "ClaudeBot": 29,
+          "GPTBot (OpenAI training)": 5,
+          "Perplexity-User": 14,
+          "Bytespider": 9
+        }
+      },
+      "window": {
+        "since": "2026-11-02T19:14:20.881Z",
+        "until": "2026-11-03T19:14:20.881Z"
+      }
     }
   }
 }

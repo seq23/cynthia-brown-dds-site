@@ -54,3 +54,10 @@ page carries that line AND a JSON-LD author resolving to the same person — the
 not drift apart. It hard-fails on fewer than five pages examined, so it cannot pass having looked at
 nothing. Privacy, the disclaimer, the 404 and the noindex previews are exempt by name: a legal notice
 is not an editorial page with a reviewer, and the weekly audit never samples them either.
+
+Added 3 Nov 2026 (Search Readiness f11): `validate_ai_measurement.mjs` guards the daily AI
+measurement boundary: real zero is accepted, missing/partial/refused sources cannot overwrite a day,
+and old days are preserved. `scripts/collect_ai_analytics.mjs` uses the shared engine's hostname-only
+Cloudflare reader and report builder, independently of content writing. Search Intelligence commits
+the daily ledger and weekly snapshot; Weekly Outcome Report uploads `search-loop-week` from those
+measurements. The report states its measured-day coverage, so a first day is never called a full week.
