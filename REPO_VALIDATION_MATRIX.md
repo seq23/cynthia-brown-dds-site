@@ -42,3 +42,15 @@ before adding a paid call. `CLAUDE.md` now carries the rule where an agent start
 things that can rot - the rule line is there, every file the doc points at still exists, and the
 ceiling the doc states is the ceiling `config/llm_routing.json` actually allows. It does not pin any
 wording: a doc that claims $0 while the config allows spending is the defect, not a phrasing change.
+
+Added 3 Nov 2026 (Search Readiness c6): `validate_page_byline.js` is a merge gate over the one thing
+a health page is judged on hardest — who put their name to it. The Monday quality sample read
+`/smile-philosophy/` as a page with "no named author or reviewer visible", and a crawl of all forty
+sitemap URLs found the same gap everywhere: the hand-built pages carried no author at all, and the
+resource and question pages passed only because the brand name in the navigation happened to match
+their schema author. `entity.json`'s `author` block is now the one statement of the reviewer, the
+templates render it as a visible `rel="author"` byline, and this validator proves every indexable
+page carries that line AND a JSON-LD author resolving to the same person — the node and the line may
+not drift apart. It hard-fails on fewer than five pages examined, so it cannot pass having looked at
+nothing. Privacy, the disclaimer, the 404 and the noindex previews are exempt by name: a legal notice
+is not an editorial page with a reviewer, and the weekly audit never samples them either.

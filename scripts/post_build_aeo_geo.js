@@ -64,6 +64,14 @@ if (selfSameAs.length) {
 if (!SAME_AS.includes(booking.defaultBookingUrl)) {
   throw new Error(`NAMED STOP [ENTITY_BOOKING_NOT_IN_SAMEAS] entity.json sameAs does not list the approved booking page ${booking.defaultBookingUrl}`);
 }
+// Search Readiness c6: who put their name to the page. The same author block scripts/build_site.js
+// renders as the visible byline, published as the WebPage author so the node and the byline agree
+// (scripts/validate_page_byline.js proves they do).
+const AUTHOR = entity.author;
+if (!AUTHOR || !AUTHOR.name) throw new Error('NAMED STOP [ENTITY_AUTHOR_MISSING] entity.json has no author.name; pages would publish a WebPage nobody is named on');
+const authorNode = { "@context": "https://schema.org", ...AUTHOR };
+const authorRef = { "@id": AUTHOR["@id"] || AUTHOR.url };
+
 const byId = (id) => locations.locations.find((l) => l.id === id);
 const postal = (l) => ({"@type":"PostalAddress","streetAddress":l.streetAddress,"addressLocality":l.addressLocality,"addressRegion":l.addressRegion,"postalCode":l.postalCode,"addressCountry":l.addressCountry});
 function practice(l, suffix) {
@@ -108,23 +116,44 @@ for(const file of htmlFiles(dist)){
     schema = [
       {"@context":"https://schema.org","@type":"WebSite","name":"Dr. Cynthia Brown, DDS","url":SITE,"description":"Personal professional website for Dr. Cynthia Brown, DDS."},
       // Search Readiness c2: WebSite belongs on the homepage, WebPage on EVERY page, this one included.
-      {"@context":"https://schema.org","@type":"WebPage","name":(html.match(/<title>(.*?)<\/title>/)||[])[1]||'Dr. Cynthia Brown DDS',"url":url,"isPartOf":{"@id":`${SITE}/#practice`}},
+      {"@context":"https://schema.org","@type":"WebPage","name":(html.match(/<title>(.*?)<\/title>/)||[])[1]||'Dr. Cynthia Brown DDS',"url":url,"isPartOf":{"@id":`${SITE}/#practice`},"author":authorRef},
+      authorNode,
       {"@context":"https://schema.org","@type":"Dentist","name":"Dr. Cynthia Brown, DDS","url":SITE,"image":`${SITE}${site.defaultOgImage}`,"areaServed":["Olive Branch, Mississippi","Southaven, Mississippi"],"alumniOf":[{"@type":"CollegeOrUniversity","name":"Spelman College"},{"@type":"CollegeOrUniversity","name":"Meharry Medical College School of Dentistry"}],"knowsAbout":["preventive dentistry","restorative dentistry","cosmetic dentistry","dental anxiety","smile confidence","dentures","implants","whitening","emergency dental care"]}
     ];
   } else {
-    schema = [{"@context":"https://schema.org","@type":"WebPage","name":(html.match(/<title>(.*?)<\/title>/)||[])[1]||'Dr. Cynthia Brown DDS','url':url}];
+    schema = [{"@context":"https://schema.org","@type":"WebPage","name":(html.match(/<title>(.*?)<\/title>/)||[])[1]||'Dr. Cynthia Brown DDS','url':url,"isPartOf":{"@id":`${SITE}/#practice`},"author":authorRef}, authorNode];
   }
   const articleMatch = route.match(/^\/resources\/(insights|white-papers)\/([^/]+)\/$/);
   if(articleMatch){
     const item = publicItems.find(x=>x.meta.slug===articleMatch[2]);
     if(item){
-      schema.push({"@context":"https://schema.org","@type":"Article","headline":item.meta.title,"description":item.meta.summary||item.meta.quickAnswer,"url":url,"datePublished":item.meta.scheduledAt,"dateModified":item.meta.lastReviewed||'2026-06-03',"author":{"@type":"Person","name":"Dr. Cynthia Brown, DDS"},"publisher":{"@type":"Organization","name":"Dr. Cynthia Brown, DDS","url":SITE},"about":item.meta.topicCategory||'dental care'});
+      schema.push({"@context":"https://schema.org","@type":"Article","headline":item.meta.title,"description":item.meta.summary||item.meta.quickAnswer,"url":url,"datePublished":item.meta.scheduledAt,"dateModified":item.meta.lastReviewed||'2026-06-03',"author":authorRef,"publisher":{"@type":"Organization","name":"Dr. Cynthia Brown, DDS","url":SITE},"about":item.meta.topicCategory||'dental care'});
       if(Array.isArray(item.meta.faqs) && item.meta.faqs.length){
         schema.push({"@context":"https://schema.org","@type":"FAQPage","mainEntity":item.meta.faqs.map(f=>({"@type":"Question","name":f.question,"acceptedAnswer":{"@type":"Answer","text":f.answer}}))});
       }
     }
   }
   schema.push({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":SITE},{"@type":"ListItem","position":2,"name":route==='/'?'Home':rel.split('/').map(s=>s.replace(/-/g,' ')).join(' / '),"item":url}]});
+  // Search Readiness c6 on /questions/: the shared search engine bylines these pages to the practice
+  // as an Organization, so the published author and the reviewer a reader now sees were two
+  // different things. The Article's author is made the one named person here and her Person node is
+  // added to the page's own graph, so the node and the visible byline say the same thing.
+  if (/^\/questions\/[^/]+\/$/.test(route)) {
+    let reconciled = false;
+    html = html.replace(/<script([^>]*type="application\/ld\+json"[^>]*)>([\s\S]*?)<\/script>/i, (m, attrs, body) => {
+      let parsed;
+      try { parsed = JSON.parse(body); } catch { return m; }
+      const graph = Array.isArray(parsed['@graph']) ? parsed['@graph'] : (Array.isArray(parsed) ? parsed : null);
+      if (!graph) return m;
+      for (const node of graph) {
+        if ([].concat(node['@type'] || []).includes('Article')) { node.author = authorRef; reconciled = true; }
+      }
+      if (!reconciled) return m;
+      if (!graph.some((n) => [].concat(n['@type'] || []).includes('Person') && n['@id'] === authorRef['@id'])) graph.push(AUTHOR);
+      return `<script${attrs}>${JSON.stringify(parsed)}</script>`;
+    });
+    if (!reconciled) throw new Error(`NAMED STOP [QUESTION_AUTHOR_NOT_RECONCILED] ${route} has no Article node in its first JSON-LD block to carry the reviewer`);
+  }
   const script = `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
   if (!html.includes('application/ld+json')) html = html.replace('</head>', `${script}</head>`);
   // First in the head, so the site's entity is the first Organization a reader meets on the page.

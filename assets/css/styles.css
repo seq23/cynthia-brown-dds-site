@@ -37,3 +37,4 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{overflow-x:hidden
 .search-loop-page .site-action{margin-top:40px}
 .search-loop-page .site-action .button{display:inline-block;min-height:44px;padding:12px 22px;border-radius:999px;background:#143d2c;color:#fff;text-decoration:none;font-weight:700}
 .question-list{display:grid;gap:12px;padding-left:20px}
+.page-byline{font-size:.92rem;font-weight:700;color:#66564d;margin:14px 0 0}.page-byline a{color:var(--hunter);text-decoration:underline;text-underline-offset:3px}.search-loop-page .page-byline,.article .page-byline{margin:4px 0 18px}

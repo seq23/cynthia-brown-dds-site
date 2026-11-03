@@ -33,6 +33,12 @@ from it, `scripts/validate_entity_graph.js` refuses a build where the two disagr
 `.github/workflows/entity-backlink-watch.yml` rechecks the profiles every week. Never type a name,
 logo or profile URL into a template; change `entity.json`.
 
+Its `author` block is the one statement of who reviewed the words. The templates render it as the
+visible `rel="author"` byline on every indexable page and `scripts/post_build_aeo_geo.js` publishes
+it as that page's JSON-LD author; `scripts/validate_page_byline.js` refuses a build where a page,
+its byline and this file disagree. A byline carries a name and a credential and never a date: a
+"last reviewed" line would be a freshness claim the build cannot prove.
+
 ## Proving a change
 
 - `npm run preflight` — build, then every validator in the one registry,
