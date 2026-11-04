@@ -548,7 +548,10 @@
         "b5 FAQ answer is 30 words (aim 40-60): \"Can I take breaks during a dental appointment?\"",
         "b5 FAQ answer is 33 words (aim 40-60): \"How can I reduce the sounds and sights at the offi\""
       ],
-      "indexnow_at": "2026-11-03"
+      "indexnow_at": "2026-11-03",
+      "extra_queries": [
+        "can dental anesthesia cause anxiety"
+      ]
     },
     {
       "slug": "why-is-dental-anxiety-so-common",
@@ -580,7 +583,125 @@
         }
       ],
       "checks": {},
-      "indexnow_at": "2026-11-03"
+      "indexnow_at": "2026-11-03",
+      "extra_queries": [
+        "why is my dental anxiety so bad"
+      ]
+    },
+    {
+      "slug": "is-dental-anxiety-real",
+      "query": "is dental anxiety real",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 4,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/is-dental-anxiety-real/index.html",
+      "route": "/questions/is-dental-anxiety-real/",
+      "url": "https://cynthiabrowndds.com/questions/is-dental-anxiety-real/",
+      "published_at": "2026-11-04",
+      "status": "live",
+      "hash": "475fbcb66406c6ad69dcaecf8ef7d048af6aa64c7b5d86f3fbb802233182f88d",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Dental_fear",
+        "https://www.nidcr.nih.gov/"
+      ],
+      "linked_from": [
+        {
+          "rel": "questions/dental-anxiety-management/index.html",
+          "route": "/questions/dental-anxiety-management/",
+          "before_hash": "2c8d6222d9897f8f0078161d8b28b95210219b1c6bdc405e0d8f470962ff4583",
+          "after_hash": "2ef3682c8f81c9140397013115416b0f0ab74a78b3d80d5b70ed7fec3a7aa972"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 35 words (aim 40-60): \"Will the dentist judge me if I have not been in ye\"",
+        "b5 FAQ answer is 37 words (aim 40-60): \"Can I ask the dentist to stop during a procedure?\"",
+        "b5 FAQ answer is 34 words (aim 40-60): \"Are there ways to help me relax if my anxiety is s\""
+      ]
+    },
+    {
+      "slug": "can-dentist-give-anxiety-meds",
+      "query": "can dentist give anxiety meds",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/can-dentist-give-anxiety-meds/index.html",
+      "route": "/questions/can-dentist-give-anxiety-meds/",
+      "url": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
+      "published_at": "2026-11-04",
+      "status": "live",
+      "hash": "fcc597d32fe3cd18a8f89c551abd0a493994b1681c4675b47e7daa4008af5dd7",
+      "model": "free-route",
+      "facts": [
+        "https://www.mouthhealthy.org/all-topics-a-z/anesthesia-and-sedation",
+        "https://medlineplus.gov/ency/article/007412.htm"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 39 words (aim 40-60): \"Will dental anxiety medication make me fall asleep\"",
+        "b5 FAQ answer is 35 words (aim 40-60): \"Can I drive myself home after taking a dental seda\"",
+        "b5 FAQ answer is 34 words (aim 40-60): \"Do I need sedation for a routine dental cleaning a\"",
+        "b5 FAQ answer is 30 words (aim 40-60): \"What should I tell my dentist about my medical his\""
+      ]
+    },
+    {
+      "slug": "can-dental-implants-cause-anxiety",
+      "query": "can dental implants cause anxiety",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "questions/can-dental-implants-cause-anxiety/index.html",
+      "route": "/questions/can-dental-implants-cause-anxiety/",
+      "url": "https://cynthiabrowndds.com/questions/can-dental-implants-cause-anxiety/",
+      "published_at": "2026-11-04",
+      "status": "live",
+      "hash": "88d99fc11e174751bdbd76ee54f382d96733cf2e7299e617f172692ae7323ac4",
+      "model": "free-route",
+      "facts": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4795792/",
+        "https://www.mouthhealthy.org/all-topics-a-z/implants"
+      ],
+      "linked_from": [
+        {
+          "rel": "questions/what-causes-dental-anxiety/index.html",
+          "route": "/questions/what-causes-dental-anxiety/",
+          "before_hash": "7815e5e1101efa310d70e454a70fd37e2529aab54a11b5006850514368980d10",
+          "after_hash": "b8d98ff6843385f59ee1e7dde7328ec865ddbfa9cf397a1e8b2f774c91d09e30"
+        },
+        {
+          "rel": "questions/what-is-dental-anxiety-called/index.html",
+          "route": "/questions/what-is-dental-anxiety-called/",
+          "before_hash": "84c1c1ac4af426e8ac8a8711d96e6537970c656bd2dfd1a78dfea5ce91f84874",
+          "after_hash": "319f54f44dd6b7203e6e5c35375b78e9def4f23a24c7a967ad5ed0f4ce1acf21"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 38 words (aim 40-60): \"Can I take medication for anxiety before an implan\"",
+        "b5 FAQ answer is 38 words (aim 40-60): \"What if my anxiety makes it hard to sit through an\"",
+        "b5 FAQ answer is 35 words (aim 40-60): \"Are dental implants the only way to replace missin\"",
+        "b5 FAQ answer is 37 words (aim 40-60): \"How do I start if I have avoided the dentist for y\""
+      ]
     }
   ],
   "dropped": [
@@ -730,6 +851,30 @@
         "b4 direct answer under the H1 is 39 words (needs 40-60)",
         "facts: needs at least one fact whose source URL answered 200"
       ]
+    },
+    {
+      "query": "can dental anxiety cause tooth pain",
+      "at": "2026-11-04",
+      "reason": [
+        "b5 FAQ answer is 27 words (aim 40-60): \"What should I do if my tooth pain becomes urgent?\"",
+        "b5 FAQ answer is 27 words (aim 40-60): \"Is it normal to feel nervous after staying away fr\"",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 1)"
+      ]
+    },
+    {
+      "query": "can dentist prescribe anxiety meds",
+      "at": "2026-11-04",
+      "reason": [
+        "b5 FAQ answer is 29 words (aim 40-60): \"What if medication is not enough for my fear?\"",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 1)"
+      ]
+    },
+    {
+      "query": "can dental issues cause anxiety",
+      "at": "2026-11-04",
+      "reason": [
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 1)"
+      ]
     }
   ],
   "redirected": [
@@ -781,6 +926,26 @@
       "kind": "engine",
       "matched_by": "same 3 intent words plus modifiers",
       "matched_text": "dental olive branch ms",
+      "stage": "draft"
+    },
+    {
+      "query": "why is my dental anxiety so bad",
+      "at": "2026-11-04",
+      "url": "https://cynthiabrowndds.com/questions/why-is-dental-anxiety-so-common/",
+      "route": "/questions/why-is-dental-anxiety-so-common/",
+      "kind": "engine",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "matched_text": "why is dental anxiety so common",
+      "stage": "search"
+    },
+    {
+      "query": "can dental anesthesia cause anxiety",
+      "at": "2026-11-04",
+      "url": "https://cynthiabrowndds.com/questions/what-causes-dental-anxiety/",
+      "route": "/questions/what-causes-dental-anxiety/",
+      "kind": "engine",
+      "matched_by": "high token overlap (0.75 >= 0.6)",
+      "matched_text": "what causes dental anxiety",
       "stage": "draft"
     }
   ]

@@ -1433,6 +1433,24 @@
   ],
   "strengthen": [
     {
+      "query": "can dental anesthesia cause anxiety",
+      "page": "/questions/what-causes-dental-anxiety/",
+      "url": "https://cynthiabrowndds.com/questions/what-causes-dental-anxiety/",
+      "score": 30,
+      "from": "distinct-gate",
+      "matched_by": "high token overlap (0.75 >= 0.6)",
+      "at": "2026-11-04"
+    },
+    {
+      "query": "why is my dental anxiety so bad",
+      "page": "/questions/why-is-dental-anxiety-so-common/",
+      "url": "https://cynthiabrowndds.com/questions/why-is-dental-anxiety-so-common/",
+      "score": 30,
+      "from": "distinct-gate",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "at": "2026-11-04"
+    },
+    {
       "query": "dental anxiety dentist",
       "page": "/questions/dental-olive-branch-ms/",
       "url": "https://cynthiabrowndds.com/questions/dental-olive-branch-ms/",

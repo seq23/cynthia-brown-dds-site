@@ -34,6 +34,30 @@
         "since": "2026-11-02T19:14:20.881Z",
         "until": "2026-11-03T19:14:20.881Z"
       }
+    },
+    "2026-11-04": {
+      "ai_visitors": {
+        "total": 0,
+        "by_engine": {},
+        "by_path": {},
+        "source": "web-analytics"
+      },
+      "ai_bot_hits": {
+        "total": 364,
+        "by_bot": {
+          "Amazonbot": 34,
+          "ChatGPT-User (ChatGPT fetch)": 45,
+          "OAI-SearchBot (ChatGPT search)": 29,
+          "Claude-User": 51,
+          "DuckAssistBot": 29,
+          "CCBot (Common Crawl)": 14,
+          "PerplexityBot": 19,
+          "ClaudeBot": 59,
+          "GPTBot (OpenAI training)": 36,
+          "Perplexity-User": 30,
+          "Bytespider": 18
+        }
+      }
     }
   }
 }
