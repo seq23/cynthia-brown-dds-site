@@ -66,7 +66,7 @@
   ],
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
-  "seoTitle": "The Year-End Oral Health Planning Guide | Dr. Brown",
+  "seoTitle": "Year-End Oral Health Planning",
   "seoDescription": "Benefits, budgets, urgent symptoms and next-year smile goals, in one place, so year-end dental planning is a short conversation rather than a scramble."
 }
 ---

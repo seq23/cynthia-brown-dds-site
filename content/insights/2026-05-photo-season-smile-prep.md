@@ -65,7 +65,7 @@
   ],
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
-  "seoTitle": "Wedding and Photo-Season Smile Prep | Dr. Brown",
+  "seoTitle": "Wedding and Photo-Season Smile Prep",
   "seoDescription": "Planning a smile for a wedding, graduation or photo season: why timing matters, what to raise at an exam, and how far ahead to start the conversation."
 }
 ---

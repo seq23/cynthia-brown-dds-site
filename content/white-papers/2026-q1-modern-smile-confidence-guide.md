@@ -66,7 +66,7 @@
   ],
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
-  "seoTitle": "The Modern Smile Confidence Guide | Dr. Brown, DDS",
+  "seoTitle": "Modern Smile Confidence Guide",
   "seoDescription": "A practical framework for whitening questions, cosmetic planning and first appointments, written for patients who want to understand options before deciding."
 }
 ---

@@ -65,7 +65,7 @@
   ],
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
-  "seoTitle": "Bleeding Gums and Bad Breath: Signs Not to Ignore",
+  "seoTitle": "Bleeding Gums and Bad Breath",
   "seoDescription": "Bleeding gums and persistent bad breath are signals, not small annoyances. What they can point to, and what to raise with a licensed dental professional."
 }
 ---

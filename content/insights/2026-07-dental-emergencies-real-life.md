@@ -65,7 +65,7 @@
   ],
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
-  "seoTitle": "Tooth Pain, Chipped Teeth and When to Call",
+  "seoTitle": "Tooth Pain and Chipped Teeth",
   "seoDescription": "Tooth pain, a chipped tooth, swelling or fever: which dental symptoms need urgent attention, what to do in the meantime, and when to call the office."
 }
 ---

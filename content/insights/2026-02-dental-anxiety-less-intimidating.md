@@ -65,7 +65,7 @@
   ],
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
-  "seoTitle": "Why Dental Anxiety Is So Common | Dr. Brown, DDS",
+  "seoTitle": "Why Dental Anxiety Is So Common",
   "seoDescription": "Dental anxiety is common and it is not a character flaw. Where it comes from, and practical ways to make your next dental visit feel less intimidating."
 }
 ---
