@@ -66,7 +66,7 @@
   ],
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
-  "seoTitle": "Dental Anxiety and the Shame-Free Return to Care",
+  "seoTitle": "Dental Anxiety and Returning to Care",
   "seoDescription": "A long-form look at how dental anxiety turns into avoidance, what that costs over time, and how a return to care can be planned without judgment or shame."
 }
 ---

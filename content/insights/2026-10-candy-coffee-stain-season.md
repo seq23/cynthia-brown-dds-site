@@ -65,7 +65,7 @@
   ],
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
-  "seoTitle": "How Coffee and Candy Stain Teeth | Dr. Brown, DDS",
+  "seoTitle": "How Coffee and Candy Stain Teeth",
   "seoDescription": "Coffee, tea, candy and everyday habits all leave their mark on teeth. What causes staining, what helps day to day, and what to ask about at an exam."
 }
 ---

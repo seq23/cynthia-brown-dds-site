@@ -65,7 +65,7 @@
   ],
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
-  "seoTitle": "What to Ask at a Dental Checkup After Years Away",
+  "seoTitle": "Dental Checkups After Years Away",
   "seoDescription": "Returning to the dentist after a long gap: what a first visit back usually covers, what to ask about, and how to plan care at a pace that is manageable."
 }
 ---

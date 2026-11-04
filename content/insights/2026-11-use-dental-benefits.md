@@ -65,7 +65,7 @@
   ],
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
-  "seoTitle": "Using Dental Benefits Before Year-End | Dr. Brown",
+  "seoTitle": "Dental Benefits Before Year-End",
   "seoDescription": "Dental benefits often reset in January. How to plan year-end appointments, what to ask the office about coverage, and why December fills up quickly."
 }
 ---

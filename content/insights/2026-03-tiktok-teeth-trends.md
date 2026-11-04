@@ -65,7 +65,7 @@
   ],
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
-  "seoTitle": "TikTok Teeth Trends and Enamel Safety | Dr. Brown",
+  "seoTitle": "TikTok Trends and Enamel Safety",
   "seoDescription": "Filing, DIY whitening and other teeth trends that look appealing on TikTok: what they actually do to enamel, and what to ask a dentist before trying one."
 }
 ---

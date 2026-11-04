@@ -65,7 +65,7 @@
   ],
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
-  "seoTitle": "Before You Book Whitening or Aligners | Dr. Brown",
+  "seoTitle": "Before Whitening or Aligners",
   "seoDescription": "What to sort out before booking whitening, aligners or cosmetic dental work: health first, realistic goals, and the questions to ask at the exam."
 }
 ---

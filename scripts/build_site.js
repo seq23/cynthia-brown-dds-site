@@ -129,7 +129,7 @@ function articlePage(item, isPreview = false) {
   const faqs = Array.isArray(item.meta.faqs) && item.meta.faqs.length ? `<section class="faq-block"><h2>Questions patients often ask</h2>${item.meta.faqs.map(f => `<details><summary>${esc(f.question)}</summary><p>${esc(f.answer)}</p></details>`).join('')}</section>` : '';
   const trace = item.meta.queryClusterId ? `<p class="source-note"><strong>Query cluster:</strong> ${esc(item.meta.queryClusterId)}</p>` : '';
   if (!item.meta.seoTitle || !item.meta.seoDescription) { console.error(`NAMED STOP [RESOURCE_SEO_MISSING] ${item.file} has no seoTitle/seoDescription (Search Readiness b1/b2)`); process.exit(1); }
-  return layout(item.meta.seoTitle, item.meta.seoDescription, `<main class="article"><div class="container article-inner"><span class="tag">${isWhite ? 'Quarterly white paper' : 'Monthly insight'}</span><h1>${esc(item.meta.title)}</h1>${byline()}<p><strong>Scheduled:</strong> ${esc(item.meta.scheduledAt)} · <strong>${item.wordCount} words</strong></p>${statusNote}${quick}${takeaway}${trace}${mdToHtml(item.body)}${faqs}</div></main>`, '', { noindex: isPreview });
+  return layout(`${item.meta.seoTitle.split(" | ")[0]} | ${entity.name}`, item.meta.seoDescription, `<main class="article"><div class="container article-inner"><span class="tag">${isWhite ? 'Quarterly white paper' : 'Monthly insight'}</span><h1>${esc(item.meta.title)}</h1>${byline()}<p><strong>Scheduled:</strong> ${esc(item.meta.scheduledAt)} · <strong>${item.wordCount} words</strong></p>${statusNote}${quick}${takeaway}${trace}${mdToHtml(item.body)}${faqs}</div></main>`, '', { noindex: isPreview });
 }
 
 rm(dist); mkdir(dist);

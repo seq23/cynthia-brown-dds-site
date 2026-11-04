@@ -66,7 +66,7 @@
   ],
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
-  "seoTitle": "Social Media, Beauty Culture and Your Teeth",
+  "seoTitle": "Social Media and Your Teeth",
   "seoDescription": "How beauty culture online reshapes what patients expect from their teeth, and how to tell a safe smile decision from a trend before booking any treatment."
 }
 ---

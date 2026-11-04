@@ -15,6 +15,7 @@ const errs = [];
 const dist = path.join(root, 'dist');
 const config = JSON.parse(fs.readFileSync(path.join(root, 'data/system/site_config.json'), 'utf8'));
 const SITE = config.siteUrl.replace(/\/$/, '');
+const entity = JSON.parse(fs.readFileSync(path.join(root, 'entity.json'), 'utf8'));
 
 function metaContent(html, key) {
   const out = [];
@@ -94,6 +95,8 @@ for (const file of pages) {
   // b1: title 30–65 characters, and no two published pages share one.
   const title = (/<title>([\s\S]*?)<\/title>/i.exec(html) ?? [, ''])[1];
   if (title.length < 30 || title.length > 65) errs.push(`b1: ${route} title is ${title.length} chars (needs 30-65): ${JSON.stringify(title)}`);
+  // Resource titles must identify the same practice as the page's entity graph.
+  if (route.startsWith('/resources/') && route !== '/resources/' && !title.includes(entity.name)) errs.push(`b10: ${route} title does not identify entity.json's practice`);
   if (!titles.has(title)) titles.set(title, []);
   titles.get(title).push(route);
 
