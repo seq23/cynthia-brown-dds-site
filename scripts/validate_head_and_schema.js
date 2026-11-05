@@ -157,6 +157,22 @@ for (const file of pages) {
   }
 }
 
+// Every local default image must be a real, bounded download, even for clients
+// that do not select a picture source. The live audit found four >1 MB PNG fallbacks.
+const imagePaths = new Set();
+for (const file of pages) {
+  const html = fs.readFileSync(file, 'utf8');
+  for (const match of html.matchAll(/<img\b[^>]*\bsrc=["']([^"']+)["']/gi)) {
+    const src = match[1];
+    if (!src.startsWith('/') || src.startsWith('//')) continue;
+    const asset = path.join(dist, src.split(/[?#]/)[0]);
+    imagePaths.add(asset);
+    if (!fs.existsSync(asset)) errs.push(`image: missing local source ${src}`);
+    else if (fs.statSync(asset).size > 1024 * 1024) errs.push(`image: ${src} exceeds 1 MB`);
+  }
+}
+if (!imagePaths.size) errs.push('image: no local image sources checked');
+
 // Rule 0: this validator must never pass by looking at nothing.
 if (checked < 10) errs.push(`NAMED STOP [NOTHING_CHECKED] only ${checked} published pages found in dist/ (run the build first); this validator must never pass on an empty site`);
 if (!errs.length) console.log(`checked ${checked} published pages: titles 30-65 and unique, one 120-160 description each, complete social tags, Organization + WebPage + BreadcrumbList + a filled LocalBusiness on every page, and the four root files`);
