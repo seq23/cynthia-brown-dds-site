@@ -61,3 +61,5 @@ and old days are preserved. `scripts/collect_ai_analytics.mjs` uses the shared e
 Cloudflare reader and report builder, independently of content writing. Search Intelligence commits
 the daily ledger and weekly snapshot; Weekly Outcome Report uploads `search-loop-week` from those
 measurements. The report states its measured-day coverage, so a first day is never called a full week.
+
+The head/schema validator also checks every built local img src exists and is at most 1 MB, including picture fallbacks (5 Nov live audit).
