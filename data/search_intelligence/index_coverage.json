@@ -1,10 +1,10 @@
 {
   "schema": "cbdds-index-coverage-v1",
   "site": "sc-domain:cynthiabrowndds.com",
-  "collected_at": "2026-11-03T13:56:59.344Z",
-  "day": "2026-11-03",
-  "sitemap_total": 40,
-  "inspected_today": 40,
+  "collected_at": "2026-11-05T12:43:57.730Z",
+  "day": "2026-11-05",
+  "sitemap_total": 43,
+  "inspected_today": 43,
   "refused_today": 0,
   "rotation": {
     "per_day": 150,
@@ -12,20 +12,20 @@
     "order": "oldest inspection first"
   },
   "counts": {
-    "indexed": 11,
+    "indexed": 35,
     "crawled_not_indexed": 0,
-    "discovered": 26,
+    "discovered": 1,
     "excluded": 0,
-    "unknown": 3
+    "unknown": 7
   },
   "urls": {
     "https://cynthiabrowndds.com/": {
       "state": "indexed",
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-11-02T03:59:06Z",
+      "last_crawl": "2026-11-03T14:26:49Z",
       "robots": "ALLOWED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/about/": {
       "state": "indexed",
@@ -33,7 +33,7 @@
       "coverage_state": "Submitted and indexed",
       "last_crawl": "2026-11-01T20:29:06Z",
       "robots": "ALLOWED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/locations/": {
       "state": "indexed",
@@ -41,7 +41,7 @@
       "coverage_state": "Submitted and indexed",
       "last_crawl": "2026-11-01T22:59:06Z",
       "robots": "ALLOWED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/services/": {
       "state": "indexed",
@@ -49,7 +49,7 @@
       "coverage_state": "Submitted and indexed",
       "last_crawl": "2026-10-07T04:53:16Z",
       "robots": "ALLOWED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/smile-philosophy/": {
       "state": "indexed",
@@ -57,31 +57,31 @@
       "coverage_state": "Submitted and indexed",
       "last_crawl": "2026-10-31T08:08:14Z",
       "robots": "ALLOWED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/resources/": {
-      "state": "discovered",
+      "state": "unknown",
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": null,
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/questions/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T03:11:26Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/book/": {
       "state": "indexed",
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-27T18:19:36Z",
+      "last_crawl": "2026-11-04T10:22:43Z",
       "robots": "ALLOWED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/privacy/": {
       "state": "indexed",
@@ -89,7 +89,7 @@
       "coverage_state": "Submitted and indexed",
       "last_crawl": "2026-11-01T12:59:06Z",
       "robots": "ALLOWED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/disclaimer/": {
       "state": "indexed",
@@ -97,7 +97,7 @@
       "coverage_state": "Submitted and indexed",
       "last_crawl": "2026-10-03T23:11:50Z",
       "robots": "ALLOWED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/resources/insights/new-year-smile-reset/": {
       "state": "indexed",
@@ -105,7 +105,7 @@
       "coverage_state": "Submitted and indexed",
       "last_crawl": "2026-10-31T13:09:18Z",
       "robots": "ALLOWED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/resources/insights/dental-anxiety-less-intimidating/": {
       "state": "indexed",
@@ -113,7 +113,7 @@
       "coverage_state": "Submitted and indexed",
       "last_crawl": "2026-11-03T10:33:29Z",
       "robots": "ALLOWED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/resources/insights/tiktok-teeth-trends/": {
       "state": "indexed",
@@ -121,31 +121,31 @@
       "coverage_state": "Submitted and indexed",
       "last_crawl": "2026-11-02T08:59:06Z",
       "robots": "ALLOWED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/resources/white-papers/modern-smile-confidence-guide/": {
-      "state": "discovered",
+      "state": "unknown",
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": null,
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/resources/insights/millennial-dental-checkup/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T18:33:03Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/resources/insights/photo-season-smile-prep/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T22:19:17Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/resources/insights/whitening-veneers-bonding/": {
       "state": "discovered",
@@ -153,55 +153,71 @@
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": null,
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/resources/white-papers/dental-anxiety-avoidance/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T21:41:11Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/resources/insights/dental-emergencies-real-life/": {
-      "state": "discovered",
+      "state": "unknown",
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": null,
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/resources/insights/family-dental-routine/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T21:59:34Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/resources/insights/gums-bleeding-bad-breath/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T13:00:44Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/resources/white-papers/social-media-beauty-culture-teeth/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T18:59:53Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/resources/insights/candy-coffee-stain-season/": {
-      "state": "discovered",
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T20:47:16Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
+    },
+    "https://cynthiabrowndds.com/questions/can-dental-implants-cause-anxiety/": {
+      "state": "unknown",
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": null,
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
+    },
+    "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/": {
+      "state": "unknown",
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": null,
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/questions/dental-anxiety-in-adults/": {
       "state": "unknown",
@@ -209,135 +225,143 @@
       "coverage_state": "URL is unknown to Google",
       "last_crawl": null,
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/questions/dental-anxiety-management/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T18:57:49Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/questions/dental-anxiety-medication/": {
-      "state": "unknown",
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T20:34:07Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/questions/dental-olive-branch-ms/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T19:51:23Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/questions/dentist-in-olive-branch-ms-on-goodman-rd/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T16:17:40Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/questions/dentist-olive-branch-mississippi/": {
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T21:16:51Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
+    },
+    "https://cynthiabrowndds.com/questions/dentist-southaven-ms-getwell/": {
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T20:12:46Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
+    },
+    "https://cynthiabrowndds.com/questions/emergency-dentist-southaven-ms/": {
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T20:55:29Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
+    },
+    "https://cynthiabrowndds.com/questions/how-to-ease-dental-anxiety/": {
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T18:44:24Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
+    },
+    "https://cynthiabrowndds.com/questions/how-to-relieve-dental-anxiety/": {
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T18:31:00Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
+    },
+    "https://cynthiabrowndds.com/questions/is-dental-anxiety-real/": {
       "state": "unknown",
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": null,
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
-    },
-    "https://cynthiabrowndds.com/questions/dentist-southaven-ms-getwell/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
-    },
-    "https://cynthiabrowndds.com/questions/emergency-dentist-southaven-ms/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
-    },
-    "https://cynthiabrowndds.com/questions/how-to-ease-dental-anxiety/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
-    },
-    "https://cynthiabrowndds.com/questions/how-to-relieve-dental-anxiety/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/questions/teeth-whitening-options-at-dentist/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T21:38:12Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/questions/veneers-vs-composite-bonding/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T18:04:04Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/questions/what-causes-dental-anxiety/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T17:29:14Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/questions/what-is-dental-anxiety-called/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T19:11:14Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/questions/what-is-severe-dental-anxiety/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T18:17:29Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/questions/why-do-i-have-dental-anxiety/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T18:06:13Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     },
     "https://cynthiabrowndds.com/questions/why-is-dental-anxiety-so-common/": {
-      "state": "discovered",
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": null,
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "inspected_at": "2026-11-03"
+      "state": "indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T19:24:39Z",
+      "robots": "ALLOWED",
+      "inspected_at": "2026-11-05"
     }
   }
 }

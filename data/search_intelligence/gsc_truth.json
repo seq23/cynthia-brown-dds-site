@@ -1,22 +1,147 @@
 {
   "schema": "cbdds-gsc-truth-v1",
   "site": "sc-domain:cynthiabrowndds.com",
-  "collected_at": "2026-11-03T13:53:22.863Z",
-  "day": "2026-11-03",
+  "collected_at": "2026-11-05T12:43:18.895Z",
+  "day": "2026-11-05",
   "window": {
-    "start": "2026-10-04",
-    "end": "2026-11-01",
+    "start": "2026-10-06",
+    "end": "2026-11-03",
     "days": 28,
     "lag_days": 2
   },
   "totals": {
-    "clicks": 0,
-    "impressions": 0,
-    "ctr": 0,
-    "position": 0,
+    "clicks": 1,
+    "impressions": 53,
+    "ctr": 1.89,
+    "position": 7.55,
     "source": "searchAnalytics with no dimensions, the same window as the rows below"
   },
-  "queries": [],
-  "pages": [],
-  "days": []
+  "queries": [
+    {
+      "query": "cindy brown dds",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 2.25
+    },
+    {
+      "query": "cosmetic dentistry trends",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "cynthia brown dds",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "query": "dr brown dentist office",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "query": "dr cynthia brown reviews",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "dr cynthia brown southaven",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7.75
+    },
+    {
+      "query": "good smile website down",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "query": "orthodontics olive branch ms",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 51
+    },
+    {
+      "query": "orthodontist olive branch ms",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 70
+    }
+  ],
+  "pages": [
+    {
+      "page": "https://cynthiabrowndds.com/",
+      "clicks": 1,
+      "impressions": 43,
+      "ctr": 2.33,
+      "position": 7.44
+    },
+    {
+      "page": "https://cynthiabrowndds.com/about/",
+      "clicks": 1,
+      "impressions": 16,
+      "ctr": 6.25,
+      "position": 7.88
+    },
+    {
+      "page": "https://cynthiabrowndds.com/disclaimer/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 16
+    },
+    {
+      "page": "https://cynthiabrowndds.com/locations/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 8.38
+    },
+    {
+      "page": "https://cynthiabrowndds.com/questions/dentist-southaven-ms-getwell/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 14
+    },
+    {
+      "page": "https://cynthiabrowndds.com/resources/insights/tiktok-teeth-trends/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 5.2
+    },
+    {
+      "page": "https://cynthiabrowndds.com/services/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-11-02",
+      "clicks": 1,
+      "impressions": 22
+    },
+    {
+      "date": "2026-11-03",
+      "clicks": 0,
+      "impressions": 31
+    }
+  ]
 }
