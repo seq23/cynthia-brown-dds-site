@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "Gums, Bleeding, and Bad Breath: The Signs People Ignore Until They Get Annoying",
   "slug": "gums-bleeding-bad-breath",
-  "status": "approved",
+  "status": "published",
   "scheduledAt": "2026-09-15",
   "summary": "A clear, confidence-centered guide to gum health, bleeding gums, bad breath.",
   "minimumWords": 900,
@@ -66,7 +66,8 @@
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
   "seoTitle": "Bleeding Gums and Bad Breath",
-  "seoDescription": "Bleeding gums and persistent bad breath are signals, not small annoyances. What they can point to, and what to raise with a licensed dental professional."
+  "seoDescription": "Bleeding gums and persistent bad breath are signals, not small annoyances. What they can point to, and what to raise with a licensed dental professional.",
+  "publishedAt": "2026-11-05"
 }
 ---
 

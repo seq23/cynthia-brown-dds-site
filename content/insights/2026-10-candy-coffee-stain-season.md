@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "Candy Season, Coffee Season, and Stain Season: How Everyday Habits Affect Your Teeth",
   "slug": "candy-coffee-stain-season",
-  "status": "approved",
+  "status": "published",
   "scheduledAt": "2026-10-15",
   "summary": "A clear, confidence-centered guide to coffee stains, candy, habits, prevention.",
   "minimumWords": 900,
@@ -66,7 +66,8 @@
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
   "seoTitle": "How Coffee and Candy Stain Teeth",
-  "seoDescription": "Coffee, tea, candy and everyday habits all leave their mark on teeth. What causes staining, what helps day to day, and what to ask about at an exam."
+  "seoDescription": "Coffee, tea, candy and everyday habits all leave their mark on teeth. What causes staining, what helps day to day, and what to ask about at an exam.",
+  "publishedAt": "2026-11-05"
 }
 ---
 

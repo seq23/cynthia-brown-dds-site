@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "Back-to-School Isn’t Just for Kids: Building a Better Family Dental Routine",
   "slug": "family-dental-routine",
-  "status": "approved",
+  "status": "published",
   "scheduledAt": "2026-08-15",
   "summary": "A clear, confidence-centered guide to family routines, prevention, busy households.",
   "minimumWords": 900,
@@ -66,7 +66,8 @@
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
   "seoTitle": "A Better Family Dental Routine",
-  "seoDescription": "A family dental routine that survives a busy school year: habits worth keeping, what preventive visits are for, and how to space appointments sensibly."
+  "seoDescription": "A family dental routine that survives a busy school year: habits worth keeping, what preventive visits are for, and how to space appointments sensibly.",
+  "publishedAt": "2026-11-05"
 }
 ---
 

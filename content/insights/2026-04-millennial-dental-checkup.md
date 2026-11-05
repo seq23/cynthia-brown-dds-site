@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "The Millennial Dental Checkup: What to Ask When You Haven’t Been in a While",
   "slug": "millennial-dental-checkup",
-  "status": "approved",
+  "status": "published",
   "scheduledAt": "2026-04-15",
   "summary": "A clear, confidence-centered guide to millennial oral health, comeback visit, preventive care.",
   "minimumWords": 900,
@@ -66,7 +66,8 @@
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
   "seoTitle": "Dental Checkups After Years Away",
-  "seoDescription": "Returning to the dentist after a long gap: what a first visit back usually covers, what to ask about, and how to plan care at a pace that is manageable."
+  "seoDescription": "Returning to the dentist after a long gap: what a first visit back usually covers, what to ask about, and how to plan care at a pace that is manageable.",
+  "publishedAt": "2026-11-05"
 }
 ---
 

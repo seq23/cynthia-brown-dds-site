@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "TikTok Teeth Trends: What Looks Cute Online but May Not Be Safe for Your Smile",
   "slug": "tiktok-teeth-trends",
-  "status": "approved",
+  "status": "published",
   "scheduledAt": "2026-03-15",
   "summary": "A clear, confidence-centered guide to social media, DIY dentistry, enamel safety.",
   "minimumWords": 900,
@@ -66,7 +66,8 @@
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
   "seoTitle": "TikTok Trends and Enamel Safety",
-  "seoDescription": "Filing, DIY whitening and other teeth trends that look appealing on TikTok: what they actually do to enamel, and what to ask a dentist before trying one."
+  "seoDescription": "Filing, DIY whitening and other teeth trends that look appealing on TikTok: what they actually do to enamel, and what to ask a dentist before trying one.",
+  "publishedAt": "2026-11-05"
 }
 ---
 

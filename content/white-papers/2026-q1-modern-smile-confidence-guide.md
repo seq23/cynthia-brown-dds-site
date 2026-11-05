@@ -4,7 +4,7 @@
   "type": "quarterly_white_paper",
   "title": "The Modern Smile Confidence Guide: A Practical Framework for Whitening, Cosmetic Questions, and First Appointments",
   "slug": "modern-smile-confidence-guide",
-  "status": "approved",
+  "status": "published",
   "scheduledAt": "2026-03-31",
   "summary": "A long-form guide for informed, confidence-centered dental decisions.",
   "minimumWords": 2500,
@@ -67,7 +67,8 @@
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
   "seoTitle": "Modern Smile Confidence Guide",
-  "seoDescription": "A practical framework for whitening questions, cosmetic planning and first appointments, written for patients who want to understand options before deciding."
+  "seoDescription": "A practical framework for whitening questions, cosmetic planning and first appointments, written for patients who want to understand options before deciding.",
+  "publishedAt": "2026-11-05"
 }
 ---
 

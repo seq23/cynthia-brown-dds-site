@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "Wedding, Graduation, and Photo-Season Smile Prep: What to Plan Early",
   "slug": "photo-season-smile-prep",
-  "status": "approved",
+  "status": "published",
   "scheduledAt": "2026-05-15",
   "summary": "A clear, confidence-centered guide to event prep, whitening timing, photo confidence.",
   "minimumWords": 900,
@@ -66,7 +66,8 @@
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
   "seoTitle": "Wedding and Photo-Season Smile Prep",
-  "seoDescription": "Planning a smile for a wedding, graduation or photo season: why timing matters, what to raise at an exam, and how far ahead to start the conversation."
+  "seoDescription": "Planning a smile for a wedding, graduation or photo season: why timing matters, what to raise at an exam, and how far ahead to start the conversation.",
+  "publishedAt": "2026-11-05"
 }
 ---
 

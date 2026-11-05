@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "The New-Year Smile Reset: What to Do Before You Book Whitening, Aligners, or Cosmetic Dental Work",
   "slug": "new-year-smile-reset",
-  "status": "approved",
+  "status": "published",
   "scheduledAt": "2026-01-15",
   "summary": "A clear, confidence-centered guide to smile confidence, cosmetic planning, young adult dental questions.",
   "minimumWords": 900,
@@ -66,7 +66,8 @@
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
   "seoTitle": "Before Whitening or Aligners",
-  "seoDescription": "What to sort out before booking whitening, aligners or cosmetic dental work: health first, realistic goals, and the questions to ask at the exam."
+  "seoDescription": "What to sort out before booking whitening, aligners or cosmetic dental work: health first, realistic goals, and the questions to ask at the exam.",
+  "publishedAt": "2026-11-05"
 }
 ---
 

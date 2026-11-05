@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "Dental Emergencies in Real Life: Tooth Pain, Chipped Teeth, Swelling, and When to Call",
   "slug": "dental-emergencies-real-life",
-  "status": "approved",
+  "status": "published",
   "scheduledAt": "2026-07-15",
   "summary": "A clear, confidence-centered guide to urgent dental symptoms, tooth pain, chipped tooth.",
   "minimumWords": 900,
@@ -66,7 +66,8 @@
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
   "seoTitle": "Tooth Pain and Chipped Teeth",
-  "seoDescription": "Tooth pain, a chipped tooth, swelling or fever: which dental symptoms need urgent attention, what to do in the meantime, and when to call the office."
+  "seoDescription": "Tooth pain, a chipped tooth, swelling or fever: which dental symptoms need urgent attention, what to do in the meantime, and when to call the office.",
+  "publishedAt": "2026-11-05"
 }
 ---
 

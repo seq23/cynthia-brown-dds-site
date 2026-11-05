@@ -4,7 +4,7 @@
   "type": "quarterly_white_paper",
   "title": "Dental Anxiety, Avoidance, and the Shame-Free Return to Care",
   "slug": "dental-anxiety-avoidance",
-  "status": "approved",
+  "status": "published",
   "scheduledAt": "2026-06-30",
   "summary": "A long-form guide for informed, confidence-centered dental decisions.",
   "minimumWords": 2500,
@@ -67,7 +67,8 @@
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
   "seoTitle": "Dental Anxiety and Returning to Care",
-  "seoDescription": "A long-form look at how dental anxiety turns into avoidance, what that costs over time, and how a return to care can be planned without judgment or shame."
+  "seoDescription": "A long-form look at how dental anxiety turns into avoidance, what that costs over time, and how a return to care can be planned without judgment or shame.",
+  "publishedAt": "2026-11-05"
 }
 ---
 
