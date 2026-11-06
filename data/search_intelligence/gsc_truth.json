@@ -1,11 +1,11 @@
 {
   "schema": "cbdds-gsc-truth-v1",
   "site": "sc-domain:cynthiabrowndds.com",
-  "collected_at": "2026-11-05T12:43:18.895Z",
-  "day": "2026-11-05",
+  "collected_at": "2026-11-06T12:43:52.845Z",
+  "day": "2026-11-06",
   "window": {
-    "start": "2026-10-06",
-    "end": "2026-11-03",
+    "start": "2026-10-07",
+    "end": "2026-11-04",
     "days": 28,
     "lag_days": 2
   },

@@ -95,6 +95,10 @@
           "ClaudeBot": 24,
           "GPTBot (OpenAI training)": 1
         }
+      },
+      "window": {
+        "since": "2026-11-05T12:44:32.071Z",
+        "until": "2026-11-06T12:44:32.071Z"
       }
     }
   }
