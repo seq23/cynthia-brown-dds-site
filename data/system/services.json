@@ -1,0 +1,15 @@
+{
+  "$comment": "The care topics the /services/ page lists, and the Service nodes the practice publishes in its JSON-LD (scripts/post_build_aeo_geo.js). No prices: the practice publishes none, so every Offer is price-on-request and points at /book/, where the booking page handles pricing. Never add a price here.",
+  "pricing_offer": {
+    "description": "Contact us for current pricing",
+    "path": "/book/"
+  },
+  "services": [
+    "Preventive care",
+    "Restorative care",
+    "Cosmetic dentistry",
+    "Emergency dental care",
+    "Dentures and implants",
+    "Teeth whitening"
+  ]
+}

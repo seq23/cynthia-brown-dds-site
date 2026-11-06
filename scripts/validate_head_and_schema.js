@@ -137,6 +137,14 @@ for (const file of pages) {
   // the only honest shape here. Its telephone and address must match data/system/locations.json.
   const lb = deepNodes(nodes, /LocalBusiness|Dentist|ProfessionalService/).find((n) => n.telephone && n.address && n.areaServed);
   if (!lb) errs.push(`c3: ${route} has no LocalBusiness with telephone, address and areaServed`);
+  // c3 (brand kind): a Service with an honest price-on-request Offer (description naming contact or
+  // request, and the url to ask at). Never a price: the practice publishes none.
+  const svc = deepNodes(nodes, /^Service$/).find((n) => deepNodes([n], /^Offer$/).some((o) => /contact|call|request|quote/i.test(String(o.description ?? '')) && String(o.url ?? '').startsWith(`${SITE}/`)));
+  if (!svc) errs.push(`c3: ${route} has no Service with a price-on-request Offer (description and url)`);
+  for (const o of deepNodes(nodes, /^(Offer|AggregateOffer)$/)) {
+    const priced = ['price', 'lowPrice', 'highPrice', 'priceSpecification'].filter((k) => o[k] !== undefined);
+    if (priced.length) errs.push(`c3: ${route} publishes an Offer with ${priced.join(', ')}; the practice publishes no prices`);
+  }
 }
 
 for (const [title, routes] of titles) {
