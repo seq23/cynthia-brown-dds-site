@@ -93,10 +93,26 @@ function practice(l, suffix) {
 }
 const primary = byId(locations.primary);
 if (!primary) throw new Error(`NAMED STOP [LOCATIONS_PRIMARY_MISSING] data/system/locations.json primary "${locations.primary}" is not in its own locations list`);
+// Search Readiness c3 (brand kind): a Service with an Offer. The practice publishes no prices, so each
+// Offer is an honest price-on-request one (description + where to ask) and carries no price field.
+const servicesData = readJson('data/system/services.json');
+const offerCatalog = {
+  "@type": "OfferCatalog",
+  "name": "Dental care",
+  "itemListElement": servicesData.services.map((name) => ({
+    "@type": "Service",
+    "name": name,
+    "serviceType": name,
+    "provider": { "@id": entity["@id"] },
+    "areaServed": locations.areaServed,
+    "offers": { "@type": "Offer", "description": servicesData.pricing_offer.description, "url": `${SITE}${servicesData.pricing_offer.path}` }
+  }))
+};
 const siteEntity = {
   "@context": "https://schema.org",
   "@graph": [
     { ...practice(primary, 'practice'),
+      "hasOfferCatalog": offerCatalog,
       "department": locations.locations.filter((l) => l.id !== locations.primary).map((l) => practice(l, l.id)) }
   ]
 };
