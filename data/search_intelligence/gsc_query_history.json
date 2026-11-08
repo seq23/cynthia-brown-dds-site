@@ -5,105 +5,169 @@
   "queries": {
     "cindy brown dds": {
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-07",
-      "days_seen": 3,
+      "last_seen": "2026-11-08",
+      "days_seen": 4,
       "best_position": 2.25,
       "clicks_total": 0,
-      "impressions_total": 6
+      "impressions_total": 7
     },
     "cosmetic dentistry trends": {
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-07",
-      "days_seen": 3,
+      "last_seen": "2026-11-08",
+      "days_seen": 4,
       "best_position": 6,
       "clicks_total": 0,
       "impressions_total": 1
     },
     "cynthia brown dds": {
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-07",
-      "days_seen": 3,
-      "best_position": 3,
-      "clicks_total": 0,
-      "impressions_total": 8
+      "last_seen": "2026-11-08",
+      "days_seen": 4,
+      "best_position": 2.77,
+      "clicks_total": 2,
+      "impressions_total": 13
     },
     "dr brown dentist office": {
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-07",
-      "days_seen": 3,
+      "last_seen": "2026-11-08",
+      "days_seen": 4,
       "best_position": 4.5,
       "clicks_total": 0,
-      "impressions_total": 2
+      "impressions_total": 3
     },
     "dr cynthia brown reviews": {
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-07",
-      "days_seen": 3,
+      "last_seen": "2026-11-08",
+      "days_seen": 4,
       "best_position": 10.38,
       "clicks_total": 0,
-      "impressions_total": 8
+      "impressions_total": 9
     },
     "dr cynthia brown southaven": {
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-07",
-      "days_seen": 3,
+      "last_seen": "2026-11-08",
+      "days_seen": 4,
       "best_position": 7.75,
       "clicks_total": 0,
       "impressions_total": 6
     },
     "good smile website down": {
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-07",
-      "days_seen": 3,
+      "last_seen": "2026-11-08",
+      "days_seen": 4,
       "best_position": 8,
       "clicks_total": 0,
       "impressions_total": 1
     },
     "orthodontics olive branch ms": {
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-07",
-      "days_seen": 3,
+      "last_seen": "2026-11-08",
+      "days_seen": 4,
       "best_position": 46.5,
       "clicks_total": 0,
       "impressions_total": 2
     },
     "orthodontist olive branch ms": {
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-07",
-      "days_seen": 3,
+      "last_seen": "2026-11-08",
+      "days_seen": 4,
       "best_position": 69,
       "clicks_total": 0,
       "impressions_total": 3
     },
     "composite bonding vs veneers": {
       "first_seen": "2026-11-07",
-      "last_seen": "2026-11-07",
-      "days_seen": 1,
+      "last_seen": "2026-11-08",
+      "days_seen": 2,
       "best_position": 82,
       "clicks_total": 0,
-      "impressions_total": 1
+      "impressions_total": 4
     },
     "dr brown dentist": {
       "first_seen": "2026-11-07",
-      "last_seen": "2026-11-07",
-      "days_seen": 1,
+      "last_seen": "2026-11-08",
+      "days_seen": 2,
       "best_position": 2,
       "clicks_total": 0,
-      "impressions_total": 1
+      "impressions_total": 2
     },
     "walk in dentist southaven, ms": {
       "first_seen": "2026-11-07",
-      "last_seen": "2026-11-07",
-      "days_seen": 1,
+      "last_seen": "2026-11-08",
+      "days_seen": 2,
       "best_position": 11.5,
       "clicks_total": 0,
       "impressions_total": 2
+    },
+    "dental anxiety tips blue island": {
+      "first_seen": "2026-11-08",
+      "last_seen": "2026-11-08",
+      "days_seen": 1,
+      "best_position": 70,
+      "clicks_total": 0,
+      "impressions_total": 2
+    },
+    "dr cynthia brown": {
+      "first_seen": "2026-11-08",
+      "last_seen": "2026-11-08",
+      "days_seen": 1,
+      "best_position": 12,
+      "clicks_total": 0,
+      "impressions_total": 3
+    },
+    "dr. brown dentistry": {
+      "first_seen": "2026-11-08",
+      "last_seen": "2026-11-08",
+      "days_seen": 1,
+      "best_position": 7,
+      "clicks_total": 0,
+      "impressions_total": 1
+    },
+    "emergency dentist near southaven": {
+      "first_seen": "2026-11-08",
+      "last_seen": "2026-11-08",
+      "days_seen": 1,
+      "best_position": 10.5,
+      "clicks_total": 0,
+      "impressions_total": 2
+    },
+    "emergency dentist southaven ms": {
+      "first_seen": "2026-11-08",
+      "last_seen": "2026-11-08",
+      "days_seen": 1,
+      "best_position": 7,
+      "clicks_total": 0,
+      "impressions_total": 2
+    },
+    "what is dental anxiety": {
+      "first_seen": "2026-11-08",
+      "last_seen": "2026-11-08",
+      "days_seen": 1,
+      "best_position": 90,
+      "clicks_total": 0,
+      "impressions_total": 1
+    },
+    "what is the fear of dentists called": {
+      "first_seen": "2026-11-08",
+      "last_seen": "2026-11-08",
+      "days_seen": 1,
+      "best_position": 84,
+      "clicks_total": 0,
+      "impressions_total": 1
+    },
+    "why is dental anxiety so common": {
+      "first_seen": "2026-11-08",
+      "last_seen": "2026-11-08",
+      "days_seen": 1,
+      "best_position": 7,
+      "clicks_total": 0,
+      "impressions_total": 1
     }
   },
-  "updated_at": "2026-11-07T12:43:56.278Z",
+  "updated_at": "2026-11-08T12:44:12.586Z",
   "counts": {
-    "known": 12,
-    "in_window_today": 12,
-    "new_today": 3
+    "known": 20,
+    "in_window_today": 20,
+    "new_today": 8
   }
 }

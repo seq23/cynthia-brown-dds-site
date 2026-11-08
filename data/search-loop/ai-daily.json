@@ -137,6 +137,10 @@
           "GPTBot (OpenAI training)": 1,
           "Google-Extended": 1
         }
+      },
+      "window": {
+        "since": "2026-11-07T12:44:51.260Z",
+        "until": "2026-11-08T12:44:51.260Z"
       }
     }
   }
