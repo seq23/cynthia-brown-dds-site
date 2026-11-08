@@ -121,6 +121,23 @@
         "since": "2026-11-06T12:44:34.333Z",
         "until": "2026-11-07T12:44:34.333Z"
       }
+    },
+    "2026-11-08": {
+      "ai_visitors": {
+        "total": 0,
+        "by_engine": {},
+        "by_path": {},
+        "source": "web-analytics"
+      },
+      "ai_bot_hits": {
+        "total": 8,
+        "by_bot": {
+          "OAI-SearchBot (ChatGPT search)": 3,
+          "Amazonbot": 3,
+          "GPTBot (OpenAI training)": 1,
+          "Google-Extended": 1
+        }
+      }
     }
   }
 }
