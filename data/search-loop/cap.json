@@ -2,8 +2,8 @@
   "schema": "search-loop-cap-v1",
   "max_live_pages": 20,
   "config_value": null,
-  "reason": "held at 20: no Search Console numbers to judge results (Search Console: HTTP 403 User does not have sufficient permission for site 'sc-domain:cynthiabrowndds.com'. See also: https:/); the cap never grows without data",
-  "last_eval_week": "2026-W45",
+  "reason": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-12..2026-10-09, so there is nothing to compare the last 28 days with); the cap never grows without data",
+  "last_eval_week": "2026-W46",
   "history": [
     {
       "at": "2026-11-03T12:42:21.771Z",
@@ -17,6 +17,13 @@
       "from": 20,
       "to": 20,
       "reason": "held at 20: no Search Console numbers to judge results (Search Console: HTTP 403 User does not have sufficient permission for site 'sc-domain:cynthiabrowndds.com'. See also: https:/); the cap never grows without data"
+    },
+    {
+      "at": "2026-11-09T12:27:43.733Z",
+      "week": "2026-W46",
+      "from": 20,
+      "to": 20,
+      "reason": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-12..2026-10-09, so there is nothing to compare the last 28 days with); the cap never grows without data"
     }
   ],
   "held": {
@@ -24,6 +31,7 @@
     "2026-11-05": 10,
     "2026-11-06": 10,
     "2026-11-07": 10,
-    "2026-11-08": 10
+    "2026-11-08": 10,
+    "2026-11-09": 10
   }
 }
