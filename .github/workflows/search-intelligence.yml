@@ -37,6 +37,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # A scheduled run that waited on the search loop (same concurrency group) must measure on
+          # the main the loop just pushed, not the commit it was queued on (9 Nov 2026: ai-daily.json conflict).
+          ref: main
 
       - name: Setup Node
         uses: actions/setup-node@v4
