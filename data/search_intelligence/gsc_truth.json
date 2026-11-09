@@ -1,42 +1,42 @@
 {
   "schema": "cbdds-gsc-truth-v1",
   "site": "sc-domain:cynthiabrowndds.com",
-  "collected_at": "2026-11-08T12:44:12.586Z",
-  "day": "2026-11-08",
+  "collected_at": "2026-11-09T15:28:08.301Z",
+  "day": "2026-11-09",
   "window": {
-    "start": "2026-10-09",
-    "end": "2026-11-06",
+    "start": "2026-10-10",
+    "end": "2026-11-07",
     "days": 28,
     "lag_days": 2
   },
   "totals": {
     "clicks": 4,
-    "impressions": 137,
-    "ctr": 2.92,
-    "position": 13.77,
+    "impressions": 164,
+    "ctr": 2.44,
+    "position": 13.71,
     "source": "searchAnalytics with no dimensions, the same window as the rows below"
   },
   "queries": [
     {
       "query": "cynthia brown dds",
       "clicks": 2,
-      "impressions": 13,
-      "ctr": 15.38,
-      "position": 2.77
+      "impressions": 15,
+      "ctr": 13.33,
+      "position": 2.8
     },
     {
       "query": "cindy brown dds",
       "clicks": 0,
-      "impressions": 7,
+      "impressions": 11,
       "ctr": 0,
-      "position": 2.43
+      "position": 2.45
     },
     {
       "query": "composite bonding vs veneers",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 6,
       "ctr": 0,
-      "position": 82
+      "position": 86.83
     },
     {
       "query": "cosmetic dentistry trends",
@@ -76,16 +76,16 @@
     {
       "query": "dr cynthia brown reviews",
       "clicks": 0,
-      "impressions": 9,
+      "impressions": 11,
       "ctr": 0,
-      "position": 10.56
+      "position": 10.73
     },
     {
       "query": "dr cynthia brown southaven",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 9,
       "ctr": 0,
-      "position": 8.17
+      "position": 7.67
     },
     {
       "query": "dr. brown dentistry",
@@ -95,16 +95,23 @@
       "position": 7
     },
     {
+      "query": "dr.brown dentist",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
       "query": "emergency dentist near southaven",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 4,
       "ctr": 0,
-      "position": 10.5
+      "position": 11.25
     },
     {
       "query": "emergency dentist southaven ms",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 3,
       "ctr": 0,
       "position": 7
     },
@@ -162,16 +169,16 @@
     {
       "page": "https://cynthiabrowndds.com/",
       "clicks": 4,
-      "impressions": 80,
-      "ctr": 5,
-      "position": 8.35
+      "impressions": 90,
+      "ctr": 4.44,
+      "position": 7.83
     },
     {
       "page": "https://cynthiabrowndds.com/about/",
       "clicks": 1,
-      "impressions": 34,
-      "ctr": 2.94,
-      "position": 7.76
+      "impressions": 45,
+      "ctr": 2.22,
+      "position": 7.33
     },
     {
       "page": "https://cynthiabrowndds.com/book/",
@@ -183,16 +190,16 @@
     {
       "page": "https://cynthiabrowndds.com/disclaimer/",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 4,
       "ctr": 0,
-      "position": 13.33
+      "position": 13.5
     },
     {
       "page": "https://cynthiabrowndds.com/locations/",
       "clicks": 0,
-      "impressions": 14,
+      "impressions": 16,
       "ctr": 0,
-      "position": 8.07
+      "position": 8.19
     },
     {
       "page": "https://cynthiabrowndds.com/questions/",
@@ -225,9 +232,9 @@
     {
       "page": "https://cynthiabrowndds.com/questions/emergency-dentist-southaven-ms/",
       "clicks": 0,
-      "impressions": 7,
+      "impressions": 14,
       "ctr": 0,
-      "position": 9.57
+      "position": 9.71
     },
     {
       "page": "https://cynthiabrowndds.com/questions/how-to-relieve-dental-anxiety/",
@@ -239,16 +246,16 @@
     {
       "page": "https://cynthiabrowndds.com/questions/veneers-vs-composite-bonding/",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 7,
       "ctr": 0,
-      "position": 85.4
+      "position": 88.57
     },
     {
       "page": "https://cynthiabrowndds.com/questions/what-is-dental-anxiety-called/",
       "clicks": 0,
-      "impressions": 9,
+      "impressions": 11,
       "ctr": 0,
-      "position": 24.78
+      "position": 21.36
     },
     {
       "page": "https://cynthiabrowndds.com/questions/why-is-dental-anxiety-so-common/",
@@ -288,9 +295,9 @@
     {
       "page": "https://cynthiabrowndds.com/services/",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 7,
       "ctr": 0,
-      "position": 9.75
+      "position": 10
     }
   ],
   "days": [
@@ -318,6 +325,11 @@
       "date": "2026-11-06",
       "clicks": 0,
       "impressions": 25
+    },
+    {
+      "date": "2026-11-07",
+      "clicks": 0,
+      "impressions": 27
     }
   ]
 }
