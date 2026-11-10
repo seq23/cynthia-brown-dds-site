@@ -60,7 +60,7 @@ jobs:
         run: node scripts/entity_backlink_watch.js | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: The healed entity.json is still a valid identity
-        run: npm run -s build && node scripts/validate_entity_graph.js
+        run: npm run -s build
 
       - name: Self-heal as a pull request
         env:

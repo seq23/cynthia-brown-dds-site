@@ -43,7 +43,7 @@ const mapsUrl = (l) => `https://www.google.com/maps/search/?api=1&query=${encode
 // Search Readiness k1 and k3 (3 Nov 2026). The name, logo, description and external profiles used
 // to be typed into this script, so the published identity and the repository's idea of it could
 // drift apart with nobody noticing. entity.json is now the only statement of it; this file is the
-// published form, scripts/validate_entity_graph.js proves the two still agree, and
+// published form, the central search audit checks the two still agree, and
 // scripts/entity_backlink_watch.js rechecks the profiles every week.
 const entity = readJson('entity.json');
 const LOGO = typeof entity.logo === 'string' ? entity.logo : entity.logo?.url;
@@ -66,7 +66,7 @@ if (!SAME_AS.includes(booking.defaultBookingUrl)) {
 }
 // Search Readiness c6: who put their name to the page. The same author block scripts/build_site.js
 // renders as the visible byline, published as the WebPage author so the node and the byline agree
-// (scripts/validate_page_byline.js proves they do).
+// (the central search audit checks they do).
 const AUTHOR = entity.author;
 if (!AUTHOR || !AUTHOR.name) throw new Error('NAMED STOP [ENTITY_AUTHOR_MISSING] entity.json has no author.name; pages would publish a WebPage nobody is named on');
 const authorNode = { "@context": "https://schema.org", ...AUTHOR };

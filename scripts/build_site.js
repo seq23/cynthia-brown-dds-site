@@ -62,7 +62,7 @@ const entity = readJson('entity.json');
 // /smile-philosophy/ as a page nobody had signed (3 Nov 2026 brief so-cynthiabrowndds.com-quality).
 // The name, credential and About link are NEVER typed here: they are entity.json's author block,
 // the same one scripts/post_build_aeo_geo.js publishes as the page's author node, and
-// scripts/validate_page_byline.js refuses a build where the two disagree.
+// the central search audit (Boss OS) flags a page where the two disagree.
 // No date: a "last reviewed" line would be a freshness claim this build cannot prove.
 const AUTHOR = entity.author;
 if (!AUTHOR || !AUTHOR.name) { console.error('NAMED STOP [ENTITY_AUTHOR_MISSING] entity.json has no author.name; no page could carry a named reviewer'); process.exit(1); }

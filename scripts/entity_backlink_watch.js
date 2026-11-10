@@ -187,7 +187,7 @@ async function main() {
   for (const c of changes) console.log(`SELF-HEAL ${c}`);
   for (const s of stops) console.log(s);
   if (!next.sameAs.length) {
-    console.log('NAMED STOP [ENTITY_SAMEAS_EMPTY] every sameAs profile is dead; scripts/validate_entity_graph.js and the build will refuse until one resolves.');
+    console.log('NAMED STOP [ENTITY_SAMEAS_EMPTY] every sameAs profile is dead; the published identity carries no outside profile until one resolves.');
   }
   if (process.env.WATCH_REPORT) {
     fs.writeFileSync(process.env.WATCH_REPORT, `${JSON.stringify({ checked_at: new Date().toISOString(), results, changes, stops }, null, 2)}\n`);
