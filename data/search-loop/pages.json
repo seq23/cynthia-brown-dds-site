@@ -63,8 +63,8 @@
         "dental anxiety"
       ],
       "reshaped": {
-        "v": 1,
-        "at": "2026-11-09",
+        "v": 2,
+        "at": "2026-11-10",
         "fixed": [],
         "left": [
           "shape: the body needs at least one list or table (give one section \"bullets\")",
@@ -430,8 +430,8 @@
       "checks": {},
       "indexnow_at": "2026-11-03",
       "reshaped": {
-        "v": 1,
-        "at": "2026-11-09",
+        "v": 2,
+        "at": "2026-11-10",
         "fixed": [],
         "left": [
           "facts: needs at least 2 distinct sources whose URLs answered 200 (found 1)",
