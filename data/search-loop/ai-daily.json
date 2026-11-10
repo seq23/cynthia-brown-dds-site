@@ -171,12 +171,16 @@
         "source": "web-analytics"
       },
       "ai_bot_hits": {
-        "total": 16,
+        "total": 15,
         "by_bot": {
           "OAI-SearchBot (ChatGPT search)": 4,
-          "Amazonbot": 10,
+          "Amazonbot": 9,
           "GPTBot (OpenAI training)": 2
         }
+      },
+      "window": {
+        "since": "2026-11-09T12:44:11.603Z",
+        "until": "2026-11-10T12:44:11.603Z"
       }
     }
   }
