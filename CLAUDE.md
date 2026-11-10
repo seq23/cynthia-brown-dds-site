@@ -29,14 +29,14 @@ the doc and `config/llm_routing.json` stop agreeing.
 
 [`entity.json`](entity.json) is the one statement of the site's identity — name, logo, description
 and the external profiles that are the same real-world practitioner. The published JSON-LD is built
-from it, `scripts/validate_entity_graph.js` refuses a build where the two disagree, and
+from it, the central search audit (Boss OS) flags a page where the two disagree, and
 `.github/workflows/entity-backlink-watch.yml` rechecks the profiles every week. Never type a name,
 logo or profile URL into a template; change `entity.json`.
 
 Its `author` block is the one statement of who reviewed the words. The templates render it as the
 visible `rel="author"` byline on every indexable page and `scripts/post_build_aeo_geo.js` publishes
-it as that page's JSON-LD author; `scripts/validate_page_byline.js` refuses a build where a page,
-its byline and this file disagree. A byline carries a name and a credential and never a date: a
+it as that page's JSON-LD author; the central search audit flags a page whose byline,
+JSON-LD author and this file disagree. A byline carries a name and a credential and never a date: a
 "last reviewed" line would be a freshness claim the build cannot prove.
 
 ## Proving a change
