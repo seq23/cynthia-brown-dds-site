@@ -1,42 +1,56 @@
 {
   "schema": "cbdds-gsc-truth-v1",
   "site": "sc-domain:cynthiabrowndds.com",
-  "collected_at": "2026-11-10T12:43:31.884Z",
-  "day": "2026-11-10",
+  "collected_at": "2026-11-11T12:43:28.940Z",
+  "day": "2026-11-11",
   "window": {
-    "start": "2026-10-11",
-    "end": "2026-11-08",
+    "start": "2026-10-12",
+    "end": "2026-11-09",
     "days": 28,
     "lag_days": 2
   },
   "totals": {
-    "clicks": 5,
-    "impressions": 191,
-    "ctr": 2.62,
-    "position": 13.3,
+    "clicks": 6,
+    "impressions": 234,
+    "ctr": 2.56,
+    "position": 12.82,
     "source": "searchAnalytics with no dimensions, the same window as the rows below"
   },
   "queries": [
     {
       "query": "cynthia brown dds",
       "clicks": 2,
-      "impressions": 16,
-      "ctr": 12.5,
-      "position": 2.81
+      "impressions": 20,
+      "ctr": 10,
+      "position": 2.85
+    },
+    {
+      "query": "can a dentist prescribe anxiety medication",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "can dentist prescribe anxiety meds",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
     },
     {
       "query": "cindy brown dds",
       "clicks": 0,
-      "impressions": 12,
+      "impressions": 13,
       "ctr": 0,
-      "position": 2.5
+      "position": 2.46
     },
     {
       "query": "composite bonding vs veneers",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 7,
       "ctr": 0,
-      "position": 86.83
+      "position": 87.43
     },
     {
       "query": "composite teeth bonding vs veneers",
@@ -83,16 +97,16 @@
     {
       "query": "dr cynthia brown reviews",
       "clicks": 0,
-      "impressions": 12,
+      "impressions": 13,
       "ctr": 0,
-      "position": 11
+      "position": 11.38
     },
     {
       "query": "dr cynthia brown southaven",
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 13,
       "ctr": 0,
-      "position": 7.64
+      "position": 7.62
     },
     {
       "query": "dr. brown dentistry",
@@ -111,16 +125,23 @@
     {
       "query": "emergency dentist near southaven",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 8,
       "ctr": 0,
-      "position": 11.2
+      "position": 11.38
     },
     {
       "query": "emergency dentist southaven ms",
       "clicks": 0,
-      "impressions": 7,
+      "impressions": 9,
       "ctr": 0,
-      "position": 7.43
+      "position": 7.56
+    },
+    {
+      "query": "fear of dentist rogers ar",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 18
     },
     {
       "query": "good smile website down",
@@ -174,32 +195,32 @@
     {
       "query": "why is dental anxiety so common",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 7
+      "position": 8.5
     }
   ],
   "pages": [
     {
       "page": "https://cynthiabrowndds.com/",
-      "clicks": 4,
-      "impressions": 95,
-      "ctr": 4.21,
-      "position": 7.63
+      "clicks": 5,
+      "impressions": 107,
+      "ctr": 4.67,
+      "position": 7.2
     },
     {
       "page": "https://cynthiabrowndds.com/about/",
       "clicks": 1,
-      "impressions": 50,
-      "ctr": 2,
-      "position": 7.14
+      "impressions": 62,
+      "ctr": 1.61,
+      "position": 6.81
     },
     {
       "page": "https://cynthiabrowndds.com/questions/can-dental-implants-cause-anxiety/",
       "clicks": 1,
-      "impressions": 1,
-      "ctr": 100,
-      "position": 1
+      "impressions": 3,
+      "ctr": 33.33,
+      "position": 4.33
     },
     {
       "page": "https://cynthiabrowndds.com/book/",
@@ -218,9 +239,9 @@
     {
       "page": "https://cynthiabrowndds.com/locations/",
       "clicks": 0,
-      "impressions": 18,
+      "impressions": 19,
       "ctr": 0,
-      "position": 8.22
+      "position": 8.16
     },
     {
       "page": "https://cynthiabrowndds.com/questions/",
@@ -232,9 +253,9 @@
     {
       "page": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 7,
       "ctr": 0,
-      "position": 1
+      "position": 5.57
     },
     {
       "page": "https://cynthiabrowndds.com/questions/dental-anxiety-medication/",
@@ -253,9 +274,16 @@
     {
       "page": "https://cynthiabrowndds.com/questions/dentist-in-olive-branch-ms-on-goodman-rd/",
       "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://cynthiabrowndds.com/questions/dentist-olive-branch-mississippi/",
+      "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 8
+      "position": 10
     },
     {
       "page": "https://cynthiabrowndds.com/questions/dentist-southaven-ms-getwell/",
@@ -267,9 +295,9 @@
     {
       "page": "https://cynthiabrowndds.com/questions/emergency-dentist-southaven-ms/",
       "clicks": 0,
-      "impressions": 23,
+      "impressions": 29,
       "ctr": 0,
-      "position": 9.48
+      "position": 9.66
     },
     {
       "page": "https://cynthiabrowndds.com/questions/how-to-relieve-dental-anxiety/",
@@ -279,32 +307,39 @@
       "position": 70
     },
     {
+      "page": "https://cynthiabrowndds.com/questions/is-dental-anxiety-real/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 18
+    },
+    {
       "page": "https://cynthiabrowndds.com/questions/veneers-vs-composite-bonding/",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 10,
       "ctr": 0,
-      "position": 88.13
+      "position": 89.3
     },
     {
       "page": "https://cynthiabrowndds.com/questions/what-is-dental-anxiety-called/",
       "clicks": 0,
-      "impressions": 12,
+      "impressions": 15,
       "ctr": 0,
-      "position": 19.75
+      "position": 16.93
     },
     {
       "page": "https://cynthiabrowndds.com/questions/why-is-dental-anxiety-so-common/",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 3,
       "ctr": 0,
-      "position": 8
+      "position": 8.67
     },
     {
       "page": "https://cynthiabrowndds.com/resources/insights/new-year-smile-reset/",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 11
+      "position": 6
     },
     {
       "page": "https://cynthiabrowndds.com/resources/insights/tiktok-teeth-trends/",
@@ -337,9 +372,9 @@
     {
       "page": "https://cynthiabrowndds.com/services/",
       "clicks": 0,
-      "impressions": 9,
+      "impressions": 17,
       "ctr": 0,
-      "position": 11.22
+      "position": 9.82
     }
   ],
   "days": [
@@ -377,6 +412,11 @@
       "date": "2026-11-08",
       "clicks": 1,
       "impressions": 27
+    },
+    {
+      "date": "2026-11-09",
+      "clicks": 1,
+      "impressions": 43
     }
   ]
 }
