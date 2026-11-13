@@ -41,3 +41,5 @@ schedule); see the notes below for what moved.
   read-only `SEARCH_LOOP_ANALYTICS_TOKEN` Actions secret. It does not run the writer or checkpoint
   repair. Weekly Outcome Report uploads the shared `search-loop-week` schema from this ledger;
   unread days remain unread and a stale measurement fails the report instead of publishing zero.
+
+- f11 repair, 4 Nov 2026: AI measurement runs as an independent job in Search Intelligence, so a refused Search Console read cannot suppress Cloudflare measurement. It uploads `search-loop-week` directly on each successful daily read; the readiness audit consumes Actions artifacts, not the committed report. Both jobs rebase before pushing their disjoint measurement files.

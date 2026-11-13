@@ -68,6 +68,32 @@ jobs:
           GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
         run: node scripts/search_intelligence/collect_index_coverage.js
 
+      - name: Prove the files before committing them
+        run: node scripts/validate_search_measurement.js
+
+      - name: Commit the day's measurement
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/search_intelligence
+          if git diff --cached --quiet; then
+            echo "::error::NO_MEASUREMENT_WRITTEN the collectors exited 0 but changed nothing; the day was not recorded"
+            exit 1
+          fi
+          git commit -m "search intelligence: Search Console truth, coverage and sitemap status"
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
+
+  ai-measurement:
+    name: Measure and report AI traffic independently of Search Console
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
       - name: Read the shared free analytics collector
         uses: actions/checkout@v4
         with:
@@ -81,19 +107,20 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.SEARCH_LOOP_CF_ACCOUNT_ID }}
         run: node scripts/collect_ai_analytics.mjs
 
-      - name: Prove the files before committing them
-        run: node scripts/validate_search_measurement.js
+      - name: Upload the measured search-loop week for the readiness audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: search-loop-week
+          path: search-loop-week.json
+          if-no-files-found: error
 
-      - name: Commit the day's measurement
+      - name: Commit the AI measurement without overwriting concurrent search truth
         run: |
           set -euo pipefail
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/search_intelligence data/search-loop/ai-daily.json data/search-loop/reports
-          if git diff --cached --quiet; then
-            echo "::error::NO_MEASUREMENT_WRITTEN the collectors exited 0 but changed nothing; the day was not recorded"
-            exit 1
-          fi
-          git commit -m "search intelligence: Search Console truth, coverage and sitemap status"
-          git pull --rebase --autostash origin main
+          git add data/search-loop/ai-daily.json data/search-loop/reports
+          git diff --cached --quiet && { echo "::error::NO_AI_MEASUREMENT_WRITTEN"; exit 1; }
+          git commit -m "search intelligence: measure AI referrals and bot reads"
+          git pull --rebase origin main
           git push origin HEAD:main
