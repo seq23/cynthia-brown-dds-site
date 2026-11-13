@@ -2,13 +2,13 @@
   "schema": "search-loop-week-v1",
   "week": "2026-W46",
   "site": "cynthiabrowndds.com",
-  "generated_at": "2026-11-12T12:44:21.042Z",
+  "generated_at": "2026-11-13T12:44:32.790Z",
   "state": "running",
   "published": 0,
   "indexed": "not read: no page old enough to inspect yet (14 days)",
   "pace": 10,
   "ai_visitors": 0,
-  "ai_bot_hits": 163,
+  "ai_bot_hits": 141,
   "conversions": "not read: no conversion source configured for this site (form fills / checkouts)",
   "wins": 0,
   "undone": 0,
@@ -22,7 +22,7 @@
     "why": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-12..2026-10-09, so there is nothing to compare the last 28 days with); the cap never grows without data"
   },
   "notes": [
-    "AI totals cover 7 measured day(s): 2026-11-06, 2026-11-07, 2026-11-08, 2026-11-09, 2026-11-10, 2026-11-11, 2026-11-12. Unread days are excluded, never zero-filled. Bot counts are requests, not people; referrals come from aggregate hostname-only analytics."
+    "AI totals cover 7 measured day(s): 2026-11-07, 2026-11-08, 2026-11-09, 2026-11-10, 2026-11-11, 2026-11-12, 2026-11-13. Unread days are excluded, never zero-filled. Bot counts are requests, not people; referrals come from aggregate hostname-only analytics."
   ],
   "lanes": {
     "ratio": {
@@ -50,5 +50,5 @@
     "weight_changes": [],
     "competition": "ok: 15 top-10 read(s) via brave"
   },
-  "run_url": "https://github.com/seq23/cynthia-brown-dds-site/actions/runs/43220508628"
+  "run_url": "https://github.com/seq23/cynthia-brown-dds-site/actions/runs/43427626733"
 }
