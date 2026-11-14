@@ -259,6 +259,10 @@
           "Meta-ExternalAgent": 2,
           "GPTBot (OpenAI training)": 2
         }
+      },
+      "window": {
+        "since": "2026-11-13T12:44:08.678Z",
+        "until": "2026-11-14T12:44:08.678Z"
       }
     }
   }
