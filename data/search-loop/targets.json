@@ -1,15 +1,15 @@
 {
   "schema": "search-loop-targets-v1",
   "site": "cynthiabrowndds.com",
-  "week": "2026-W46",
-  "generated_at": "2026-11-09T12:27:43.733Z",
+  "week": "2026-W47",
+  "generated_at": "2026-11-16T12:36:15.684Z",
   "sources": {
-    "search_console": "ok: 32 rows",
+    "search_console": "ok: 45 rows",
     "bing_webmaster": "ok: 0 rows",
-    "easy_wins": "ok: 3 easy win(s) in Search Console",
+    "easy_wins": "ok: 2 easy win(s) in Search Console",
     "suggestqueries.google.com": "ok",
     "api.bing.com": "ok",
-    "relevance_screen": "ok: kept 26 of 33 (free model)",
+    "relevance_screen": "ok: kept 58 of 150 (free model)",
     "top10": "ok: 15 top-10 read(s) via brave"
   },
   "targets": [
@@ -19,23 +19,18 @@
       "signals": {
         "words": 4,
         "question": false,
-        "gsc_position": 16,
-        "gsc_impressions": 1,
+        "gsc_position": 14,
+        "gsc_impressions": 5,
         "gsc_page": "https://cynthiabrowndds.com/services/",
-        "neighbour": {
-          "sim": 0.5,
-          "of": "cynthia brown dds",
-          "why": "top 3 with 13 impressions"
-        },
         "unanswered": {
           "words": 4,
           "covered": 0.25,
-          "parts_best_position": 2,
-          "parts_rows": 11
+          "parts_best_position": 1.9,
+          "parts_rows": 12
         },
         "top10": {
           "provider": "brave",
-          "weakness": 0.31,
+          "weakness": 0.38,
           "counts": {
             "results": 10,
             "directories": 3,
@@ -50,17 +45,55 @@
         }
       },
       "scores": {
-        "striking": 39.5,
-        "can_be_one": 69.9
+        "striking": 49.4,
+        "can_be_one": 55.2
       },
-      "score": 69.9,
+      "score": 55.2,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "easy-win neighbour of \"cynthia brown dds\" (top 3 with 13 impressions)",
-        "no site page answers this 4-word question, and the site holds its parts at position 2",
-        "weak top 10 (0.31): 3 directories, 0 forums, 1 off-target national, 0 thin or old, 5 answer the exact question",
+        "no site page answers this 4-word question, and the site holds its parts at position 1.9",
+        "weak top 10 (0.38): 3 directories, 0 forums, 1 off-target national, 0 thin or old, 5 answer the exact question",
         "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "walk in dentist southaven ms",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 11.7,
+        "gsc_impressions": 7,
+        "gsc_page": "https://cynthiabrowndds.com/questions/emergency-dentist-southaven-ms/",
+        "google_suggest": true,
+        "local": true,
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.08,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 1,
+            "exact_answer": 1
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 1 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 75.3,
+        "can_be_one": 13.2
+      },
+      "score": 75.3,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 11.7 in Search Console (7 impressions)",
+        "can-be-#1 evidence too thin (13.2 < 15)"
       ]
     },
     {
@@ -80,30 +113,31 @@
         },
         "top10": {
           "provider": "brave",
-          "weakness": 0.23,
+          "weakness": 0.31,
           "counts": {
             "results": 10,
             "directories": 0,
-            "forums": 1,
+            "forums": 3,
             "off_target_national": 0,
-            "thin_or_old": 1,
+            "thin_or_old": 2,
             "exact_answer": 0
           },
           "reasons": [
-            "top 10: 0 directories, 1 forums, 0 off-target national, 1 thin or old, 0 answer the exact question"
+            "top 10: 0 directories, 3 forums, 0 off-target national, 2 thin or old, 0 answer the exact question"
           ]
         }
       },
       "scores": {
         "striking": 54,
-        "can_be_one": 49.2
+        "can_be_one": 52.4
       },
-      "score": 54,
+      "score": 52.4,
       "kind": "new",
-      "lane": "striking",
+      "lane": "can_be_one",
       "reasons": [
-        "already ranks 8 in Search Console (1 impressions)",
-        "can-be-#1 score 49.2 too (taken by the striking lane's turn)"
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "weak top 10 (0.31): 0 directories, 3 forums, 0 off-target national, 2 thin or old, 0 answer the exact question",
+        "people search it (autocomplete or impressions)"
       ]
     },
     {
@@ -113,11 +147,11 @@
         "words": 3,
         "question": false,
         "gsc_position": 8.5,
-        "gsc_impressions": 2,
+        "gsc_impressions": 4,
         "gsc_page": "https://cynthiabrowndds.com/questions/",
         "neighbour": {
           "sim": 0.67,
-          "of": "cindy brown dds",
+          "of": "cheryl brown dds",
           "why": "top 3 with 1 impressions"
         },
         "top10": {
@@ -128,67 +162,24 @@
             "directories": 4,
             "forums": 0,
             "off_target_national": 0,
-            "thin_or_old": 2,
-            "exact_answer": 4
+            "thin_or_old": 1,
+            "exact_answer": 3
           },
           "reasons": [
-            "top 10: 4 directories, 0 forums, 0 off-target national, 2 thin or old, 4 answer the exact question"
+            "top 10: 4 directories, 0 forums, 0 off-target national, 1 thin or old, 3 answer the exact question"
           ]
         }
       },
       "scores": {
-        "striking": 45.4,
+        "striking": 48.4,
         "can_be_one": 48.7
       },
       "score": 48.7,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "easy-win neighbour of \"cindy brown dds\" (top 3 with 1 impressions)",
-        "weak top 10 (0.38): 4 directories, 0 forums, 0 off-target national, 2 thin or old, 4 answer the exact question",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "dr cynthia brown",
-      "variants": [],
-      "signals": {
-        "words": 3,
-        "question": false,
-        "gsc_position": 12,
-        "gsc_impressions": 3,
-        "gsc_page": "https://cynthiabrowndds.com/about/",
-        "neighbour": {
-          "sim": 0.75,
-          "of": "dr cynthia brown southaven",
-          "why": "top 2 with 3 impressions"
-        },
-        "top10": {
-          "provider": "brave",
-          "weakness": 0.23,
-          "counts": {
-            "results": 10,
-            "directories": 3,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 1,
-            "exact_answer": 6
-          },
-          "reasons": [
-            "top 10: 3 directories, 0 forums, 0 off-target national, 1 thin or old, 6 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 40.7,
-        "can_be_one": 45.5
-      },
-      "score": 45.5,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "easy-win neighbour of \"dr cynthia brown southaven\" (top 2 with 3 impressions)",
-        "weak top 10 (0.23): 3 directories, 0 forums, 0 off-target national, 1 thin or old, 6 answer the exact question",
+        "easy-win neighbour of \"cheryl brown dds\" (top 3 with 1 impressions)",
+        "weak top 10 (0.38): 4 directories, 0 forums, 0 off-target national, 1 thin or old, 3 answer the exact question",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -198,87 +189,12 @@
       "signals": {
         "words": 4,
         "question": false,
-        "gsc_position": 10.5,
-        "gsc_impressions": 2,
+        "gsc_position": 10.8,
+        "gsc_impressions": 12,
         "gsc_page": "https://cynthiabrowndds.com/questions/emergency-dentist-southaven-ms/",
         "top10": {
           "provider": "brave",
           "weakness": 0.15,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 1,
-            "exact_answer": 2
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 2 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 51.8,
-        "can_be_one": 16
-      },
-      "score": 51.8,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "already ranks 10.5 in Search Console (2 impressions)",
-        "can-be-#1 score 16 too (taken by the striking lane's turn)"
-      ]
-    },
-    {
-      "query": "composite bonding vs porcelain veneers",
-      "variants": [
-        "is composite bonding or porcelain veneers better"
-      ],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "google_suggest": true,
-        "top10": {
-          "provider": "brave",
-          "weakness": 0.15,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 1,
-            "exact_answer": 2
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 2 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 40,
-        "can_be_one": 16
-      },
-      "score": 16,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "weak top 10 (0.15): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 2 answer the exact question",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "walk in dentist southaven ms",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "gsc_position": 11.5,
-        "gsc_impressions": 2,
-        "gsc_page": "https://cynthiabrowndds.com/questions/emergency-dentist-southaven-ms/",
-        "top10": {
-          "provider": "brave",
-          "weakness": 0.08,
           "counts": {
             "results": 10,
             "directories": 0,
@@ -293,21 +209,217 @@
         }
       },
       "scores": {
-        "striking": 50,
-        "can_be_one": 13.2
+        "striking": 59.7,
+        "can_be_one": 16
       },
-      "score": 50,
+      "score": 59.7,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "already ranks 11.5 in Search Console (2 impressions)",
-        "can-be-#1 evidence too thin (13.2 < 15)"
+        "already ranks 10.8 in Search Console (12 impressions)",
+        "can-be-#1 score 16 too (taken by the striking lane's turn)"
       ]
     },
     {
-      "query": "teeth bonding vs veneers",
+      "query": "dr cynthia brown",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 12,
+        "gsc_impressions": 3,
+        "gsc_page": "https://cynthiabrowndds.com/about/",
+        "neighbour": {
+          "sim": 0.75,
+          "of": "dr cynthia brown southaven",
+          "why": "top 2 with 10 impressions"
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.15,
+          "counts": {
+            "results": 10,
+            "directories": 2,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 0,
+            "exact_answer": 6
+          },
+          "reasons": [
+            "top 10: 2 directories, 0 forums, 0 off-target national, 0 thin or old, 6 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 40.7,
+        "can_be_one": 42.3
+      },
+      "score": 42.3,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "easy-win neighbour of \"dr cynthia brown southaven\" (top 2 with 10 impressions)",
+        "weak top 10 (0.15): 2 directories, 0 forums, 0 off-target national, 0 thin or old, 6 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "can a dentist prescribe anxiety medication",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 2,
+        "gsc_page": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.31,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 1,
+            "off_target_national": 0,
+            "thin_or_old": 3,
+            "exact_answer": 1
+          },
+          "reasons": [
+            "top 10: 0 directories, 1 forums, 0 off-target national, 3 thin or old, 1 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 57.7,
+        "can_be_one": 22.4
+      },
+      "score": 22.4,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "weak top 10 (0.31): 0 directories, 1 forums, 0 off-target national, 3 thin or old, 1 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "can dentist prescribe anxiety meds",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "gsc_position": 8,
+        "gsc_impressions": 1,
+        "gsc_page": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.23,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 1,
+            "off_target_national": 0,
+            "thin_or_old": 3,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 1 forums, 0 off-target national, 3 thin or old, 0 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 59,
+        "can_be_one": 19.2
+      },
+      "score": 59,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 8 in Search Console (1 impressions)",
+        "can-be-#1 score 19.2 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "dentist office olive branch ms",
       "variants": [
-        "what is teeth bonding vs veneers"
+        "dentist office in olive branch ms"
+      ],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "local": true,
+        "bing_suggest": true,
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.23,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 1,
+            "thin_or_old": 2,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 1 off-target national, 2 thin or old, 0 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 45,
+        "can_be_one": 19.2
+      },
+      "score": 19.2,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "weak top 10 (0.23): 0 directories, 0 forums, 1 off-target national, 2 thin or old, 0 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "can coffee stains on teeth be removed",
+      "variants": [
+        "removing coffee stains on teeth"
+      ],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.23,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 2,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 2 thin or old, 0 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 45,
+        "can_be_one": 19.2
+      },
+      "score": 19.2,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "weak top 10 (0.23): 0 directories, 0 forums, 0 off-target national, 2 thin or old, 0 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "veneers vs bonding teeth",
+      "variants": [
+        "veneers or bonding teeth",
+        "teeth veneers vs bonding",
+        "teeth bonding vs veneers"
       ],
       "signals": {
         "words": 4,
@@ -343,262 +455,508 @@
       ]
     },
     {
-      "query": "dental bonding vs veneers",
+      "query": "veneers vs bonding front teeth",
       "variants": [
-        "what is dental bonding vs veneers",
-        "what is dental bonding or veneers",
-        "is dental bonding or veneers better"
+        "veneers or bonding for front teeth"
       ],
       "signals": {
-        "words": 4,
+        "words": 5,
         "question": false,
-        "bing_suggest": true,
         "google_suggest": true,
+        "bing_suggest": true,
         "top10": {
           "provider": "brave",
-          "weakness": 0.08,
+          "weakness": 0,
           "counts": {
             "results": 10,
             "directories": 0,
-            "forums": 1,
+            "forums": 0,
             "off_target_national": 0,
-            "thin_or_old": 1,
-            "exact_answer": 6
+            "thin_or_old": 0,
+            "exact_answer": 1
           },
           "reasons": [
-            "top 10: 0 directories, 1 forums, 0 off-target national, 1 thin or old, 6 answer the exact question"
+            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 1 answer the exact question"
           ]
         }
       },
       "scores": {
         "striking": 40,
-        "can_be_one": 13.2
+        "can_be_one": 0
       },
       "score": 40,
       "kind": "new",
       "lane": "striking",
       "reasons": [
         "autocomplete demand (google/bing)",
-        "can-be-#1 evidence too thin (13.2 < 15)"
-      ]
-    },
-    {
-      "query": "how much is composite bonding vs veneers",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 30,
-        "can_be_one": 0
-      },
-      "score": 30,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)",
         "can-be-#1 evidence too thin (0 < 15)"
       ]
     },
     {
-      "query": "is composite bonding better than veneers",
+      "query": "bleeding gums when brushing",
       "variants": [],
       "signals": {
-        "words": 6,
-        "question": true,
+        "words": 4,
+        "question": false,
         "google_suggest": true,
+        "bing_suggest": true,
         "top10": {
           "provider": "brave",
           "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 30,
-        "can_be_one": 0
-      },
-      "score": 30,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)",
-        "can-be-#1 evidence too thin (0 < 15)"
-      ]
-    },
-    {
-      "query": "is composite bonding the same as veneers",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 30,
-        "can_be_one": 0
-      },
-      "score": 30,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)",
-        "can-be-#1 evidence too thin (0 < 15)"
-      ]
-    },
-    {
-      "query": "what is stronger composite bonding or veneers",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 30,
-        "can_be_one": 0
-      },
-      "score": 30,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)",
-        "can-be-#1 evidence too thin (0 < 15)"
-      ]
-    },
-    {
-      "query": "what is composite bonding compared to veneers",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 30,
-        "can_be_one": 0
-      },
-      "score": 30,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)",
-        "can-be-#1 evidence too thin (0 < 15)"
-      ]
-    },
-    {
-      "query": "what is more expensive composite bonding or veneers",
-      "variants": [
-        "is composite bonding or veneers more expensive"
-      ],
-      "signals": {
-        "words": 8,
-        "question": true,
-        "google_suggest": true,
-        "top10": {
-          "provider": "brave",
-          "weakness": 0.08,
           "counts": {
             "results": 10,
             "directories": 0,
             "forums": 0,
             "off_target_national": 0,
             "thin_or_old": 1,
-            "exact_answer": 0
+            "exact_answer": 3
           },
           "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question"
+            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 3 answer the exact question"
           ]
         }
       },
       "scores": {
+        "striking": 40,
+        "can_be_one": 0
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)",
+        "can-be-#1 evidence too thin (0 < 15)"
+      ]
+    },
+    {
+      "query": "bleeding gums when flossing",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "top10": {
+          "provider": "brave",
+          "weakness": 0,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 0,
+            "exact_answer": 1
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 1 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 40,
+        "can_be_one": 0
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)",
+        "can-be-#1 evidence too thin (0 < 15)"
+      ]
+    },
+    {
+      "query": "bad breath causes and treatment",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "top10": {
+          "provider": "brave",
+          "weakness": 0,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 1,
+            "exact_answer": 3
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 3 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 40,
+        "can_be_one": 0
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)",
+        "can-be-#1 evidence too thin (0 < 15)"
+      ]
+    },
+    {
+      "query": "dental emergency what to do",
+      "variants": [
+        "dental emergency"
+      ],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 40,
+        "can_be_one": 0
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "dental cleaning how often",
+      "variants": [
+        "how often should you get a dental cleaning",
+        "how often to get dental cleaning"
+      ],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 40,
+        "can_be_one": 0
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "dentures vs implants cost",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 40,
+        "can_be_one": 0
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "dentures vs implants pros and cons",
+      "variants": [
+        "dentures vs implants pros cons"
+      ],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 40,
+        "can_be_one": 0
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "coffee stains on teeth",
+      "variants": [
+        "prevent coffee stains on teeth",
+        "avoid coffee stains on teeth"
+      ],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 40,
+        "can_be_one": 0
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "coffee stains on teeth removal",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 40,
+        "can_be_one": 0
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "composite bonding vs porcelain veneers",
+      "variants": [
+        "porcelain veneers vs composite bonding",
+        "porcelain veneers or composite bonding"
+      ],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 40,
+        "can_be_one": 0
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "fear of the dentist name",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 17,
+        "gsc_impressions": 1,
+        "gsc_page": "https://cynthiabrowndds.com/questions/what-is-dental-anxiety-called/",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 37.6,
+        "can_be_one": 0
+      },
+      "score": 37.6,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 17 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "fear of dentist rogers ar",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 18,
+        "gsc_impressions": 1,
+        "gsc_page": "https://cynthiabrowndds.com/questions/is-dental-anxiety-real/",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 35.8,
+        "can_be_one": 0
+      },
+      "score": 35.8,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 18 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "dental southaven ms",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "google_suggest": true,
+        "local": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 35,
+        "can_be_one": 0
+      },
+      "score": 35,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "dentist olive branch ms hacks cross",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "google_suggest": true,
+        "local": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
         "striking": 30,
-        "can_be_one": 13.2
+        "can_be_one": 0
       },
       "score": 30,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "autocomplete demand (google/bing)",
-        "can-be-#1 evidence too thin (13.2 < 15)"
+        "autocomplete demand (google/bing)"
       ]
     },
     {
-      "query": "is composite bonding different to composite veneers",
+      "query": "emergency dentist olive branch ms",
       "variants": [],
       "signals": {
-        "words": 7,
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "local": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "affordable dentist olive branch ms",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "local": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "family dentist olive branch ms",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "local": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "bleeding gums",
+      "variants": [],
+      "signals": {
+        "words": 2,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "bad breath causes",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "are coffee stains on teeth permanent",
+      "variants": [],
+      "signals": {
+        "words": 6,
         "question": true,
         "google_suggest": true,
         "top10": "not read: outside this run's top-10 budget"
@@ -615,12 +973,477 @@
       ]
     },
     {
-      "query": "composite bonding vs veneers cost",
+      "query": "emergency dental southaven ms",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "local": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "is composite bonding better than veneers",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "teeth whitening near olive branch",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 25.7,
+        "gsc_impressions": 3,
+        "gsc_page": "https://cynthiabrowndds.com/questions/dental-olive-branch-ms/",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25.8,
+        "can_be_one": 0
+      },
+      "score": 25.8,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 25.7 in Search Console (3 impressions)"
+      ]
+    },
+    {
+      "query": "dentist office in southaven ms",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "local": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "going to the dentist after years",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "going to the dentist after 10 years",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "going to the dentist after 5 years",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "going back to the dentist after years",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "going to the dentist after 20 years",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "going to the dentist after 15 years",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "going to the dentist after 6 years",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "going to the dentist after 4 years",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "teeth whitening options for sensitive teeth",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "veneers vs bonding cost",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "bleeding gums during pregnancy",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "bad breath causes and solutions",
       "variants": [],
       "signals": {
         "words": 5,
         "question": false,
         "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "what to do if you have dental emergency",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "dentist cleaning how often",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "professional teeth cleaning how often",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "how often need dental cleaning",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "cavity signs and symptoms",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "cavity signs in teeth",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "dentures vs implants which is better",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "southaven dental care location",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "local": true,
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
@@ -673,149 +1496,198 @@
       "reasons": [
         "autocomplete demand (google/bing)"
       ]
-    },
+    }
+  ],
+  "strengthen": [
     {
-      "query": "composite bonding vs veneers difference",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 25,
-        "can_be_one": 0
-      },
-      "score": 25,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)"
-      ]
-    },
-    {
-      "query": "composite bonding vs veneers pictures",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 25,
-        "can_be_one": 0
-      },
-      "score": 25,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)"
-      ]
-    },
-    {
-      "query": "composite bonding v veneers",
-      "variants": [],
+      "query": "dentist olive branch ms",
+      "variants": [
+        "dentist in olive branch ms",
+        "olive branch ms dentist"
+      ],
       "signals": {
         "words": 4,
         "question": false,
         "google_suggest": true,
-        "top10": "not read: outside this run's top-10 budget"
+        "local": true,
+        "bing_suggest": true
       },
       "scores": {
-        "striking": 25,
+        "striking": 45,
         "can_be_one": 0
       },
-      "score": 25,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)"
-      ]
+      "score": 45,
+      "page": "/questions/dentist-in-olive-branch-ms-on-goodman-rd/"
     },
     {
-      "query": "whats better veneers or composite bonding",
-      "variants": [],
+      "query": "dentist southaven ms",
+      "variants": [
+        "dentist in southaven ms"
+      ],
       "signals": {
-        "words": 6,
+        "words": 3,
         "question": false,
         "google_suggest": true,
-        "top10": "not read: outside this run's top-10 budget"
+        "local": true,
+        "bing_suggest": true
+      },
+      "scores": {
+        "striking": 35,
+        "can_be_one": 0
+      },
+      "score": 35,
+      "page": "/questions/dentist-southaven-ms-getwell/"
+    },
+    {
+      "query": "dental anxiety",
+      "variants": [
+        "dental anxiety tips"
+      ],
+      "signals": {
+        "words": 2,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "page": "/questions/can-dental-implants-cause-anxiety/"
+    },
+    {
+      "query": "teeth whitening options",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "page": "/questions/teeth-whitening-options-at-dentist/"
+    },
+    {
+      "query": "veneers vs bonding",
+      "variants": [
+        "veneers or bonding"
+      ],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "page": "/questions/veneers-vs-composite-bonding/"
+    },
+    {
+      "query": "emergency dentist what to do",
+      "variants": [
+        "how do i get emergency dentist"
+      ],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "local": true
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "page": "/questions/emergency-dentist-southaven-ms/"
+    },
+    {
+      "query": "olive branch dental care olive branch ms",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": false,
+        "bing_suggest": true,
+        "local": true
       },
       "scores": {
         "striking": 25,
         "can_be_one": 0
       },
       "score": 25,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)"
-      ]
+      "page": "/questions/dental-olive-branch-ms/"
     },
     {
-      "query": "no prep veneers vs composite bonding",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 20,
-        "can_be_one": 0
-      },
-      "score": 20,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)"
-      ]
-    },
-    {
-      "query": "difference between bonding and veneers",
+      "query": "dental care olive branch ms",
       "variants": [],
       "signals": {
         "words": 5,
         "question": false,
         "bing_suggest": true,
-        "top10": "not read: outside this run's top-10 budget"
+        "local": true
       },
       "scores": {
-        "striking": 20,
+        "striking": 25,
         "can_be_one": 0
       },
-      "score": 20,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)"
-      ]
+      "score": 25,
+      "page": "/questions/dental-olive-branch-ms/"
     },
     {
-      "query": "difference between tooth bonding and veneers",
+      "query": "dentist in olive branch",
       "variants": [],
       "signals": {
-        "words": 6,
+        "words": 4,
         "question": false,
         "bing_suggest": true,
-        "top10": "not read: outside this run's top-10 budget"
+        "local": true
       },
       "scores": {
-        "striking": 20,
+        "striking": 25,
         "can_be_one": 0
       },
-      "score": 20,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)"
-      ]
-    }
-  ],
-  "strengthen": [
+      "score": 25,
+      "page": "/questions/dentist-in-olive-branch-ms-on-goodman-rd/"
+    },
+    {
+      "query": "olive branch dental care",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "local": true
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "page": "/questions/dental-olive-branch-ms/"
+    },
+    {
+      "query": "dental in olive branch",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "local": true
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "page": "/questions/dental-olive-branch-ms/"
+    },
     {
       "query": "composite bonding vs composite veneers",
       "variants": [],

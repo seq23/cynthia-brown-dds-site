@@ -25,13 +25,29 @@
         "https://www.cdc.gov/oral-health/about/index.html"
       ],
       "linked_from": [],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-16",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 25,
+          "ai_visits_today": 0,
+          "indexed": true,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "indexnow_at": "2026-11-02",
       "extra_queries": [
         "affordable dentist olive branch ms",
         "dentist near olive branch ms",
         "dentist southaven ms accepting payment plans"
-      ]
+      ],
+      "inspected_at": "2026-11-16",
+      "indexed": true,
+      "indexed_at": "2026-11-16"
     },
     {
       "slug": "how-to-ease-dental-anxiety",
@@ -57,7 +73,20 @@
         "https://www.mouthhealthy.org/en/az-topics/a/anxiety"
       ],
       "linked_from": [],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-16",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": 0,
+          "indexed": true,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "indexnow_at": "2026-11-02",
       "extra_queries": [
         "dental anxiety"
@@ -70,7 +99,10 @@
           "shape: the body needs at least one list or table (give one section \"bullets\")",
           "d2: a how-to page has no numbered steps"
         ]
-      }
+      },
+      "inspected_at": "2026-11-16",
+      "indexed": true,
+      "indexed_at": "2026-11-16"
     },
     {
       "slug": "why-do-i-have-dental-anxiety",
@@ -95,8 +127,24 @@
         "https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/dental-anxiety-and-phobia"
       ],
       "linked_from": [],
-      "checks": {},
-      "indexnow_at": "2026-11-02"
+      "checks": {
+        "w2": {
+          "at": "2026-11-16",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": 0,
+          "indexed": true,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
+      "indexnow_at": "2026-11-02",
+      "inspected_at": "2026-11-16",
+      "indexed": true,
+      "indexed_at": "2026-11-16"
     },
     {
       "slug": "dental-anxiety-in-adults",
@@ -120,8 +168,24 @@
         "https://www.apa.org/topics/anxiety"
       ],
       "linked_from": [],
-      "checks": {},
-      "indexnow_at": "2026-11-02"
+      "checks": {
+        "w2": {
+          "at": "2026-11-16",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": 0,
+          "indexed": true,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
+      "indexnow_at": "2026-11-02",
+      "inspected_at": "2026-11-16",
+      "indexed": true,
+      "indexed_at": "2026-11-16"
     },
     {
       "slug": "teeth-whitening-options-at-dentist",
@@ -146,8 +210,24 @@
         "https://www.cdc.gov/oral-health/about/index.html"
       ],
       "linked_from": [],
-      "checks": {},
-      "indexnow_at": "2026-11-02"
+      "checks": {
+        "w2": {
+          "at": "2026-11-16",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": 0,
+          "indexed": true,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
+      "indexnow_at": "2026-11-02",
+      "inspected_at": "2026-11-16",
+      "indexed": true,
+      "indexed_at": "2026-11-16"
     },
     {
       "slug": "veneers-vs-composite-bonding",
@@ -171,8 +251,24 @@
         "https://www.colgate.com/en-us/oral-health/cosmetic-dentistry/bonding"
       ],
       "linked_from": [],
-      "checks": {},
-      "indexnow_at": "2026-11-02"
+      "checks": {
+        "w2": {
+          "at": "2026-11-16",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 22,
+          "position": 85,
+          "ai_visits_today": 0,
+          "indexed": true,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
+      "indexnow_at": "2026-11-02",
+      "inspected_at": "2026-11-16",
+      "indexed": true,
+      "indexed_at": "2026-11-16"
     },
     {
       "slug": "dental-olive-branch-ms",
@@ -196,11 +292,27 @@
         "https://www.nidcr.nih.gov/health-info/oral-hygiene"
       ],
       "linked_from": [],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-16",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 4,
+          "position": 20.8,
+          "ai_visits_today": 0,
+          "indexed": true,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "indexnow_at": "2026-11-02",
       "extra_queries": [
         "dental anxiety dentist"
-      ]
+      ],
+      "inspected_at": "2026-11-16",
+      "indexed": true,
+      "indexed_at": "2026-11-16"
     },
     {
       "slug": "dentist-in-olive-branch-ms-on-goodman-rd",
