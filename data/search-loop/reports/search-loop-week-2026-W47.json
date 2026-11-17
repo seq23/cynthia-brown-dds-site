@@ -2,15 +2,15 @@
   "schema": "search-loop-week-v1",
   "week": "2026-W47",
   "site": "cynthiabrowndds.com",
-  "generated_at": "2026-11-16T12:56:20.838Z",
+  "generated_at": "2026-11-17T12:44:02.523Z",
   "state": "running",
   "published": 0,
-  "indexed": 7,
+  "indexed": 17,
   "pace": 10,
   "ai_visitors": 0,
-  "ai_bot_hits": 79,
+  "ai_bot_hits": 69,
   "conversions": "not read: no conversion source configured for this site (form fills / checkouts)",
-  "wins": 0,
+  "wins": 3,
   "undone": 0,
   "merged": 0,
   "held_by_cap": 70,
@@ -22,7 +22,7 @@
     "why": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-19..2026-10-16, so there is nothing to compare the last 28 days with); the cap never grows without data"
   },
   "notes": [
-    "AI totals cover 7 measured day(s): 2026-11-10, 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-14, 2026-11-15, 2026-11-16. Unread days are excluded, never zero-filled. Bot counts are requests, not people; referrals come from aggregate hostname-only analytics."
+    "AI totals cover 7 measured day(s): 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-14, 2026-11-15, 2026-11-16, 2026-11-17. Unread days are excluded, never zero-filled. Bot counts are requests, not people; referrals come from aggregate hostname-only analytics."
   ],
   "lanes": {
     "ratio": {
@@ -37,7 +37,7 @@
     },
     "striking": {
       "pages": 20,
-      "measured": 7,
+      "measured": 17,
       "top3": 0,
       "hit_rate": 0
     },
@@ -50,5 +50,5 @@
     "weight_changes": [],
     "competition": "ok: 15 top-10 read(s) via brave"
   },
-  "run_url": "https://github.com/seq23/cynthia-brown-dds-site/actions/runs/43871061702"
+  "run_url": "https://github.com/seq23/cynthia-brown-dds-site/actions/runs/44085859543"
 }
