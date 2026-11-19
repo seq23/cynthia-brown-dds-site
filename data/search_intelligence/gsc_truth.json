@@ -1,19 +1,19 @@
 {
   "schema": "cbdds-gsc-truth-v1",
   "site": "sc-domain:cynthiabrowndds.com",
-  "collected_at": "2026-11-18T12:43:53.607Z",
-  "day": "2026-11-18",
+  "collected_at": "2026-11-19T20:57:37.365Z",
+  "day": "2026-11-19",
   "window": {
-    "start": "2026-10-19",
-    "end": "2026-11-16",
+    "start": "2026-10-20",
+    "end": "2026-11-17",
     "days": 28,
     "lag_days": 2
   },
   "totals": {
-    "clicks": 12,
-    "impressions": 443,
-    "ctr": 2.71,
-    "position": 14.31,
+    "clicks": 13,
+    "impressions": 472,
+    "ctr": 2.75,
+    "position": 13.98,
     "source": "searchAnalytics with no dimensions, the same window as the rows below"
   },
   "queries": [
@@ -39,18 +39,25 @@
       "position": 7
     },
     {
-      "query": "can dentist prescribe anxiety meds",
+      "query": "can dentist give you something for anxiety",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 8
+      "position": 6
+    },
+    {
+      "query": "can dentist prescribe anxiety meds",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4.5
     },
     {
       "query": "can dentists prescribe anxiety medication",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 4,
       "ctr": 0,
-      "position": 7.5
+      "position": 5.75
     },
     {
       "query": "cheryl brown dds",
@@ -139,16 +146,16 @@
     {
       "query": "dr cynthia brown reviews",
       "clicks": 0,
-      "impressions": 23,
+      "impressions": 26,
       "ctr": 0,
-      "position": 11.96
+      "position": 11.62
     },
     {
       "query": "dr cynthia brown southaven",
       "clicks": 0,
-      "impressions": 25,
+      "impressions": 27,
       "ctr": 0,
-      "position": 7.08
+      "position": 7.22
     },
     {
       "query": "dr. brown dentistry",
@@ -202,16 +209,16 @@
     {
       "query": "orthodontics olive branch ms",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 5,
       "ctr": 0,
-      "position": 45.25
+      "position": 44.4
     },
     {
       "query": "orthodontist olive branch ms",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 5,
       "ctr": 0,
-      "position": 68.25
+      "position": 63.8
     },
     {
       "query": "porcelain veneers vs composite bonding",
@@ -259,24 +266,24 @@
   "pages": [
     {
       "page": "https://cynthiabrowndds.com/",
-      "clicks": 11,
-      "impressions": 167,
-      "ctr": 6.59,
-      "position": 7.18
+      "clicks": 12,
+      "impressions": 176,
+      "ctr": 6.82,
+      "position": 7.54
     },
     {
       "page": "https://cynthiabrowndds.com/about/",
       "clicks": 1,
-      "impressions": 98,
-      "ctr": 1.02,
-      "position": 6.98
+      "impressions": 102,
+      "ctr": 0.98,
+      "position": 6.81
     },
     {
       "page": "https://cynthiabrowndds.com/questions/can-dental-implants-cause-anxiety/",
       "clicks": 1,
-      "impressions": 13,
-      "ctr": 7.69,
-      "position": 11
+      "impressions": 17,
+      "ctr": 5.88,
+      "position": 10.24
     },
     {
       "page": "https://cynthiabrowndds.com/book/",
@@ -295,9 +302,9 @@
     {
       "page": "https://cynthiabrowndds.com/locations/",
       "clicks": 0,
-      "impressions": 36,
+      "impressions": 38,
       "ctr": 0,
-      "position": 7.33
+      "position": 7.45
     },
     {
       "page": "https://cynthiabrowndds.com/questions/",
@@ -309,9 +316,9 @@
     {
       "page": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
       "clicks": 0,
-      "impressions": 63,
+      "impressions": 73,
       "ctr": 0,
-      "position": 9.11
+      "position": 8.73
     },
     {
       "page": "https://cynthiabrowndds.com/questions/dental-anxiety-medication/",
@@ -379,9 +386,9 @@
     {
       "page": "https://cynthiabrowndds.com/questions/what-is-dental-anxiety-called/",
       "clicks": 0,
-      "impressions": 26,
+      "impressions": 27,
       "ctr": 0,
-      "position": 20.73
+      "position": 20.04
     },
     {
       "page": "https://cynthiabrowndds.com/questions/why-is-dental-anxiety-so-common/",
@@ -449,9 +456,9 @@
     {
       "page": "https://cynthiabrowndds.com/services/",
       "clicks": 0,
-      "impressions": 28,
+      "impressions": 31,
       "ctr": 0,
-      "position": 10.79
+      "position": 11.13
     }
   ],
   "days": [
@@ -529,6 +536,11 @@
       "date": "2026-11-16",
       "clicks": 0,
       "impressions": 28
+    },
+    {
+      "date": "2026-11-17",
+      "clicks": 1,
+      "impressions": 29
     }
   ]
 }
