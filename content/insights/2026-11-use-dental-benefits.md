@@ -4,7 +4,7 @@
   "type": "monthly_insight",
   "title": "Using Dental Benefits Before Year-End: What to Know Before December Gets Busy",
   "slug": "use-dental-benefits",
-  "status": "approved",
+  "status": "published",
   "scheduledAt": "2026-11-15",
   "summary": "A clear, confidence-centered guide to dental benefits, cost planning, year-end appointments.",
   "minimumWords": 900,
@@ -66,7 +66,8 @@
   "schemaType": "Article",
   "lastReviewed": "2026-06-03",
   "seoTitle": "Dental Benefits Before Year-End",
-  "seoDescription": "Dental benefits often reset in January. How to plan year-end appointments, what to ask the office about coverage, and why December fills up quickly."
+  "seoDescription": "Dental benefits often reset in January. How to plan year-end appointments, what to ask the office about coverage, and why December fills up quickly.",
+  "publishedAt": "2026-11-19"
 }
 ---
 
