@@ -358,6 +358,10 @@
           "OAI-SearchBot (ChatGPT search)": 3,
           "Amazonbot": 2
         }
+      },
+      "window": {
+        "since": "2026-11-18T20:57:41.772Z",
+        "until": "2026-11-19T20:57:41.772Z"
       }
     }
   }
