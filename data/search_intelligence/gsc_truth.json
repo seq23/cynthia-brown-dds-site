@@ -1,19 +1,19 @@
 {
   "schema": "cbdds-gsc-truth-v1",
   "site": "sc-domain:cynthiabrowndds.com",
-  "collected_at": "2026-11-19T20:57:37.365Z",
-  "day": "2026-11-19",
+  "collected_at": "2026-11-20T20:42:45.263Z",
+  "day": "2026-11-20",
   "window": {
-    "start": "2026-10-20",
-    "end": "2026-11-17",
+    "start": "2026-10-21",
+    "end": "2026-11-18",
     "days": 28,
     "lag_days": 2
   },
   "totals": {
     "clicks": 13,
-    "impressions": 472,
-    "ctr": 2.75,
-    "position": 13.98,
+    "impressions": 500,
+    "ctr": 2.6,
+    "position": 14.05,
     "source": "searchAnalytics with no dimensions, the same window as the rows below"
   },
   "queries": [
@@ -34,23 +34,23 @@
     {
       "query": "can a dentist prescribe zofran",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 7
+      "position": 9
     },
     {
       "query": "can dentist give you something for anxiety",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 6
+      "position": 5.5
     },
     {
       "query": "can dentist prescribe anxiety meds",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 3,
       "ctr": 0,
-      "position": 4.5
+      "position": 4.33
     },
     {
       "query": "can dentists prescribe anxiety medication",
@@ -146,16 +146,16 @@
     {
       "query": "dr cynthia brown reviews",
       "clicks": 0,
-      "impressions": 26,
+      "impressions": 28,
       "ctr": 0,
-      "position": 11.62
+      "position": 11.86
     },
     {
       "query": "dr cynthia brown southaven",
       "clicks": 0,
-      "impressions": 27,
+      "impressions": 29,
       "ctr": 0,
-      "position": 7.22
+      "position": 7.28
     },
     {
       "query": "dr. brown dentistry",
@@ -216,9 +216,9 @@
     {
       "query": "orthodontist olive branch ms",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 6,
       "ctr": 0,
-      "position": 63.8
+      "position": 62.33
     },
     {
       "query": "porcelain veneers vs composite bonding",
@@ -267,23 +267,23 @@
     {
       "page": "https://cynthiabrowndds.com/",
       "clicks": 12,
-      "impressions": 176,
-      "ctr": 6.82,
-      "position": 7.54
+      "impressions": 185,
+      "ctr": 6.49,
+      "position": 7.69
     },
     {
       "page": "https://cynthiabrowndds.com/about/",
       "clicks": 1,
-      "impressions": 102,
-      "ctr": 0.98,
-      "position": 6.81
+      "impressions": 103,
+      "ctr": 0.97,
+      "position": 6.86
     },
     {
       "page": "https://cynthiabrowndds.com/questions/can-dental-implants-cause-anxiety/",
       "clicks": 1,
-      "impressions": 17,
-      "ctr": 5.88,
-      "position": 10.24
+      "impressions": 21,
+      "ctr": 4.76,
+      "position": 17.9
     },
     {
       "page": "https://cynthiabrowndds.com/book/",
@@ -302,9 +302,9 @@
     {
       "page": "https://cynthiabrowndds.com/locations/",
       "clicks": 0,
-      "impressions": 38,
+      "impressions": 40,
       "ctr": 0,
-      "position": 7.45
+      "position": 7.33
     },
     {
       "page": "https://cynthiabrowndds.com/questions/",
@@ -316,9 +316,9 @@
     {
       "page": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
       "clicks": 0,
-      "impressions": 73,
+      "impressions": 83,
       "ctr": 0,
-      "position": 8.73
+      "position": 8.55
     },
     {
       "page": "https://cynthiabrowndds.com/questions/dental-anxiety-medication/",
@@ -351,9 +351,9 @@
     {
       "page": "https://cynthiabrowndds.com/questions/dentist-southaven-ms-getwell/",
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 12,
       "ctr": 0,
-      "position": 28.18
+      "position": 26.75
     },
     {
       "page": "https://cynthiabrowndds.com/questions/emergency-dentist-southaven-ms/",
@@ -456,9 +456,9 @@
     {
       "page": "https://cynthiabrowndds.com/services/",
       "clicks": 0,
-      "impressions": 31,
+      "impressions": 34,
       "ctr": 0,
-      "position": 11.13
+      "position": 11.44
     }
   ],
   "days": [
@@ -541,6 +541,11 @@
       "date": "2026-11-17",
       "clicks": 1,
       "impressions": 29
+    },
+    {
+      "date": "2026-11-18",
+      "clicks": 0,
+      "impressions": 28
     }
   ]
 }
