@@ -404,6 +404,18 @@
         "since": "2026-11-20T19:46:08.130Z",
         "until": "2026-11-21T19:46:08.130Z"
       }
+    },
+    "2026-11-22": {
+      "ai_visitors_not_read": "this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for cynthiabrowndds.com",
+      "ai_bot_hits": {
+        "total": 14,
+        "by_bot": {
+          "ChatGPT-User (ChatGPT fetch)": 1,
+          "OAI-SearchBot (ChatGPT search)": 1,
+          "Amazonbot": 11,
+          "GPTBot (OpenAI training)": 1
+        }
+      }
     }
   }
 }
