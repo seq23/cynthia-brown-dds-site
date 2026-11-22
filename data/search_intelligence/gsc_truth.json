@@ -1,19 +1,19 @@
 {
   "schema": "cbdds-gsc-truth-v1",
   "site": "sc-domain:cynthiabrowndds.com",
-  "collected_at": "2026-11-21T19:46:06.851Z",
-  "day": "2026-11-21",
+  "collected_at": "2026-11-22T20:11:05.208Z",
+  "day": "2026-11-22",
   "window": {
-    "start": "2026-10-22",
-    "end": "2026-11-19",
+    "start": "2026-10-23",
+    "end": "2026-11-20",
     "days": 28,
     "lag_days": 2
   },
   "totals": {
-    "clicks": 13,
-    "impressions": 522,
-    "ctr": 2.49,
-    "position": 13.77,
+    "clicks": 15,
+    "impressions": 555,
+    "ctr": 2.7,
+    "position": 13.6,
     "source": "searchAnalytics with no dimensions, the same window as the rows below"
   },
   "queries": [
@@ -27,9 +27,9 @@
     {
       "query": "can a dentist prescribe anxiety medication",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 4,
       "ctr": 0,
-      "position": 8.67
+      "position": 7.5
     },
     {
       "query": "can a dentist prescribe zofran",
@@ -123,9 +123,16 @@
       "position": 69
     },
     {
+      "query": "dr brow",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
       "query": "dr brown dentist",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 4,
       "ctr": 0,
       "position": 5
     },
@@ -146,16 +153,16 @@
     {
       "query": "dr cynthia brown reviews",
       "clicks": 0,
-      "impressions": 29,
+      "impressions": 30,
       "ctr": 0,
-      "position": 11.79
+      "position": 11.93
     },
     {
       "query": "dr cynthia brown southaven",
       "clicks": 0,
-      "impressions": 29,
+      "impressions": 33,
       "ctr": 0,
-      "position": 7.28
+      "position": 7.36
     },
     {
       "query": "dr. brown dentistry",
@@ -216,9 +223,9 @@
     {
       "query": "orthodontist olive branch ms",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 8,
       "ctr": 0,
-      "position": 62.33
+      "position": 58.25
     },
     {
       "query": "porcelain veneers vs composite bonding",
@@ -230,9 +237,9 @@
     {
       "query": "teeth whitening near olive branch",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 4,
       "ctr": 0,
-      "position": 25.67
+      "position": 42.75
     },
     {
       "query": "walk in dentist southaven, ms",
@@ -266,24 +273,24 @@
   "pages": [
     {
       "page": "https://cynthiabrowndds.com/",
-      "clicks": 12,
-      "impressions": 195,
-      "ctr": 6.15,
-      "position": 7.63
+      "clicks": 14,
+      "impressions": 205,
+      "ctr": 6.83,
+      "position": 7.83
     },
     {
       "page": "https://cynthiabrowndds.com/about/",
       "clicks": 1,
-      "impressions": 103,
-      "ctr": 0.97,
-      "position": 6.86
+      "impressions": 104,
+      "ctr": 0.96,
+      "position": 6.89
     },
     {
       "page": "https://cynthiabrowndds.com/questions/can-dental-implants-cause-anxiety/",
       "clicks": 1,
-      "impressions": 22,
-      "ctr": 4.55,
-      "position": 17.5
+      "impressions": 26,
+      "ctr": 3.85,
+      "position": 15.88
     },
     {
       "page": "https://cynthiabrowndds.com/book/",
@@ -302,9 +309,9 @@
     {
       "page": "https://cynthiabrowndds.com/locations/",
       "clicks": 0,
-      "impressions": 41,
+      "impressions": 44,
       "ctr": 0,
-      "position": 7.24
+      "position": 7.34
     },
     {
       "page": "https://cynthiabrowndds.com/privacy/",
@@ -323,9 +330,9 @@
     {
       "page": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
       "clicks": 0,
-      "impressions": 92,
+      "impressions": 106,
       "ctr": 0,
-      "position": 8.5
+      "position": 8.03
     },
     {
       "page": "https://cynthiabrowndds.com/questions/dental-anxiety-medication/",
@@ -351,9 +358,9 @@
     {
       "page": "https://cynthiabrowndds.com/questions/dentist-olive-branch-mississippi/",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 4,
       "ctr": 0,
-      "position": 30.67
+      "position": 46.5
     },
     {
       "page": "https://cynthiabrowndds.com/questions/dentist-southaven-ms-getwell/",
@@ -407,9 +414,9 @@
     {
       "page": "https://cynthiabrowndds.com/resources/",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 3,
       "ctr": 0,
-      "position": 13.5
+      "position": 12
     },
     {
       "page": "https://cynthiabrowndds.com/resources/insights/dental-anxiety-less-intimidating/",
@@ -463,9 +470,9 @@
     {
       "page": "https://cynthiabrowndds.com/services/",
       "clicks": 0,
-      "impressions": 34,
+      "impressions": 37,
       "ctr": 0,
-      "position": 11.44
+      "position": 11.73
     }
   ],
   "days": [
@@ -558,6 +565,11 @@
       "date": "2026-11-19",
       "clicks": 0,
       "impressions": 22
+    },
+    {
+      "date": "2026-11-20",
+      "clicks": 2,
+      "impressions": 33
     }
   ]
 }
