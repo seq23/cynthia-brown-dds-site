@@ -55,6 +55,5 @@
   "analytics": { "ai_referrals": "cloudflare", "ai_bot_hits": "cloudflare", "zone": "cynthiabrowndds.com" },
   "conversions": { "source": "none" },
   "shares_audience_with": [],
-  "ledger_dir": "data/search-loop",
-  "gate": { "banned_patterns": ["\\btailored\\b", "\\bunlock(s|ed|ing)?\\b", "\\belevate\\b", "\\bdive in\\b", "\\bdelve", "\\bseamless\\b", "\\bempower\\b", "\\bembark", "\\bai-powered\\b", "\\bsparkles?\\b"] }
+  "ledger_dir": "data/search-loop"
 }
