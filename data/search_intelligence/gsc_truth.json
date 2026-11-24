@@ -1,19 +1,19 @@
 {
   "schema": "cbdds-gsc-truth-v1",
   "site": "sc-domain:cynthiabrowndds.com",
-  "collected_at": "2026-11-24T00:20:16.508Z",
-  "day": "2026-11-23",
+  "collected_at": "2026-11-24T22:45:22.760Z",
+  "day": "2026-11-24",
   "window": {
-    "start": "2026-10-24",
-    "end": "2026-11-21",
+    "start": "2026-10-25",
+    "end": "2026-11-22",
     "days": 28,
     "lag_days": 2
   },
   "totals": {
     "clicks": 16,
-    "impressions": 568,
-    "ctr": 2.82,
-    "position": 13.72,
+    "impressions": 586,
+    "ctr": 2.73,
+    "position": 13.58,
     "source": "searchAnalytics with no dimensions, the same window as the rows below"
   },
   "queries": [
@@ -237,9 +237,9 @@
     {
       "query": "teeth whitening near olive branch",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 7,
       "ctr": 0,
-      "position": 57.67
+      "position": 54.14
     },
     {
       "query": "walk in dentist southaven, ms",
@@ -274,9 +274,9 @@
     {
       "page": "https://cynthiabrowndds.com/",
       "clicks": 14,
-      "impressions": 208,
-      "ctr": 6.73,
-      "position": 8.15
+      "impressions": 212,
+      "ctr": 6.6,
+      "position": 8.24
     },
     {
       "page": "https://cynthiabrowndds.com/about/",
@@ -288,16 +288,16 @@
     {
       "page": "https://cynthiabrowndds.com/questions/can-dental-implants-cause-anxiety/",
       "clicks": 1,
-      "impressions": 27,
-      "ctr": 3.7,
-      "position": 15.67
+      "impressions": 28,
+      "ctr": 3.57,
+      "position": 15.5
     },
     {
       "page": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
       "clicks": 1,
-      "impressions": 111,
-      "ctr": 0.9,
-      "position": 7.84
+      "impressions": 120,
+      "ctr": 0.83,
+      "position": 7.94
     },
     {
       "page": "https://cynthiabrowndds.com/book/",
@@ -316,9 +316,9 @@
     {
       "page": "https://cynthiabrowndds.com/locations/",
       "clicks": 0,
-      "impressions": 45,
+      "impressions": 46,
       "ctr": 0,
-      "position": 7.31
+      "position": 7.3
     },
     {
       "page": "https://cynthiabrowndds.com/privacy/",
@@ -400,9 +400,9 @@
     {
       "page": "https://cynthiabrowndds.com/questions/what-is-dental-anxiety-called/",
       "clicks": 0,
-      "impressions": 28,
+      "impressions": 30,
       "ctr": 0,
-      "position": 19.61
+      "position": 18.8
     },
     {
       "page": "https://cynthiabrowndds.com/questions/why-is-dental-anxiety-so-common/",
@@ -442,9 +442,9 @@
     {
       "page": "https://cynthiabrowndds.com/resources/insights/tiktok-teeth-trends/",
       "clicks": 0,
-      "impressions": 12,
+      "impressions": 13,
       "ctr": 0,
-      "position": 6.42
+      "position": 6
     },
     {
       "page": "https://cynthiabrowndds.com/resources/white-papers/dental-anxiety-avoidance/",
@@ -575,6 +575,11 @@
       "date": "2026-11-21",
       "clicks": 1,
       "impressions": 13
+    },
+    {
+      "date": "2026-11-22",
+      "clicks": 0,
+      "impressions": 18
     }
   ]
 }
