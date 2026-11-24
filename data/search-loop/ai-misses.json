@@ -1,0 +1,11 @@
+{
+  "schema": "search-loop-ai-misses-v1",
+  "weeks": {},
+  "reads": [
+    {
+      "at": "2026-11-23T23:56:57.763Z",
+      "status": "could_not_tell",
+      "reason": "no BOSS_OPEN_LOOPS_TOKEN in this run (pass it in the caller's secrets: block)"
+    }
+  ]
+}

@@ -1,15 +1,15 @@
 {
   "schema": "search-loop-targets-v1",
   "site": "cynthiabrowndds.com",
-  "week": "2026-W47",
-  "generated_at": "2026-11-16T12:36:15.684Z",
+  "week": "2026-W48",
+  "generated_at": "2026-11-23T23:56:57.763Z",
   "sources": {
-    "search_console": "ok: 45 rows",
+    "search_console": "ok: 52 rows",
     "bing_webmaster": "ok: 0 rows",
-    "easy_wins": "ok: 2 easy win(s) in Search Console",
+    "easy_wins": "ok: 4 easy win(s) in Search Console",
     "suggestqueries.google.com": "ok",
     "api.bing.com": "ok",
-    "relevance_screen": "ok: kept 58 of 150 (free model)",
+    "relevance_screen": "ok: kept 68 of 150 (free model)",
     "top10": "ok: 15 top-10 read(s) via brave"
   },
   "targets": [
@@ -19,41 +19,47 @@
       "signals": {
         "words": 4,
         "question": false,
-        "gsc_position": 14,
-        "gsc_impressions": 5,
+        "gsc_position": 14.3,
+        "gsc_impressions": 9,
         "gsc_page": "https://cynthiabrowndds.com/services/",
+        "neighbour": {
+          "sim": 0.75,
+          "of": "dr cynthia brown",
+          "why": "top 2 with 1 impressions"
+        },
         "unanswered": {
           "words": 4,
           "covered": 0.25,
-          "parts_best_position": 1.9,
-          "parts_rows": 12
+          "parts_best_position": 1.8,
+          "parts_rows": 14
         },
         "top10": {
           "provider": "brave",
           "weakness": 0.38,
           "counts": {
             "results": 10,
-            "directories": 3,
+            "directories": 2,
             "forums": 0,
             "off_target_national": 1,
-            "thin_or_old": 0,
-            "exact_answer": 5
+            "thin_or_old": 1,
+            "exact_answer": 4
           },
           "reasons": [
-            "top 10: 3 directories, 0 forums, 1 off-target national, 0 thin or old, 5 answer the exact question"
+            "top 10: 2 directories, 0 forums, 1 off-target national, 1 thin or old, 4 answer the exact question"
           ]
         }
       },
       "scores": {
-        "striking": 49.4,
-        "can_be_one": 55.2
+        "striking": 51.8,
+        "can_be_one": 81.5
       },
-      "score": 55.2,
+      "score": 81.5,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 1.9",
-        "weak top 10 (0.38): 3 directories, 0 forums, 1 off-target national, 0 thin or old, 5 answer the exact question",
+        "easy-win neighbour of \"dr cynthia brown\" (top 2 with 1 impressions)",
+        "no site page answers this 4-word question, and the site holds its parts at position 1.8",
+        "weak top 10 (0.38): 2 directories, 0 forums, 1 off-target national, 1 thin or old, 4 answer the exact question",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -97,6 +103,54 @@
       ]
     },
     {
+      "query": "dr cynthia brown olive branch",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "local": true,
+        "place_variant_of": "dr cynthia brown southaven",
+        "neighbour": {
+          "sim": 0.6,
+          "of": "dr cynthia brown",
+          "why": "top 2 with 1 impressions"
+        },
+        "unanswered": {
+          "words": 5,
+          "covered": 0.4,
+          "parts_best_position": 1.8,
+          "parts_rows": 14
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.23,
+          "counts": {
+            "results": 10,
+            "directories": 2,
+            "forums": 0,
+            "off_target_national": 1,
+            "thin_or_old": 0,
+            "exact_answer": 2
+          },
+          "reasons": [
+            "top 10: 2 directories, 0 forums, 1 off-target national, 0 thin or old, 2 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 15,
+        "can_be_one": 60.2
+      },
+      "score": 60.2,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "easy-win neighbour of \"dr cynthia brown\" (top 2 with 1 impressions)",
+        "no site page answers this 5-word question, and the site holds its parts at position 1.8",
+        "weak top 10 (0.23): 2 directories, 0 forums, 1 off-target national, 0 thin or old, 2 answer the exact question"
+      ]
+    },
+    {
       "query": "good smile website down",
       "variants": [],
       "signals": {
@@ -113,31 +167,68 @@
         },
         "top10": {
           "provider": "brave",
-          "weakness": 0.31,
+          "weakness": 0.23,
           "counts": {
             "results": 10,
             "directories": 0,
-            "forums": 3,
+            "forums": 2,
             "off_target_national": 0,
-            "thin_or_old": 2,
+            "thin_or_old": 1,
             "exact_answer": 0
           },
           "reasons": [
-            "top 10: 0 directories, 3 forums, 0 off-target national, 2 thin or old, 0 answer the exact question"
+            "top 10: 0 directories, 2 forums, 0 off-target national, 1 thin or old, 0 answer the exact question"
           ]
         }
       },
       "scores": {
         "striking": 54,
-        "can_be_one": 52.4
+        "can_be_one": 49.2
       },
-      "score": 52.4,
+      "score": 49.2,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
         "no site page answers this 4-word question, and the site holds its parts at position 8",
-        "weak top 10 (0.31): 0 directories, 3 forums, 0 off-target national, 2 thin or old, 0 answer the exact question",
+        "weak top 10 (0.23): 0 directories, 2 forums, 0 off-target national, 1 thin or old, 0 answer the exact question",
         "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "emergency dentist near southaven",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 10.8,
+        "gsc_impressions": 12,
+        "gsc_page": "https://cynthiabrowndds.com/questions/emergency-dentist-southaven-ms/",
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.08,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 1,
+            "exact_answer": 1
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 1 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 59.7,
+        "can_be_one": 13.2
+      },
+      "score": 59.7,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10.8 in Search Console (12 impressions)",
+        "can-be-#1 evidence too thin (13.2 < 15)"
       ]
     },
     {
@@ -184,14 +275,19 @@
       ]
     },
     {
-      "query": "emergency dentist near southaven",
+      "query": "where is there an emergency dentist near me",
       "variants": [],
       "signals": {
-        "words": 4,
-        "question": false,
-        "gsc_position": 10.8,
-        "gsc_impressions": 12,
-        "gsc_page": "https://cynthiabrowndds.com/questions/emergency-dentist-southaven-ms/",
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "local": true,
+        "unanswered": {
+          "words": 5,
+          "covered": 0.4,
+          "parts_best_position": 7.6,
+          "parts_rows": 1
+        },
         "top10": {
           "provider": "brave",
           "weakness": 0.15,
@@ -200,24 +296,62 @@
             "directories": 0,
             "forums": 0,
             "off_target_national": 0,
-            "thin_or_old": 1,
-            "exact_answer": 1
+            "thin_or_old": 2,
+            "exact_answer": 0
           },
           "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 1 answer the exact question"
+            "top 10: 0 directories, 0 forums, 0 off-target national, 2 thin or old, 0 answer the exact question"
           ]
         }
       },
       "scores": {
-        "striking": 59.7,
-        "can_be_one": 16
+        "striking": 35,
+        "can_be_one": 46
       },
-      "score": 59.7,
+      "score": 46,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 7.6",
+        "weak top 10 (0.15): 0 directories, 0 forums, 0 off-target national, 2 thin or old, 0 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "can a dentist prescribe zofran",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "gsc_position": 9,
+        "gsc_impressions": 2,
+        "gsc_page": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.46,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 1,
+            "off_target_national": 0,
+            "thin_or_old": 4,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 1 forums, 0 off-target national, 4 thin or old, 0 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 59.5,
+        "can_be_one": 28.4
+      },
+      "score": 59.5,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "already ranks 10.8 in Search Console (12 impressions)",
-        "can-be-#1 score 16 too (taken by the striking lane's turn)"
+        "already ranks 9 in Search Console (2 impressions)",
+        "can-be-#1 score 28.4 too (taken by the striking lane's turn)"
       ]
     },
     {
@@ -226,13 +360,13 @@
       "signals": {
         "words": 3,
         "question": false,
-        "gsc_position": 12,
-        "gsc_impressions": 3,
+        "gsc_position": 11,
+        "gsc_impressions": 4,
         "gsc_page": "https://cynthiabrowndds.com/about/",
         "neighbour": {
           "sim": 0.75,
           "of": "dr cynthia brown southaven",
-          "why": "top 2 with 10 impressions"
+          "why": "top 2 with 18 impressions"
         },
         "top10": {
           "provider": "brave",
@@ -243,98 +377,24 @@
             "forums": 0,
             "off_target_national": 0,
             "thin_or_old": 0,
-            "exact_answer": 6
+            "exact_answer": 5
           },
           "reasons": [
-            "top 10: 2 directories, 0 forums, 0 off-target national, 0 thin or old, 6 answer the exact question"
+            "top 10: 2 directories, 0 forums, 0 off-target national, 0 thin or old, 5 answer the exact question"
           ]
         }
       },
       "scores": {
-        "striking": 40.7,
+        "striking": 43.8,
         "can_be_one": 42.3
       },
       "score": 42.3,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "easy-win neighbour of \"dr cynthia brown southaven\" (top 2 with 10 impressions)",
-        "weak top 10 (0.15): 2 directories, 0 forums, 0 off-target national, 0 thin or old, 6 answer the exact question",
+        "easy-win neighbour of \"dr cynthia brown southaven\" (top 2 with 18 impressions)",
+        "weak top 10 (0.15): 2 directories, 0 forums, 0 off-target national, 0 thin or old, 5 answer the exact question",
         "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "can a dentist prescribe anxiety medication",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "gsc_position": 10,
-        "gsc_impressions": 2,
-        "gsc_page": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
-        "top10": {
-          "provider": "brave",
-          "weakness": 0.31,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 1,
-            "off_target_national": 0,
-            "thin_or_old": 3,
-            "exact_answer": 1
-          },
-          "reasons": [
-            "top 10: 0 directories, 1 forums, 0 off-target national, 3 thin or old, 1 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 57.7,
-        "can_be_one": 22.4
-      },
-      "score": 22.4,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "weak top 10 (0.31): 0 directories, 1 forums, 0 off-target national, 3 thin or old, 1 answer the exact question",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "can dentist prescribe anxiety meds",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "gsc_position": 8,
-        "gsc_impressions": 1,
-        "gsc_page": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
-        "top10": {
-          "provider": "brave",
-          "weakness": 0.23,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 1,
-            "off_target_national": 0,
-            "thin_or_old": 3,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 1 forums, 0 off-target national, 3 thin or old, 0 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 59,
-        "can_be_one": 19.2
-      },
-      "score": 59,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "already ranks 8 in Search Console (1 impressions)",
-        "can-be-#1 score 19.2 too (taken by the striking lane's turn)"
       ]
     },
     {
@@ -350,68 +410,102 @@
         "bing_suggest": true,
         "top10": {
           "provider": "brave",
-          "weakness": 0.23,
+          "weakness": 0.15,
           "counts": {
             "results": 10,
             "directories": 0,
             "forums": 0,
             "off_target_national": 1,
-            "thin_or_old": 2,
-            "exact_answer": 0
+            "thin_or_old": 1,
+            "exact_answer": 1
           },
           "reasons": [
-            "top 10: 0 directories, 0 forums, 1 off-target national, 2 thin or old, 0 answer the exact question"
+            "top 10: 0 directories, 0 forums, 1 off-target national, 1 thin or old, 1 answer the exact question"
           ]
         }
       },
       "scores": {
         "striking": 45,
-        "can_be_one": 19.2
+        "can_be_one": 16
       },
-      "score": 19.2,
+      "score": 16,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "weak top 10 (0.23): 0 directories, 0 forums, 1 off-target national, 2 thin or old, 0 answer the exact question",
+        "weak top 10 (0.15): 0 directories, 0 forums, 1 off-target national, 1 thin or old, 1 answer the exact question",
         "people search it (autocomplete or impressions)"
       ]
     },
     {
-      "query": "can coffee stains on teeth be removed",
-      "variants": [
-        "removing coffee stains on teeth"
-      ],
+      "query": "are coffee stains on teeth permanent",
+      "variants": [],
       "signals": {
-        "words": 7,
+        "words": 6,
         "question": true,
         "google_suggest": true,
         "bing_suggest": true,
         "top10": {
           "provider": "brave",
-          "weakness": 0.23,
+          "weakness": 0.15,
           "counts": {
             "results": 10,
             "directories": 0,
             "forums": 0,
             "off_target_national": 0,
-            "thin_or_old": 2,
-            "exact_answer": 0
+            "thin_or_old": 1,
+            "exact_answer": 3
           },
           "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 2 thin or old, 0 answer the exact question"
+            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 3 answer the exact question"
           ]
         }
       },
       "scores": {
         "striking": 45,
-        "can_be_one": 19.2
+        "can_be_one": 16
       },
-      "score": 19.2,
+      "score": 45,
       "kind": "new",
-      "lane": "can_be_one",
+      "lane": "striking",
       "reasons": [
-        "weak top 10 (0.23): 0 directories, 0 forums, 0 off-target national, 2 thin or old, 0 answer the exact question",
-        "people search it (autocomplete or impressions)"
+        "autocomplete demand (google/bing)",
+        "can-be-#1 score 16 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "teeth whitening options at home",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "top10": {
+          "provider": "brave",
+          "weakness": 0,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 0,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 40,
+        "can_be_one": 0
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)",
+        "can-be-#1 evidence too thin (0 < 15)"
       ]
     },
     {
@@ -473,10 +567,10 @@
             "forums": 0,
             "off_target_national": 0,
             "thin_or_old": 0,
-            "exact_answer": 1
+            "exact_answer": 0
           },
           "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 1 answer the exact question"
+            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
           ]
         }
       },
@@ -502,30 +596,30 @@
         "bing_suggest": true,
         "top10": {
           "provider": "brave",
-          "weakness": 0,
+          "weakness": 0.08,
           "counts": {
             "results": 10,
             "directories": 0,
             "forums": 0,
             "off_target_national": 0,
             "thin_or_old": 1,
-            "exact_answer": 3
+            "exact_answer": 2
           },
           "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 3 answer the exact question"
+            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 2 answer the exact question"
           ]
         }
       },
       "scores": {
         "striking": 40,
-        "can_be_one": 0
+        "can_be_one": 13.2
       },
       "score": 40,
       "kind": "new",
       "lane": "striking",
       "reasons": [
         "autocomplete demand (google/bing)",
-        "can-be-#1 evidence too thin (0 < 15)"
+        "can-be-#1 evidence too thin (13.2 < 15)"
       ]
     },
     {
@@ -536,21 +630,7 @@
         "question": false,
         "google_suggest": true,
         "bing_suggest": true,
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 1
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 1 answer the exact question"
-          ]
-        }
+        "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
         "striking": 40,
@@ -560,8 +640,7 @@
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "autocomplete demand (google/bing)",
-        "can-be-#1 evidence too thin (0 < 15)"
+        "autocomplete demand (google/bing)"
       ]
     },
     {
@@ -572,21 +651,7 @@
         "question": false,
         "google_suggest": true,
         "bing_suggest": true,
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 1,
-            "exact_answer": 3
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 3 answer the exact question"
-          ]
-        }
+        "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
         "striking": 40,
@@ -596,15 +661,12 @@
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "autocomplete demand (google/bing)",
-        "can-be-#1 evidence too thin (0 < 15)"
+        "autocomplete demand (google/bing)"
       ]
     },
     {
       "query": "dental emergency what to do",
-      "variants": [
-        "dental emergency"
-      ],
+      "variants": [],
       "signals": {
         "words": 5,
         "question": false,
@@ -627,54 +689,11 @@
       "query": "dental cleaning how often",
       "variants": [
         "how often should you get a dental cleaning",
-        "how often to get dental cleaning"
+        "how often to get dental cleaning",
+        "how often should i get a dental cleaning"
       ],
       "signals": {
         "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "bing_suggest": true,
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 40,
-        "can_be_one": 0
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)"
-      ]
-    },
-    {
-      "query": "dentures vs implants cost",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "bing_suggest": true,
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 40,
-        "can_be_one": 0
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)"
-      ]
-    },
-    {
-      "query": "dentures vs implants pros and cons",
-      "variants": [
-        "dentures vs implants pros cons"
-      ],
-      "signals": {
-        "words": 6,
         "question": false,
         "google_suggest": true,
         "bing_suggest": true,
@@ -827,20 +846,83 @@
       ]
     },
     {
-      "query": "dentist olive branch ms hacks cross",
+      "query": "where can i go for emergency dentist",
       "variants": [],
       "signals": {
-        "words": 6,
-        "question": false,
+        "words": 7,
+        "question": true,
         "google_suggest": true,
         "local": true,
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 30,
+        "striking": 35,
         "can_be_one": 0
       },
-      "score": 30,
+      "score": 35,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "who to call for emergency dentist",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "local": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 35,
+        "can_be_one": 0
+      },
+      "score": 35,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "what number do you call for emergency dentist",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "local": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 35,
+        "can_be_one": 0
+      },
+      "score": 35,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "where can i get an emergency dentist appointment",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "local": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 35,
+        "can_be_one": 0
+      },
+      "score": 35,
       "kind": "new",
       "lane": "striking",
       "reasons": [
@@ -911,10 +993,54 @@
       ]
     },
     {
-      "query": "bleeding gums",
+      "query": "dentist southaven ms accepting payment plans",
       "variants": [],
       "signals": {
-        "words": 2,
+        "words": 6,
+        "question": false,
+        "google_suggest": true,
+        "local": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "dental anxiety dentist",
+      "variants": [
+        "dentist for dental anxiety"
+      ],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "bleeding gums treatment",
+      "variants": [],
+      "signals": {
+        "words": 3,
         "question": false,
         "google_suggest": true,
         "bing_suggest": true,
@@ -953,10 +1079,31 @@
       ]
     },
     {
-      "query": "are coffee stains on teeth permanent",
+      "query": "cavity signs",
       "variants": [],
       "signals": {
-        "words": 6,
+        "words": 2,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "can coffee stains on teeth be removed",
+      "variants": [],
+      "signals": {
+        "words": 7,
         "question": true,
         "google_suggest": true,
         "top10": "not read: outside this run's top-10 budget"
@@ -1043,6 +1190,26 @@
         "question": false,
         "bing_suggest": true,
         "local": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "dental anxiety dentist near me",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
@@ -1277,7 +1444,7 @@
       ]
     },
     {
-      "query": "bad breath causes and solutions",
+      "query": "bad breath causes from stomach",
       "variants": [],
       "signals": {
         "words": 5,
@@ -1297,12 +1464,12 @@
       ]
     },
     {
-      "query": "what to do if you have dental emergency",
+      "query": "bad breath causes and solutions",
       "variants": [],
       "signals": {
-        "words": 8,
-        "question": true,
-        "bing_suggest": true,
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
@@ -1338,6 +1505,26 @@
     },
     {
       "query": "professional teeth cleaning how often",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "dental deep cleaning how often",
       "variants": [],
       "signals": {
         "words": 5,
@@ -1417,6 +1604,26 @@
       ]
     },
     {
+      "query": "dentures vs implants pros and cons",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
       "query": "dentures vs implants which is better",
       "variants": [],
       "signals": {
@@ -1437,7 +1644,47 @@
       ]
     },
     {
-      "query": "southaven dental care location",
+      "query": "why do people have dental anxiety",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "how to help dental anxiety",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "dentist in southaven mississippi",
       "variants": [],
       "signals": {
         "words": 4,
@@ -1458,32 +1705,15 @@
       ]
     },
     {
-      "query": "composite bonding vs veneers pros and cons",
-      "variants": [],
+      "query": "dental office southaven ms",
+      "variants": [
+        "dental office in southaven ms"
+      ],
       "signals": {
-        "words": 7,
+        "words": 4,
         "question": false,
-        "google_suggest": true,
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 25,
-        "can_be_one": 0
-      },
-      "score": 25,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "autocomplete demand (google/bing)"
-      ]
-    },
-    {
-      "query": "composite bonding vs veneers vs crowns",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "google_suggest": true,
+        "bing_suggest": true,
+        "local": true,
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
@@ -1520,6 +1750,22 @@
       "page": "/questions/dentist-in-olive-branch-ms-on-goodman-rd/"
     },
     {
+      "query": "how common is dental anxiety",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "bing_suggest": true
+      },
+      "scores": {
+        "striking": 45,
+        "can_be_one": 0
+      },
+      "score": 45,
+      "page": "/questions/why-is-dental-anxiety-so-common/"
+    },
+    {
       "query": "dentist southaven ms",
       "variants": [
         "dentist in southaven ms"
@@ -1541,7 +1787,14 @@
     {
       "query": "dental anxiety",
       "variants": [
-        "dental anxiety tips"
+        "dental anxiety tips",
+        "dental anxiety definition",
+        "how to deal with dental anxiety",
+        "how to prevent dental anxiety",
+        "how to manage dental anxiety",
+        "how to overcome dental anxiety",
+        "how to reduce dental anxiety",
+        "how to cope with dental anxiety"
       ],
       "signals": {
         "words": 2,
@@ -1609,6 +1862,36 @@
       "page": "/questions/emergency-dentist-southaven-ms/"
     },
     {
+      "query": "what can a dentist give you for anxiety",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "page": "/questions/can-dentist-give-anxiety-meds/"
+    },
+    {
+      "query": "how to reduce anxiety at the dentist",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "page": "/questions/can-dentist-give-anxiety-meds/"
+    },
+    {
       "query": "olive branch dental care olive branch ms",
       "variants": [],
       "signals": {
@@ -1657,6 +1940,22 @@
       "page": "/questions/dentist-in-olive-branch-ms-on-goodman-rd/"
     },
     {
+      "query": "dental in olive branch",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "local": true
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "page": "/questions/dental-olive-branch-ms/"
+    },
+    {
       "query": "olive branch dental care",
       "variants": [],
       "signals": {
@@ -1673,20 +1972,34 @@
       "page": "/questions/dental-olive-branch-ms/"
     },
     {
-      "query": "dental in olive branch",
+      "query": "anxiety meds for dentist",
       "variants": [],
       "signals": {
         "words": 4,
         "question": false,
-        "bing_suggest": true,
-        "local": true
+        "bing_suggest": true
       },
       "scores": {
-        "striking": 25,
+        "striking": 20,
         "can_be_one": 0
       },
-      "score": 25,
-      "page": "/questions/dental-olive-branch-ms/"
+      "score": 20,
+      "page": "/questions/can-dentist-give-anxiety-meds/"
+    },
+    {
+      "query": "dentist visit with anxiety",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true
+      },
+      "scores": {
+        "striking": 20,
+        "can_be_one": 0
+      },
+      "score": 20,
+      "page": "/questions/can-dentist-give-anxiety-meds/"
     },
     {
       "query": "composite bonding vs composite veneers",

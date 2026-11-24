@@ -416,6 +416,30 @@
           "GPTBot (OpenAI training)": 1
         }
       }
+    },
+    "2026-11-23": {
+      "ai_visitors": {
+        "total": 0,
+        "by_engine": {},
+        "by_path": {},
+        "source": "web-analytics"
+      },
+      "ai_bot_hits": {
+        "total": 316,
+        "by_bot": {
+          "Amazonbot": 24,
+          "ChatGPT-User (ChatGPT fetch)": 33,
+          "Claude-User": 30,
+          "DuckAssistBot": 40,
+          "CCBot (Common Crawl)": 21,
+          "PerplexityBot": 10,
+          "ClaudeBot": 26,
+          "GPTBot (OpenAI training)": 28,
+          "Perplexity-User": 30,
+          "Bytespider": 36,
+          "OAI-SearchBot (ChatGPT search)": 38
+        }
+      }
     }
   }
 }

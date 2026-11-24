@@ -1,8 +1,8 @@
 {
   "schema": "search-loop-discovery-v1",
   "site": "cynthiabrowndds.com",
-  "week": "2026-W47",
-  "generated_at": "2026-11-16T12:36:15.684Z",
+  "week": "2026-W48",
+  "generated_at": "2026-11-23T23:56:57.763Z",
   "paid_calls": 0,
   "cost_usd": 0,
   "hosts": {
@@ -38,16 +38,16 @@
     }
   },
   "sources": {
-    "search_console": "ok: 45 rows",
+    "search_console": "ok: 52 rows",
     "bing_webmaster": "ok: 0 rows",
-    "easy_wins": "ok: 2 easy win(s) in Search Console",
+    "easy_wins": "ok: 4 easy win(s) in Search Console",
     "suggestqueries.google.com": "ok",
     "api.bing.com": "ok",
-    "relevance_screen": "ok: kept 58 of 150 (free model)",
+    "relevance_screen": "ok: kept 68 of 150 (free model)",
     "top10": "ok: 15 top-10 read(s) via brave"
   },
   "seeds": {
-    "planned": 679,
+    "planned": 697,
     "asked": 40,
     "topics": 14,
     "topics_asked": 14,
@@ -55,7 +55,7 @@
     "priority_targets": 0
   },
   "notes": [
-    "autocomplete stopped at its budget of 80 calls (40 of 679 planned questions asked)"
+    "autocomplete stopped at its budget of 80 calls (40 of 697 planned questions asked)"
   ],
   "competition": "ok: 15 top-10 read(s) via brave",
   "lanes": {
@@ -64,7 +64,7 @@
       "striking": 1
     },
     "can_be_one": 7,
-    "striking": 51,
+    "striking": 61,
     "weights": {
       "neighbour": 35,
       "unanswered": 30,
@@ -73,9 +73,9 @@
     }
   },
   "counts": {
-    "candidates": 310,
-    "targets": 58,
-    "strengthen_candidates": 12,
+    "candidates": 356,
+    "targets": 68,
+    "strengthen_candidates": 17,
     "dropped_shared_audience": 0
   }
 }
