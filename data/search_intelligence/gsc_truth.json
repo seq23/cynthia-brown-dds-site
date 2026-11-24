@@ -1,19 +1,19 @@
 {
   "schema": "cbdds-gsc-truth-v1",
   "site": "sc-domain:cynthiabrowndds.com",
-  "collected_at": "2026-11-22T20:11:05.208Z",
-  "day": "2026-11-22",
+  "collected_at": "2026-11-24T00:20:16.508Z",
+  "day": "2026-11-23",
   "window": {
-    "start": "2026-10-23",
-    "end": "2026-11-20",
+    "start": "2026-10-24",
+    "end": "2026-11-21",
     "days": 28,
     "lag_days": 2
   },
   "totals": {
-    "clicks": 15,
-    "impressions": 555,
-    "ctr": 2.7,
-    "position": 13.6,
+    "clicks": 16,
+    "impressions": 568,
+    "ctr": 2.82,
+    "position": 13.72,
     "source": "searchAnalytics with no dimensions, the same window as the rows below"
   },
   "queries": [
@@ -153,16 +153,16 @@
     {
       "query": "dr cynthia brown reviews",
       "clicks": 0,
-      "impressions": 30,
+      "impressions": 31,
       "ctr": 0,
-      "position": 11.93
+      "position": 12.06
     },
     {
       "query": "dr cynthia brown southaven",
       "clicks": 0,
-      "impressions": 33,
+      "impressions": 35,
       "ctr": 0,
-      "position": 7.36
+      "position": 7.09
     },
     {
       "query": "dr. brown dentistry",
@@ -237,9 +237,9 @@
     {
       "query": "teeth whitening near olive branch",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 6,
       "ctr": 0,
-      "position": 42.75
+      "position": 57.67
     },
     {
       "query": "walk in dentist southaven, ms",
@@ -274,23 +274,30 @@
     {
       "page": "https://cynthiabrowndds.com/",
       "clicks": 14,
-      "impressions": 205,
-      "ctr": 6.83,
-      "position": 7.83
+      "impressions": 208,
+      "ctr": 6.73,
+      "position": 8.15
     },
     {
       "page": "https://cynthiabrowndds.com/about/",
       "clicks": 1,
-      "impressions": 104,
-      "ctr": 0.96,
-      "position": 6.89
+      "impressions": 106,
+      "ctr": 0.94,
+      "position": 6.93
     },
     {
       "page": "https://cynthiabrowndds.com/questions/can-dental-implants-cause-anxiety/",
       "clicks": 1,
-      "impressions": 26,
-      "ctr": 3.85,
-      "position": 15.88
+      "impressions": 27,
+      "ctr": 3.7,
+      "position": 15.67
+    },
+    {
+      "page": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
+      "clicks": 1,
+      "impressions": 111,
+      "ctr": 0.9,
+      "position": 7.84
     },
     {
       "page": "https://cynthiabrowndds.com/book/",
@@ -309,9 +316,9 @@
     {
       "page": "https://cynthiabrowndds.com/locations/",
       "clicks": 0,
-      "impressions": 44,
+      "impressions": 45,
       "ctr": 0,
-      "position": 7.34
+      "position": 7.31
     },
     {
       "page": "https://cynthiabrowndds.com/privacy/",
@@ -326,13 +333,6 @@
       "impressions": 6,
       "ctr": 0,
       "position": 7.67
-    },
-    {
-      "page": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
-      "clicks": 0,
-      "impressions": 106,
-      "ctr": 0,
-      "position": 8.03
     },
     {
       "page": "https://cynthiabrowndds.com/questions/dental-anxiety-medication/",
@@ -400,9 +400,9 @@
     {
       "page": "https://cynthiabrowndds.com/questions/what-is-dental-anxiety-called/",
       "clicks": 0,
-      "impressions": 27,
+      "impressions": 28,
       "ctr": 0,
-      "position": 20.04
+      "position": 19.61
     },
     {
       "page": "https://cynthiabrowndds.com/questions/why-is-dental-anxiety-so-common/",
@@ -442,9 +442,9 @@
     {
       "page": "https://cynthiabrowndds.com/resources/insights/tiktok-teeth-trends/",
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 12,
       "ctr": 0,
-      "position": 6.18
+      "position": 6.42
     },
     {
       "page": "https://cynthiabrowndds.com/resources/white-papers/dental-anxiety-avoidance/",
@@ -470,9 +470,9 @@
     {
       "page": "https://cynthiabrowndds.com/services/",
       "clicks": 0,
-      "impressions": 37,
+      "impressions": 39,
       "ctr": 0,
-      "position": 11.73
+      "position": 13.82
     }
   ],
   "days": [
@@ -570,6 +570,11 @@
       "date": "2026-11-20",
       "clicks": 2,
       "impressions": 33
+    },
+    {
+      "date": "2026-11-21",
+      "clicks": 1,
+      "impressions": 13
     }
   ]
 }
