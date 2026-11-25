@@ -3,14 +3,15 @@ name: Weekly outcome report
 # i9 (Search Readiness, 3 Nov 2026): without a report nobody notices a drop for a month, and without
 # an issue that closes itself the list of problems rots into a list nobody reads.
 #
-# Reads only what this repository already records - the daily Search Console files - and writes
+# Reads the committed Search Console files and collects current AI analytics. It writes
 # weekly-outcome-report.json, uploaded as the artifact `weekly-outcome-report` for Boss OS to word
 # into her weekly email. Any number that cannot be read is said as "not read: <reason>", never 0.
 #
 # A red week opens ONE issue (label `weekly-outcome`, title fixed) or updates the open one; the first
 # green week closes it. Nothing is emailed, committed or deployed from here.
 #
-# Mondays 06:49 America/Chicago, after that morning's search-intelligence run at 06:40.
+# Mondays 06:49 America/Chicago. The AI artifact reads Cloudflare directly
+# because GitHub may delay the separate daily collector.
 
 on:
   schedule:
@@ -35,6 +36,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0  # last week's gsc_truth.json comes out of git history
 
       - name: Setup Node
@@ -57,8 +59,11 @@ jobs:
           ref: v1
           path: .search-loop-engine
 
-      - name: Report measured AI traffic (never run the content writer)
-        run: node scripts/collect_ai_analytics.mjs --report-only
+      - name: Measure current AI traffic for the report
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.SEARCH_LOOP_ANALYTICS_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.SEARCH_LOOP_CF_ACCOUNT_ID }}
+        run: node scripts/collect_ai_analytics.mjs
 
       - name: Upload the search-loop week
         uses: actions/upload-artifact@v4

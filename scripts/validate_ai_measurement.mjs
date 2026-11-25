@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { recordDay } from './collect_ai_analytics.mjs';
+import { measuredWeek, recordDay } from './collect_ai_analytics.mjs';
 const day = '2026-11-03';
 const old = { schema: 'search-loop-ai-daily-v1', days: { '2026-11-02': { not_read: 'not collected' } } };
 const result = { ai_visitors: { total: 0 }, ai_bot_hits: { total: 130 }, window: { since: '2026-11-02', until: day } };
@@ -11,4 +11,11 @@ assert.equal(old.days[day], undefined);
 for (const bad of [{ notRead: '403 refused' }, { ai_visitors: { total: 0 }, botsNotRead: 'refused' }, { ai_visitors: { total: -1 }, ai_bot_hits: { total: 0 } }]) {
   assert.throws(() => recordDay(old, day, bad), /AI_MEASUREMENT_NOT_READ/);
 }
-console.log('AI measurement: 7 proofs passed (real zero, bot count, history, immutability, refused and partial sources, invalid counts)');
+// A scheduled report cannot use incomplete or stale data when daily CI is delayed.
+assert.throws(() => measuredWeek(got, '2026-11-04'), /AI_MEASUREMENT_STALE/);
+assert.throws(() => measuredWeek({ days: {} }, day), /AI_MEASUREMENT_STALE/);
+assert.throws(() => measuredWeek({ days: { [day]: { ai_visitors: { total: 0 } } } }, day),
+  /AI_MEASUREMENT_STALE/);
+assert.throws(() => measuredWeek(got, '2026-11-02'), /AI_MEASUREMENT_STALE/);
+assert.deepEqual(measuredWeek(got, day), [day]);
+console.log('OUTPUT 12 AI measurement checks passed');
