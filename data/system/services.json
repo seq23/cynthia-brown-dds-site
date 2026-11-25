@@ -1,15 +1,39 @@
 {
-  "$comment": "The care topics the /services/ page lists, and the Service nodes the practice publishes in its JSON-LD (scripts/post_build_aeo_geo.js). No prices: the practice publishes none, so every Offer is price-on-request and points at /book/, where the booking page handles pricing. Never add a price here.",
+  "$comment": "The care topics the /services/ page lists, and the Service nodes the practice publishes in its JSON-LD (scripts/post_build_aeo_geo.js). Each service carries its own words: `summary` says what the care covers and `ask` is one question a patient can bring to the exam. The build stops if a service has no summary or ask, or if two services share one (Search Readiness q1, 25 Nov 2026: one sentence repeated on every card read as template filler). No prices: the practice publishes none, so every Offer is price-on-request and points at /book/, where the booking page handles pricing. Never add a price here, and never a promise of a result.",
   "pricing_offer": {
     "description": "Contact us for current pricing",
     "path": "/book/"
   },
   "services": [
-    "Preventive care",
-    "Restorative care",
-    "Cosmetic dentistry",
-    "Emergency dental care",
-    "Dentures and implants",
-    "Teeth whitening"
+    {
+      "name": "Preventive care",
+      "summary": "Routine exams, professional cleanings and X-rays when the dentist judges them needed, aimed at finding decay and gum problems while they are small.",
+      "ask": "How often should my cleanings be, given my gums and history?"
+    },
+    {
+      "name": "Restorative care",
+      "summary": "Fillings, crowns and root canal treatment that repair a tooth damaged by decay, a crack or wear, so it can keep doing its job.",
+      "ask": "Can this tooth be repaired with a filling, or does it need more coverage?"
+    },
+    {
+      "name": "Cosmetic dentistry",
+      "summary": "Bonding, veneers and reshaping that change how teeth look, considered only after the teeth and gums underneath are healthy.",
+      "ask": "Which of my concerns are cosmetic, and which should be treated for health first?"
+    },
+    {
+      "name": "Emergency dental care",
+      "summary": "Prompt care for a knocked-out or broken tooth, a swollen face or jaw, or tooth pain that keeps you awake; the booking page shows the soonest opening. Swelling that spreads or makes it hard to breathe or swallow needs an emergency room first.",
+      "ask": "What should I do with a broken or knocked-out tooth before I arrive?"
+    },
+    {
+      "name": "Dentures and implants",
+      "summary": "Ways to replace missing teeth: full or partial dentures that come out, and implants that are anchored in the jawbone and need enough healthy bone to hold them.",
+      "ask": "Is my jawbone suited to an implant, or is a denture or bridge the better fit?"
+    },
+    {
+      "name": "Teeth whitening",
+      "summary": "In-office or take-home bleaching that lightens natural enamel. It does not change the shade of crowns, veneers or fillings, and can leave teeth sensitive for a while.",
+      "ask": "Will my existing fillings or crowns still match after whitening?"
+    }
   ]
 }

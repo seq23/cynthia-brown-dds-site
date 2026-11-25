@@ -99,10 +99,11 @@ const servicesData = readJson('data/system/services.json');
 const offerCatalog = {
   "@type": "OfferCatalog",
   "name": "Dental care",
-  "itemListElement": servicesData.services.map((name) => ({
+  "itemListElement": servicesData.services.map(({ name, summary }) => ({
     "@type": "Service",
     "name": name,
     "serviceType": name,
+    "description": summary,
     "provider": { "@id": entity["@id"] },
     "areaServed": locations.areaServed,
     "offers": { "@type": "Offer", "description": servicesData.pricing_offer.description, "url": `${SITE}${servicesData.pricing_offer.path}` }
