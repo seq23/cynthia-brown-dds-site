@@ -7,33 +7,33 @@
   "services": [
     {
       "name": "Preventive care",
-      "summary": "Routine exams, professional cleanings and X-rays when the dentist judges them needed, aimed at finding decay and gum problems while they are small.",
-      "ask": "How often should my cleanings be, given my gums and history?"
+      "summary": "Routine exams and professional cleanings, with time to discuss brushing, flossing and when to schedule your next visit.",
+      "ask": "How often should I schedule cleanings given my dental history?"
     },
     {
       "name": "Restorative care",
-      "summary": "Fillings, crowns and root canal treatment that repair a tooth damaged by decay, a crack or wear, so it can keep doing its job.",
-      "ask": "Can this tooth be repaired with a filling, or does it need more coverage?"
+      "summary": "Fillings and crowns are examples of repairs a dentist may discuss for a tooth affected by decay, a crack or wear.",
+      "ask": "How will you decide whether this tooth needs a filling or a crown?"
     },
     {
       "name": "Cosmetic dentistry",
-      "summary": "Bonding, veneers and reshaping that change how teeth look, considered only after the teeth and gums underneath are healthy.",
-      "ask": "Which of my concerns are cosmetic, and which should be treated for health first?"
+      "summary": "A conversation about the tooth color, shape or spacing you would like to change and the options available after an exam.",
+      "ask": "Which options fit the changes I want to make to my smile?"
     },
     {
       "name": "Emergency dental care",
-      "summary": "Prompt care for a knocked-out or broken tooth, a swollen face or jaw, or tooth pain that keeps you awake; the booking page shows the soonest opening. Swelling that spreads or makes it hard to breathe or swallow needs an emergency room first.",
-      "ask": "What should I do with a broken or knocked-out tooth before I arrive?"
+      "summary": "Tooth pain, a broken tooth or a dental injury are reasons to contact the office about an urgent visit.",
+      "ask": "What details should I share when I call about a broken tooth?"
     },
     {
       "name": "Dentures and implants",
-      "summary": "Ways to replace missing teeth: full or partial dentures that come out, and implants that are anchored in the jawbone and need enough healthy bone to hold them.",
-      "ask": "Is my jawbone suited to an implant, or is a denture or bridge the better fit?"
+      "summary": "Dentures and implants are options a dentist can discuss when one or more teeth are missing. The discussion includes how each option is fitted and cared for.",
+      "ask": "What would daily care look like with each option?"
     },
     {
       "name": "Teeth whitening",
-      "summary": "In-office or take-home bleaching that lightens natural enamel. It does not change the shade of crowns, veneers or fillings, and can leave teeth sensitive for a while.",
-      "ask": "Will my existing fillings or crowns still match after whitening?"
+      "summary": "Whitening is a conversation about the shade of your natural teeth and how it may look alongside existing fillings, veneers or crowns.",
+      "ask": "How might whitening affect the way my crowns or fillings match?"
     }
   ]
 }
