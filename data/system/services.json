@@ -1,15 +1,39 @@
 {
-  "$comment": "The care topics the /services/ page lists, and the Service nodes the practice publishes in its JSON-LD (scripts/post_build_aeo_geo.js). No prices: the practice publishes none, so every Offer is price-on-request and points at /book/, where the booking page handles pricing. Never add a price here.",
+  "$comment": "The care topics the /services/ page lists, and the Service nodes the practice publishes in its JSON-LD (scripts/post_build_aeo_geo.js). Each service carries its own words: `summary` says what the care covers and `ask` is one question a patient can bring to the exam. The build stops if a service has no summary or ask, or if two services share one (Search Readiness q1, 25 Nov 2026: one sentence repeated on every card read as template filler). No prices: the practice publishes none, so every Offer is price-on-request and points at /book/, where the booking page handles pricing. Never add a price here, and never a promise of a result.",
   "pricing_offer": {
     "description": "Contact us for current pricing",
     "path": "/book/"
   },
   "services": [
-    "Preventive care",
-    "Restorative care",
-    "Cosmetic dentistry",
-    "Emergency dental care",
-    "Dentures and implants",
-    "Teeth whitening"
+    {
+      "name": "Preventive care",
+      "summary": "Routine exams and professional cleanings, with time to discuss brushing, flossing and when to schedule your next visit.",
+      "ask": "How often should I schedule cleanings given my dental history?"
+    },
+    {
+      "name": "Restorative care",
+      "summary": "Fillings and crowns are examples of repairs a dentist may discuss for a tooth affected by decay, a crack or wear.",
+      "ask": "How will you decide whether this tooth needs a filling or a crown?"
+    },
+    {
+      "name": "Cosmetic dentistry",
+      "summary": "A conversation about the tooth color, shape or spacing you would like to change and the options available after an exam.",
+      "ask": "Which options fit the changes I want to make to my smile?"
+    },
+    {
+      "name": "Emergency dental care",
+      "summary": "Tooth pain, a broken tooth or a dental injury are reasons to contact the office about an urgent visit.",
+      "ask": "What details should I share when I call about a broken tooth?"
+    },
+    {
+      "name": "Dentures and implants",
+      "summary": "Dentures and implants are options a dentist can discuss when one or more teeth are missing. The discussion includes how each option is fitted and cared for.",
+      "ask": "What would daily care look like with each option?"
+    },
+    {
+      "name": "Teeth whitening",
+      "summary": "Whitening is a conversation about the shade of your natural teeth and how it may look alongside existing fillings, veneers or crowns.",
+      "ask": "How might whitening affect the way my crowns or fillings match?"
+    }
   ]
 }
