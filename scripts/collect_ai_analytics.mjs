@@ -17,6 +17,20 @@ export function recordDay(daily, day, result) {
   } } };
 }
 
+export function measuredWeek(daily, today) {
+  const from = new Date(today + 'T00:00:00Z');
+  from.setUTCDate(from.getUTCDate() - 6);
+  const firstDay = from.toISOString().slice(0, 10);
+  const days = Object.entries(daily.days)
+    .filter(([day, value]) => day >= firstDay && day <= today &&
+      [value.ai_visitors, value.ai_bot_hits].every(count => Number.isFinite(count?.total) && count.total >= 0))
+    .map(([day]) => day).sort();
+  if (days[days.length - 1] !== today) {
+    throw new Error(`AI_MEASUREMENT_STALE: no complete measurement on ${today}`);
+  }
+  return days;
+}
+
 async function main() {
   const engine = path.resolve(process.env.SEARCH_LOOP_ENGINE_DIR || path.join(root, '.search-loop-engine'));
   const mod = async (name) => import(pathToFileURL(path.join(engine, 'src', `${name}.mjs`)));
@@ -36,10 +50,7 @@ async function main() {
   const report = buildReport(cfg, { mode: cfg.mode, effectivePace: cfg.pace.start_per_day, now });
   const errors = checkReport(report);
   if (errors.length) throw new Error(`INVALID_REPORT: ${errors.join('; ')}`);
-  const measuredDays = Object.entries(JSON.parse(fs.readFileSync(dailyPath)).days)
-    .filter(([day, v]) => now - new Date(day + 'T12:00:00Z') < 7 * 86400000 && v.ai_visitors && v.ai_bot_hits)
-    .map(([day]) => day).sort();
-  if (!measuredDays.length || !measuredDays.includes(centralDate(now))) throw new Error('AI_MEASUREMENT_STALE: collect today before reporting');
+  const measuredDays = measuredWeek(JSON.parse(fs.readFileSync(dailyPath)), centralDate(now));
   report.notes.push(`AI totals cover ${measuredDays.length} measured day(s): ${measuredDays.join(', ')}. Unread days are excluded, never zero-filled. Bot counts are requests, not people; referrals come from aggregate hostname-only analytics.`);
   const out = path.join(root, cfg.ledger_dir, 'reports', `search-loop-week-${report.week}.json`);
   fs.mkdirSync(path.dirname(out), { recursive: true });
