@@ -1,19 +1,19 @@
 {
   "schema": "cbdds-gsc-truth-v1",
   "site": "sc-domain:cynthiabrowndds.com",
-  "collected_at": "2026-11-25T22:00:13.595Z",
-  "day": "2026-11-25",
+  "collected_at": "2026-11-26T21:54:23.140Z",
+  "day": "2026-11-26",
   "window": {
-    "start": "2026-10-26",
-    "end": "2026-11-23",
+    "start": "2026-10-27",
+    "end": "2026-11-24",
     "days": 28,
     "lag_days": 2
   },
   "totals": {
-    "clicks": 16,
-    "impressions": 624,
-    "ctr": 2.56,
-    "position": 13.43,
+    "clicks": 18,
+    "impressions": 652,
+    "ctr": 2.76,
+    "position": 13.11,
     "source": "searchAnalytics with no dimensions, the same window as the rows below"
   },
   "queries": [
@@ -62,9 +62,9 @@
     {
       "query": "can dentist prescribe anxiety meds",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 9,
       "ctr": 0,
-      "position": 4.75
+      "position": 5.33
     },
     {
       "query": "can dentists prescribe anxiety medication",
@@ -228,6 +228,13 @@
       "position": 8
     },
     {
+      "query": "is it scary?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
       "query": "orthodontics olive branch ms",
       "clicks": 0,
       "impressions": 6,
@@ -287,31 +294,31 @@
   "pages": [
     {
       "page": "https://cynthiabrowndds.com/",
-      "clicks": 14,
-      "impressions": 224,
-      "ctr": 6.25,
-      "position": 8.77
+      "clicks": 15,
+      "impressions": 230,
+      "ctr": 6.52,
+      "position": 8.67
+    },
+    {
+      "page": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
+      "clicks": 2,
+      "impressions": 156,
+      "ctr": 1.28,
+      "position": 7.62
     },
     {
       "page": "https://cynthiabrowndds.com/about/",
       "clicks": 1,
-      "impressions": 109,
-      "ctr": 0.92,
-      "position": 6.94
+      "impressions": 112,
+      "ctr": 0.89,
+      "position": 6.92
     },
     {
       "page": "https://cynthiabrowndds.com/questions/can-dental-implants-cause-anxiety/",
       "clicks": 1,
-      "impressions": 28,
-      "ctr": 3.57,
-      "position": 15.5
-    },
-    {
-      "page": "https://cynthiabrowndds.com/questions/can-dentist-give-anxiety-meds/",
-      "clicks": 1,
-      "impressions": 141,
-      "ctr": 0.71,
-      "position": 7.72
+      "impressions": 32,
+      "ctr": 3.13,
+      "position": 14.13
     },
     {
       "page": "https://cynthiabrowndds.com/book/",
@@ -330,9 +337,9 @@
     {
       "page": "https://cynthiabrowndds.com/locations/",
       "clicks": 0,
-      "impressions": 47,
+      "impressions": 49,
       "ctr": 0,
-      "position": 7.28
+      "position": 7.24
     },
     {
       "page": "https://cynthiabrowndds.com/privacy/",
@@ -379,9 +386,9 @@
     {
       "page": "https://cynthiabrowndds.com/questions/dentist-southaven-ms-getwell/",
       "clicks": 0,
-      "impressions": 12,
+      "impressions": 13,
       "ctr": 0,
-      "position": 26.75
+      "position": 25.46
     },
     {
       "page": "https://cynthiabrowndds.com/questions/emergency-dentist-southaven-ms/",
@@ -414,9 +421,9 @@
     {
       "page": "https://cynthiabrowndds.com/questions/what-is-dental-anxiety-called/",
       "clicks": 0,
-      "impressions": 30,
+      "impressions": 31,
       "ctr": 0,
-      "position": 18.8
+      "position": 18.52
     },
     {
       "page": "https://cynthiabrowndds.com/questions/why-do-i-have-dental-anxiety/",
@@ -606,6 +613,11 @@
       "date": "2026-11-23",
       "clicks": 0,
       "impressions": 38
+    },
+    {
+      "date": "2026-11-24",
+      "clicks": 2,
+      "impressions": 28
     }
   ]
 }
