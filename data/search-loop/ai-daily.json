@@ -513,6 +513,10 @@
           "Amazonbot": 3,
           "GPTBot (OpenAI training)": 1
         }
+      },
+      "window": {
+        "since": "2026-11-26T21:37:44.708Z",
+        "until": "2026-11-27T21:37:44.708Z"
       }
     }
   }
